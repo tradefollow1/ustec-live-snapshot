@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-21T04:03:00.857028+03:00",
-  "candle_time_sofia": "2026-08-21T04:00:00+03:00",
-  "price": 29236.0,
+  "generated_at_sofia": "2026-08-21T04:06:01.082321+03:00",
+  "candle_time_sofia": "2026-08-21T04:03:00+03:00",
+  "price": 29219.6,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.384,
@@ -47,24 +47,17 @@
       "trend": "TRANSITION",
       "active_leg": "BEARISH",
       "active_leg_origin": 29270.9,
-      "active_leg_points": 34.9,
+      "active_leg_points": 51.3,
       "last_swing_high": 29270.9,
       "last_swing_low": 29221.1,
       "prev_swing_high": 29273.2,
       "prev_swing_low": 29199.4,
-      "choch": false,
-      "bos": false,
-      "reversal_direction": "NONE",
-      "reversal_state": "NONE",
-      "atr14": 18.1391,
+      "choch": true,
+      "bos": true,
+      "reversal_direction": "BEARISH",
+      "reversal_state": "CONFIRMED",
+      "atr14": 18.4435,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-21T03:51:00+03:00",
-          "open": 29258.1,
-          "high": 29270.4,
-          "low": 29240.0,
-          "close": 29245.1
-        },
         {
           "time_sofia": "2026-08-21T03:54:00+03:00",
           "open": 29245.5,
@@ -85,36 +78,41 @@
           "high": 29243.6,
           "low": 29226.5,
           "close": 29236.0
+        },
+        {
+          "time_sofia": "2026-08-21T04:03:00+03:00",
+          "open": 29235.7,
+          "high": 29238.2,
+          "low": 29215.8,
+          "close": 29219.6
         }
       ]
     }
   },
   "ama": {
-    "value": 29241.6668,
-    "distance_points": -5.6668,
+    "value": 29239.3577,
+    "distance_points": -19.7577,
     "price_side": "BELOW",
-    "slope": "FLAT →",
+    "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 25,
-    "bearish_execution_0_100": 31,
+    "bullish_execution_0_100": 19,
+    "bearish_execution_0_100": 60,
     "bullish_execution_1_5": 1,
-    "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 53,
-    "bearish_exhaustion_0_100": 49,
-    "bullish_exhaustion_1_5": 2,
-    "bearish_exhaustion_1_5": 2
+    "bearish_execution_1_5": 3,
+    "bullish_exhaustion_0_100": 66,
+    "bearish_exhaustion_0_100": 39,
+    "bullish_exhaustion_1_5": 3,
+    "bearish_exhaustion_1_5": 1
   },
   "levels": {
     "day_high": 29273.2,
     "day_low": 29183.1,
-    "points_from_day_high": -37.2,
-    "points_from_day_low": 52.9,
+    "points_from_day_high": -53.6,
+    "points_from_day_low": 36.5,
     "supports": [
-      29222.1,
-      29221.1,
       29205.0,
       29199.4,
       29195.5,
@@ -126,6 +124,9 @@
       29111.9
     ],
     "resistances": [
+      29231.9,
+      29232.1,
+      29234.6,
       29237.0,
       29244.49,
       29270.9,
@@ -134,29 +135,29 @@
       29340.13,
       29381.99,
       29431.53,
-      29491.9,
-      29508.1,
-      29519.6,
-      29533.74
+      29491.9
     ],
-    "sell_retest_level": 29237.0,
+    "sell_retest_level": 29231.9,
     "sell_retest_zone": [
-      29231.56,
-      29242.44
+      29226.37,
+      29237.43
     ],
-    "buy_retest_level": 29222.1,
+    "buy_retest_level": 29205.0,
     "buy_retest_zone": [
-      29216.66,
-      29227.54
+      29199.47,
+      29210.53
     ],
     "next_up_trigger": 29270.9,
     "next_down_trigger": 29221.1
   },
   "python_decision": {
     "action": "WAIT",
-    "confidence_1_5": 1,
-    "reason": "No actionable alignment.",
-    "wait_zone": null,
+    "confidence_1_5": 3,
+    "reason": "Wait for SELL pullback/retest zone and bearish rejection.",
+    "wait_zone": [
+      29225.4,
+      29238.4
+    ],
     "dynamic_target": null,
     "technical_sl": null,
     "emergency_max_loss_points": 100.0
@@ -172,8 +173,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29209.4,
-        "current": 29238.0,
-        "profit": -2.45,
+        "current": 29221.5,
+        "profit": -1.04,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
