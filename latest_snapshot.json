@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-21T23:11:36.703427+03:00",
-  "candle_time_sofia": "2026-08-21T23:06:00+03:00",
-  "price": 29301.0,
+  "generated_at_sofia": "2026-08-21T23:14:38.030431+03:00",
+  "candle_time_sofia": "2026-08-21T23:09:00+03:00",
+  "price": 29305.7,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.384,
@@ -47,11 +47,11 @@
       "trend": "BEARISH",
       "active_leg": "BULLISH",
       "active_leg_origin": 29295.4,
-      "active_leg_points": 5.6,
+      "active_leg_points": 10.3,
       "macro_leg": "BULLISH",
       "macro_origin": 29274.2,
       "macro_start_time": "2026-08-21T21:33:00+03:00",
-      "macro_points": 26.8,
+      "macro_points": 31.5,
       "macro_peak": 29352.2,
       "macro_trough": 29274.2,
       "macro_state": "CONTINUATION",
@@ -64,17 +64,10 @@
       "prev_swing_low": 29317.2,
       "choch": false,
       "bos": false,
-      "reversal_direction": "NONE",
-      "reversal_state": "NONE",
-      "atr14": 15.2928,
+      "reversal_direction": "BULLISH",
+      "reversal_state": "ANTICIPATION",
+      "atr14": 15.2004,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-21T22:57:00+03:00",
-          "open": 29316.7,
-          "high": 29333.3,
-          "low": 29295.4,
-          "close": 29316.2
-        },
         {
           "time_sofia": "2026-08-21T23:00:00+03:00",
           "open": 29315.8,
@@ -95,34 +88,42 @@
           "high": 29308.1,
           "low": 29300.4,
           "close": 29301.0
+        },
+        {
+          "time_sofia": "2026-08-21T23:09:00+03:00",
+          "open": 29300.9,
+          "high": 29305.7,
+          "low": 29291.7,
+          "close": 29305.7
         }
       ]
     }
   },
   "ama": {
-    "value": 29317.3603,
-    "distance_points": -16.3603,
+    "value": 29312.3668,
+    "distance_points": -6.6668,
     "price_side": "BELOW",
     "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 19,
-    "bearish_execution_0_100": 52,
+    "bullish_execution_0_100": 37,
+    "bearish_execution_0_100": 42,
     "bullish_execution_1_5": 1,
     "bearish_execution_1_5": 2,
-    "bullish_exhaustion_0_100": 70,
-    "bearish_exhaustion_0_100": 47,
-    "bullish_exhaustion_1_5": 4,
-    "bearish_exhaustion_1_5": 2
+    "bullish_exhaustion_0_100": 62,
+    "bearish_exhaustion_0_100": 60,
+    "bullish_exhaustion_1_5": 3,
+    "bearish_exhaustion_1_5": 3
   },
   "levels": {
     "day_high": 29454.5,
     "day_low": 29135.9,
-    "points_from_day_high": -153.5,
-    "points_from_day_low": 165.1,
+    "points_from_day_high": -148.8,
+    "points_from_day_low": 169.8,
     "supports": [
+      29302.9,
       29300.4,
       29296.5,
       29295.4,
@@ -151,13 +152,13 @@
     ],
     "sell_retest_level": 29307.7,
     "sell_retest_zone": [
-      29303.11,
-      29312.29
+      29303.14,
+      29312.26
     ],
-    "buy_retest_level": 29300.4,
+    "buy_retest_level": 29302.9,
     "buy_retest_zone": [
-      29295.81,
-      29304.99
+      29298.34,
+      29307.46
     ],
     "next_up_trigger": 29333.3,
     "next_down_trigger": 29295.4
@@ -207,8 +208,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 174,
-    "status_line": "NEWS: President Trump Speaks | USD MEDIUM | 02:00 Sofia | T-174m",
+    "minutes_to_event": 171,
+    "status_line": "NEWS: President Trump Speaks | USD MEDIUM | 02:00 Sofia | T-171m",
     "next_event": {
       "title": "President Trump Speaks",
       "currency": "USD",
@@ -222,8 +223,8 @@
   "ai_second_opinion": {
     "agreement": "AGREE",
     "ai_action": "WAIT",
-    "confidence": 1,
-    "comment": "AGREE with Python WAIT. No position-management action is supplied; bearish higher-timeframe bias conflicts with the bullish M3 active/macro leg and execution scores are weak.",
+    "confidence": 2,
+    "comment": "AGREE with Python WAIT. H1/H4 and falling AMA are bearish, but M3 macro leg is bullish and execution scores are weak; no position-management action is supplied.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
