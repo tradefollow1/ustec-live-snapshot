@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-21T06:53:59.739533+03:00",
-  "candle_time_sofia": "2026-08-21T06:51:00+03:00",
-  "price": 29257.5,
+  "generated_at_sofia": "2026-08-21T06:57:04.332004+03:00",
+  "candle_time_sofia": "2026-08-21T06:54:00+03:00",
+  "price": 29253.4,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.384,
@@ -47,24 +47,17 @@
       "trend": "BEARISH",
       "active_leg": "BULLISH",
       "active_leg_origin": 29254.1,
-      "active_leg_points": 3.4,
+      "active_leg_points": -0.7,
       "last_swing_high": 29285.6,
       "last_swing_low": 29254.1,
       "prev_swing_high": 29307.7,
       "prev_swing_low": 29257.6,
       "choch": false,
-      "bos": false,
-      "reversal_direction": "NONE",
-      "reversal_state": "NONE",
-      "atr14": 10.9914,
+      "bos": true,
+      "reversal_direction": "BEARISH",
+      "reversal_state": "CONFIRMED",
+      "atr14": 10.7277,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-21T06:42:00+03:00",
-          "open": 29265.1,
-          "high": 29270.4,
-          "low": 29263.7,
-          "close": 29265.6
-        },
         {
           "time_sofia": "2026-08-21T06:45:00+03:00",
           "open": 29265.4,
@@ -85,13 +78,20 @@
           "high": 29262.6,
           "low": 29254.4,
           "close": 29257.5
+        },
+        {
+          "time_sofia": "2026-08-21T06:54:00+03:00",
+          "open": 29257.6,
+          "high": 29258.7,
+          "low": 29251.4,
+          "close": 29253.4
         }
       ]
     }
   },
   "ama": {
-    "value": 29268.645,
-    "distance_points": -11.145,
+    "value": 29260.7949,
+    "distance_points": -7.3949,
     "price_side": "BELOW",
     "slope": "FALLING ↓",
     "role": "resistance",
@@ -99,21 +99,20 @@
   },
   "scores": {
     "bullish_execution_0_100": 22,
-    "bearish_execution_0_100": 56,
+    "bearish_execution_0_100": 60,
     "bullish_execution_1_5": 1,
     "bearish_execution_1_5": 3,
-    "bullish_exhaustion_0_100": 60,
-    "bearish_exhaustion_0_100": 41,
+    "bullish_exhaustion_0_100": 65,
+    "bearish_exhaustion_0_100": 42,
     "bullish_exhaustion_1_5": 3,
     "bearish_exhaustion_1_5": 2
   },
   "levels": {
     "day_high": 29307.7,
     "day_low": 29183.1,
-    "points_from_day_high": -50.2,
-    "points_from_day_low": 74.4,
+    "points_from_day_high": -54.3,
+    "points_from_day_low": 70.3,
     "supports": [
-      29254.1,
       29250.5,
       29242.5,
       29229.0,
@@ -144,10 +143,10 @@
       29258.2,
       29266.2
     ],
-    "buy_retest_level": 29254.1,
+    "buy_retest_level": 29250.5,
     "buy_retest_zone": [
-      29250.1,
-      29258.1
+      29246.5,
+      29254.5
     ],
     "next_up_trigger": 29285.6,
     "next_down_trigger": 29254.1
@@ -155,8 +154,11 @@
   "python_decision": {
     "action": "WAIT",
     "confidence_1_5": 3,
-    "reason": "No actionable alignment.",
-    "wait_zone": null,
+    "reason": "Wait for SELL pullback/retest zone and bearish rejection.",
+    "wait_zone": [
+      29257.2,
+      29267.2
+    ],
     "dynamic_target": null,
     "technical_sl": null,
     "emergency_max_loss_points": 100.0
@@ -172,8 +174,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29209.4,
-        "current": 29259.4,
-        "profit": -4.28,
+        "current": 29253.2,
+        "profit": -3.75,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -184,8 +186,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29280.1,
-        "current": 29258.4,
-        "profit": -1.8599999999999999,
+        "current": 29252.2,
+        "profit": -2.39,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -197,8 +199,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 1149,
-    "status_line": "NEWS: President Trump Speaks | USD MEDIUM | 02:00 Sofia | T-1149m",
+    "minutes_to_event": 1146,
+    "status_line": "NEWS: President Trump Speaks | USD MEDIUM | 02:00 Sofia | T-1146m",
     "next_event": {
       "title": "President Trump Speaks",
       "currency": "USD",
