@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-21T06:03:00.071237+03:00",
-  "candle_time_sofia": "2026-08-21T06:00:00+03:00",
-  "price": 29293.7,
+  "generated_at_sofia": "2026-08-21T06:06:00.359740+03:00",
+  "candle_time_sofia": "2026-08-21T06:03:00+03:00",
+  "price": 29281.2,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.384,
@@ -47,24 +47,17 @@
       "trend": "BULLISH",
       "active_leg": "BEARISH",
       "active_leg_origin": 29307.7,
-      "active_leg_points": 14.0,
+      "active_leg_points": 26.5,
       "last_swing_high": 29307.7,
       "last_swing_low": 29284.9,
       "prev_swing_high": 29304.7,
       "prev_swing_low": 29242.5,
-      "choch": false,
+      "choch": true,
       "bos": false,
-      "reversal_direction": "NONE",
-      "reversal_state": "NONE",
-      "atr14": 12.0418,
+      "reversal_direction": "BEARISH",
+      "reversal_state": "EARLY",
+      "atr14": 12.246,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-21T05:51:00+03:00",
-          "open": 29297.6,
-          "high": 29307.7,
-          "low": 29295.4,
-          "close": 29298.9
-        },
         {
           "time_sofia": "2026-08-21T05:54:00+03:00",
           "open": 29298.6,
@@ -85,36 +78,51 @@
           "high": 29296.6,
           "low": 29290.2,
           "close": 29293.7
+        },
+        {
+          "time_sofia": "2026-08-21T06:03:00+03:00",
+          "open": 29293.6,
+          "high": 29295.4,
+          "low": 29280.5,
+          "close": 29281.2
         }
       ]
     }
   },
   "ama": {
-    "value": 29291.3617,
-    "distance_points": 2.3383,
-    "price_side": "ABOVE",
+    "value": 29290.3496,
+    "distance_points": -9.1496,
+    "price_side": "BELOW",
     "slope": "FLAT →",
-    "role": "support",
-    "confirmed_cross": null
+    "role": "resistance",
+    "confirmed_cross": {
+      "direction": "DOWN",
+      "price": 29281.2,
+      "ama": 29290.3496130202,
+      "distance": -9.149613020199467,
+      "slope": "FLAT →",
+      "role": "resistance",
+      "time_utc": "2026-08-21T03:03:00+00:00",
+      "time_sofia": "2026-08-21T06:03:00+03:00",
+      "candle_id": "2026-08-21T03:03:00Z"
+    }
   },
   "scores": {
-    "bullish_execution_0_100": 46,
-    "bearish_execution_0_100": 31,
-    "bullish_execution_1_5": 2,
-    "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 51,
-    "bearish_exhaustion_0_100": 47,
-    "bullish_exhaustion_1_5": 2,
-    "bearish_exhaustion_1_5": 2
+    "bullish_execution_0_100": 33,
+    "bearish_execution_0_100": 65,
+    "bullish_execution_1_5": 1,
+    "bearish_execution_1_5": 3,
+    "bullish_exhaustion_0_100": 60,
+    "bearish_exhaustion_0_100": 22,
+    "bullish_exhaustion_1_5": 3,
+    "bearish_exhaustion_1_5": 1
   },
   "levels": {
     "day_high": 29307.7,
     "day_low": 29183.1,
-    "points_from_day_high": -14.0,
-    "points_from_day_low": 110.6,
+    "points_from_day_high": -26.5,
+    "points_from_day_low": 98.1,
     "supports": [
-      29286.4,
-      29284.9,
       29250.5,
       29242.5,
       29229.0,
@@ -124,7 +132,9 @@
       29199.4,
       29195.5,
       29177.7,
-      29149.9
+      29149.9,
+      29121.6,
+      29111.9
     ],
     "resistances": [
       29297.77,
@@ -145,19 +155,22 @@
       29293.77,
       29301.77
     ],
-    "buy_retest_level": 29286.4,
+    "buy_retest_level": 29250.5,
     "buy_retest_zone": [
-      29282.4,
-      29290.4
+      29246.5,
+      29254.5
     ],
     "next_up_trigger": 29307.7,
     "next_down_trigger": 29284.9
   },
   "python_decision": {
     "action": "WAIT",
-    "confidence_1_5": 2,
-    "reason": "No actionable alignment.",
-    "wait_zone": null,
+    "confidence_1_5": 3,
+    "reason": "Wait for SELL pullback/retest zone and bearish rejection.",
+    "wait_zone": [
+      29292.8,
+      29302.8
+    ],
     "dynamic_target": null,
     "technical_sl": null,
     "emergency_max_loss_points": 100.0
@@ -173,8 +186,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29209.4,
-        "current": 29294.6,
-        "profit": -7.28,
+        "current": 29281.7,
+        "profit": -6.18,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -185,8 +198,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29280.1,
-        "current": 29293.6,
-        "profit": 1.15,
+        "current": 29280.7,
+        "profit": 0.05,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -198,8 +211,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 1200,
-    "status_line": "NEWS: President Trump Speaks | USD MEDIUM | 02:00 Sofia | T-1200m",
+    "minutes_to_event": 1197,
+    "status_line": "NEWS: President Trump Speaks | USD MEDIUM | 02:00 Sofia | T-1197m",
     "next_event": {
       "title": "President Trump Speaks",
       "currency": "USD",
