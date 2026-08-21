@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-21T23:47:53.582155+03:00",
-  "candle_time_sofia": "2026-08-21T23:42:00+03:00",
-  "price": 29305.2,
+  "generated_at_sofia": "2026-08-21T23:50:55.311396+03:00",
+  "candle_time_sofia": "2026-08-21T23:45:00+03:00",
+  "price": 29301.7,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.384,
@@ -47,14 +47,14 @@
       "trend": "BEARISH",
       "active_leg": "BULLISH",
       "active_leg_origin": 29287.9,
-      "active_leg_points": 17.3,
+      "active_leg_points": 13.8,
       "macro_leg": "BEARISH",
       "macro_origin": 29352.2,
       "macro_start_time": "2026-08-21T22:48:00+03:00",
-      "macro_points": 47.0,
+      "macro_points": 50.5,
       "macro_peak": 29352.2,
       "macro_trough": 29287.9,
-      "macro_state": "END_WATCH",
+      "macro_state": "PULLBACK",
       "macro_source": "M3_ATR_PERSISTENT_4.5",
       "macro_reversal_atr_definition": 4.5,
       "macro_score_influence": false,
@@ -64,17 +64,10 @@
       "prev_swing_low": 29291.7,
       "choch": false,
       "bos": false,
-      "reversal_direction": "BULLISH",
-      "reversal_state": "ANTICIPATION",
-      "atr14": 10.4287,
+      "reversal_direction": "NONE",
+      "reversal_state": "NONE",
+      "atr14": 10.1481,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-21T23:33:00+03:00",
-          "open": 29296.1,
-          "high": 29300.2,
-          "low": 29295.4,
-          "close": 29299.4
-        },
         {
           "time_sofia": "2026-08-21T23:36:00+03:00",
           "open": 29299.2,
@@ -95,33 +88,40 @@
           "high": 29306.9,
           "low": 29300.4,
           "close": 29305.2
+        },
+        {
+          "time_sofia": "2026-08-21T23:45:00+03:00",
+          "open": 29305.1,
+          "high": 29305.2,
+          "low": 29298.7,
+          "close": 29301.7
         }
       ]
     }
   },
   "ama": {
-    "value": 29299.9669,
-    "distance_points": 5.2331,
+    "value": 29300.2778,
+    "distance_points": 1.4222,
     "price_side": "ABOVE",
     "slope": "FLAT →",
     "role": "support",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 34,
-    "bearish_execution_0_100": 45,
+    "bullish_execution_0_100": 20,
+    "bearish_execution_0_100": 48,
     "bullish_execution_1_5": 1,
     "bearish_execution_1_5": 2,
-    "bullish_exhaustion_0_100": 66,
-    "bearish_exhaustion_0_100": 54,
-    "bullish_exhaustion_1_5": 3,
+    "bullish_exhaustion_0_100": 70,
+    "bearish_exhaustion_0_100": 51,
+    "bullish_exhaustion_1_5": 4,
     "bearish_exhaustion_1_5": 2
   },
   "levels": {
     "day_high": 29454.5,
     "day_low": 29135.9,
-    "points_from_day_high": -149.3,
-    "points_from_day_low": 169.3,
+    "points_from_day_high": -152.8,
+    "points_from_day_low": 165.8,
     "supports": [
       29300.4,
       29295.4,
@@ -183,8 +183,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29301.4,
-        "profit": -3.61,
+        "current": 29294.6,
+        "profit": -4.2,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -195,8 +195,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29302.4,
-        "profit": -0.21,
+        "current": 29295.6,
+        "profit": 0.38,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -208,8 +208,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 138,
-    "status_line": "NEWS: President Trump Speaks | USD MEDIUM | 02:00 Sofia | T-138m",
+    "minutes_to_event": 135,
+    "status_line": "NEWS: President Trump Speaks | USD MEDIUM | 02:00 Sofia | T-135m",
     "next_event": {
       "title": "President Trump Speaks",
       "currency": "USD",
@@ -224,7 +224,7 @@
     "agreement": "AGREE",
     "ai_action": "WAIT",
     "confidence": 3,
-    "comment": "WAIT matches Python; no position-management action. Bearish H4/H1 conflicts with the active bullish M3 leg and execution scores are weak.",
+    "comment": "AGREE with Python WAIT. No position-management action is supplied. Bearish higher-timeframe bias is offset by an M3 bullish pullback, with no BOS/CHOCH and price near flat AMA.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
