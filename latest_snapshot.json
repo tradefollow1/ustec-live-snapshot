@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T02:27:26.032014+03:00",
-  "candle_time_sofia": "2026-08-24T02:24:00+03:00",
-  "price": 29350.4,
+  "generated_at_sofia": "2026-08-24T02:30:26.372081+03:00",
+  "candle_time_sofia": "2026-08-24T02:27:00+03:00",
+  "price": 29351.8,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.544,
@@ -47,12 +47,12 @@
       "trend": "TRANSITION",
       "active_leg": "BULLISH",
       "active_leg_origin": 29308.9,
-      "active_leg_points": 41.5,
+      "active_leg_points": 42.9,
       "macro_leg": "BULLISH",
       "macro_origin": 29226.4,
       "macro_start_time": "2026-08-24T01:03:00+03:00",
-      "macro_points": 124.0,
-      "macro_peak": 29351.1,
+      "macro_points": 125.4,
+      "macro_peak": 29352.6,
       "macro_trough": 29226.4,
       "macro_state": "CONTINUATION",
       "macro_source": "M3_ATR_PERSISTENT_4.5",
@@ -66,15 +66,8 @@
       "bos": true,
       "reversal_direction": "BULLISH",
       "reversal_state": "CONFIRMED",
-      "atr14": 11.8549,
+      "atr14": 11.4367,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T02:15:00+03:00",
-          "open": 29310.0,
-          "high": 29322.4,
-          "low": 29308.9,
-          "close": 29321.0
-        },
         {
           "time_sofia": "2026-08-24T02:18:00+03:00",
           "open": 29320.9,
@@ -95,33 +88,40 @@
           "high": 29351.1,
           "low": 29327.4,
           "close": 29350.4
+        },
+        {
+          "time_sofia": "2026-08-24T02:27:00+03:00",
+          "open": 29350.5,
+          "high": 29352.6,
+          "low": 29346.6,
+          "close": 29351.8
         }
       ]
     }
   },
   "ama": {
-    "value": 29329.9782,
-    "distance_points": 20.4218,
+    "value": 29338.7746,
+    "distance_points": 13.0254,
     "price_side": "ABOVE",
     "slope": "RISING ↑",
     "role": "support",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 46,
-    "bearish_execution_0_100": 23,
-    "bullish_execution_1_5": 2,
+    "bullish_execution_0_100": 36,
+    "bearish_execution_0_100": 30,
+    "bullish_execution_1_5": 1,
     "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 60,
-    "bearish_exhaustion_0_100": 62,
-    "bullish_exhaustion_1_5": 3,
-    "bearish_exhaustion_1_5": 3
+    "bullish_exhaustion_0_100": 76,
+    "bearish_exhaustion_0_100": 48,
+    "bullish_exhaustion_1_5": 4,
+    "bearish_exhaustion_1_5": 2
   },
   "levels": {
-    "day_high": 29351.1,
+    "day_high": 29352.6,
     "day_low": 29225.9,
-    "points_from_day_high": -0.7,
-    "points_from_day_low": 124.5,
+    "points_from_day_high": -0.8,
+    "points_from_day_low": 125.9,
     "supports": [
       29347.04,
       29341.9,
@@ -165,7 +165,7 @@
   },
   "python_decision": {
     "action": "WAIT",
-    "confidence_1_5": 2,
+    "confidence_1_5": 1,
     "reason": "No actionable alignment.",
     "wait_zone": null,
     "dynamic_target": null,
@@ -183,8 +183,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29349.9,
-        "profit": 0.54,
+        "current": 29365.9,
+        "profit": 1.9100000000000001,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -195,8 +195,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29350.9,
-        "profit": -4.36,
+        "current": 29366.9,
+        "profit": -5.73,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -208,8 +208,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 1116,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-1116m",
+    "minutes_to_event": 1113,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-1113m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -229,10 +229,10 @@
     }
   ],
   "ai_second_opinion": {
-    "agreement": "AGREE",
+    "agreement": "DISAGREE",
     "ai_action": "EXIT_SHORT",
-    "confidence": 5,
-    "comment": "Disagree with Python WAIT; agree with the short position-management SL. The short is invalidated: price 29350.4 is above its 29324.5 SL.",
+    "confidence": 1,
+    "comment": "Exit short: its SL invalidation is active; this overrides Python WAIT. Price is above the short SL.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
