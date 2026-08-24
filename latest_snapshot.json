@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T04:46:26.836759+03:00",
-  "candle_time_sofia": "2026-08-24T04:42:00+03:00",
-  "price": 29316.0,
+  "generated_at_sofia": "2026-08-24T04:49:25.504920+03:00",
+  "candle_time_sofia": "2026-08-24T04:45:00+03:00",
+  "price": 29304.1,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.304,
@@ -47,14 +47,14 @@
       "trend": "TRANSITION",
       "active_leg": "BULLISH",
       "active_leg_origin": 29307.4,
-      "active_leg_points": 8.6,
+      "active_leg_points": -3.3,
       "macro_leg": "BULLISH",
       "macro_origin": 29258.6,
       "macro_start_time": "2026-08-24T03:24:00+03:00",
-      "macro_points": 57.4,
+      "macro_points": 45.5,
       "macro_peak": 29371.8,
       "macro_trough": 29258.6,
-      "macro_state": "CONTINUATION",
+      "macro_state": "END_WATCH",
       "macro_source": "M3_ATR_PERSISTENT_4.5",
       "macro_reversal_atr_definition": 4.5,
       "macro_score_influence": false,
@@ -62,19 +62,12 @@
       "last_swing_low": 29307.4,
       "prev_swing_high": 29359.0,
       "prev_swing_low": 29321.1,
-      "choch": false,
+      "choch": true,
       "bos": false,
-      "reversal_direction": "NONE",
-      "reversal_state": "NONE",
-      "atr14": 21.0994,
+      "reversal_direction": "BEARISH",
+      "reversal_state": "EARLY",
+      "atr14": 20.7709,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T04:33:00+03:00",
-          "open": 29323.5,
-          "high": 29330.3,
-          "low": 29311.4,
-          "close": 29319.1
-        },
         {
           "time_sofia": "2026-08-24T04:36:00+03:00",
           "open": 29318.6,
@@ -95,36 +88,41 @@
           "high": 29331.9,
           "low": 29312.6,
           "close": 29316.0
+        },
+        {
+          "time_sofia": "2026-08-24T04:45:00+03:00",
+          "open": 29316.3,
+          "high": 29318.5,
+          "low": 29302.0,
+          "close": 29304.1
         }
       ]
     }
   },
   "ama": {
-    "value": 29323.3911,
-    "distance_points": -7.3911,
+    "value": 29317.9579,
+    "distance_points": -13.8579,
     "price_side": "BELOW",
     "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 24,
-    "bearish_execution_0_100": 34,
+    "bullish_execution_0_100": 19,
+    "bearish_execution_0_100": 58,
     "bullish_execution_1_5": 1,
-    "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 50,
-    "bearish_exhaustion_0_100": 39,
-    "bullish_exhaustion_1_5": 2,
+    "bearish_execution_1_5": 3,
+    "bullish_exhaustion_0_100": 57,
+    "bearish_exhaustion_0_100": 34,
+    "bullish_exhaustion_1_5": 3,
     "bearish_exhaustion_1_5": 1
   },
   "levels": {
     "day_high": 29403.6,
     "day_low": 29225.9,
-    "points_from_day_high": -87.6,
-    "points_from_day_low": 90.1,
+    "points_from_day_high": -99.5,
+    "points_from_day_low": 78.2,
     "supports": [
-      29308.9,
-      29307.4,
       29286.4,
       29275.5,
       29274.2,
@@ -137,6 +135,9 @@
       29111.9
     ],
     "resistances": [
+      29306.9,
+      29307.7,
+      29308.5,
       29322.5,
       29325.5,
       29328.01,
@@ -145,29 +146,29 @@
       29369.3,
       29370.31,
       29370.36,
-      29370.6,
-      29371.8,
-      29383.0,
-      29403.6
+      29370.6
     ],
-    "sell_retest_level": 29322.5,
+    "sell_retest_level": 29306.9,
     "sell_retest_zone": [
-      29316.17,
-      29328.83
+      29300.67,
+      29313.13
     ],
-    "buy_retest_level": 29308.9,
+    "buy_retest_level": 29286.4,
     "buy_retest_zone": [
-      29302.57,
-      29315.23
+      29280.17,
+      29292.63
     ],
     "next_up_trigger": 29371.8,
     "next_down_trigger": 29307.4
   },
   "python_decision": {
     "action": "WAIT",
-    "confidence_1_5": 1,
-    "reason": "No actionable alignment.",
-    "wait_zone": null,
+    "confidence_1_5": 3,
+    "reason": "Wait for SELL pullback/retest zone and bearish rejection.",
+    "wait_zone": [
+      29299.6,
+      29314.2
+    ],
     "dynamic_target": null,
     "technical_sl": null,
     "emergency_max_loss_points": 100.0
@@ -183,8 +184,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29315.4,
-        "profit": -2.41,
+        "current": 29311.8,
+        "profit": -2.7199999999999998,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -195,8 +196,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29316.4,
-        "profit": -1.4,
+        "current": 29312.8,
+        "profit": -1.1,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -208,8 +209,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 978,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-978m",
+    "minutes_to_event": 975,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-975m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -219,12 +220,20 @@
       "previous": ""
     }
   },
-  "position_management_actions": [],
+  "position_management_actions": [
+    {
+      "ticket": 1355982918,
+      "action": "SL",
+      "reason": "SL invalidation reached.",
+      "target": 29352.2,
+      "sl": 29304.28436994853
+    }
+  ],
   "ai_second_opinion": {
-    "agreement": "AGREE",
-    "ai_action": "WAIT",
-    "confidence": 4,
-    "comment": "Agree with Python WAIT. No position-management actions are supplied; H4 bearish conflicts with bullish M3, and execution scores are weak.",
+    "agreement": "DISAGREE",
+    "ai_action": "EXIT_LONG",
+    "confidence": 1,
+    "comment": "Exit the long: its SL action is triggered at 29304.2844 while price is 29304.1. This overrides Python WAIT; it agrees with the position-management SL.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
