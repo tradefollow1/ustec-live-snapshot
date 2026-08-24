@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T04:49:25.504920+03:00",
-  "candle_time_sofia": "2026-08-24T04:45:00+03:00",
-  "price": 29304.1,
+  "generated_at_sofia": "2026-08-24T04:52:26.840283+03:00",
+  "candle_time_sofia": "2026-08-24T04:48:00+03:00",
+  "price": 29316.1,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.304,
@@ -44,37 +44,30 @@
       "bias_score": 0.19999999999999998
     },
     "M3": {
-      "trend": "TRANSITION",
-      "active_leg": "BULLISH",
-      "active_leg_origin": 29307.4,
-      "active_leg_points": -3.3,
+      "trend": "BEARISH",
+      "active_leg": "BEARISH",
+      "active_leg_origin": 29331.9,
+      "active_leg_points": 15.8,
       "macro_leg": "BULLISH",
       "macro_origin": 29258.6,
       "macro_start_time": "2026-08-24T03:24:00+03:00",
-      "macro_points": 45.5,
+      "macro_points": 57.5,
       "macro_peak": 29371.8,
       "macro_trough": 29258.6,
-      "macro_state": "END_WATCH",
+      "macro_state": "PULLBACK",
       "macro_source": "M3_ATR_PERSISTENT_4.5",
       "macro_reversal_atr_definition": 4.5,
       "macro_score_influence": false,
-      "last_swing_high": 29371.8,
+      "last_swing_high": 29331.9,
       "last_swing_low": 29307.4,
-      "prev_swing_high": 29359.0,
+      "prev_swing_high": 29371.8,
       "prev_swing_low": 29321.1,
-      "choch": true,
+      "choch": false,
       "bos": false,
-      "reversal_direction": "BEARISH",
-      "reversal_state": "EARLY",
-      "atr14": 20.7709,
+      "reversal_direction": "BULLISH",
+      "reversal_state": "ANTICIPATION",
+      "atr14": 21.1444,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T04:36:00+03:00",
-          "open": 29318.6,
-          "high": 29322.8,
-          "low": 29307.4,
-          "close": 29317.4
-        },
         {
           "time_sofia": "2026-08-24T04:39:00+03:00",
           "open": 29317.3,
@@ -95,34 +88,43 @@
           "high": 29318.5,
           "low": 29302.0,
           "close": 29304.1
+        },
+        {
+          "time_sofia": "2026-08-24T04:48:00+03:00",
+          "open": 29304.6,
+          "high": 29320.0,
+          "low": 29294.0,
+          "close": 29316.1
         }
       ]
     }
   },
   "ama": {
-    "value": 29317.9579,
-    "distance_points": -13.8579,
+    "value": 29317.4714,
+    "distance_points": -1.3714,
     "price_side": "BELOW",
     "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 19,
-    "bearish_execution_0_100": 58,
-    "bullish_execution_1_5": 1,
-    "bearish_execution_1_5": 3,
-    "bullish_exhaustion_0_100": 57,
-    "bearish_exhaustion_0_100": 34,
-    "bullish_exhaustion_1_5": 3,
-    "bearish_exhaustion_1_5": 1
+    "bullish_execution_0_100": 44,
+    "bearish_execution_0_100": 46,
+    "bullish_execution_1_5": 2,
+    "bearish_execution_1_5": 2,
+    "bullish_exhaustion_0_100": 48,
+    "bearish_exhaustion_0_100": 51,
+    "bullish_exhaustion_1_5": 2,
+    "bearish_exhaustion_1_5": 2
   },
   "levels": {
     "day_high": 29403.6,
     "day_low": 29225.9,
-    "points_from_day_high": -99.5,
-    "points_from_day_low": 78.2,
+    "points_from_day_high": -87.5,
+    "points_from_day_low": 90.2,
     "supports": [
+      29308.9,
+      29307.4,
       29286.4,
       29275.5,
       29274.2,
@@ -135,40 +137,37 @@
       29111.9
     ],
     "resistances": [
-      29306.9,
-      29307.7,
-      29308.5,
       29322.5,
       29325.5,
       29328.01,
+      29331.9,
       29352.2,
       29359.0,
       29369.3,
       29370.31,
       29370.36,
-      29370.6
+      29370.6,
+      29371.8,
+      29383.0
     ],
-    "sell_retest_level": 29306.9,
+    "sell_retest_level": 29322.5,
     "sell_retest_zone": [
-      29300.67,
-      29313.13
+      29316.16,
+      29328.84
     ],
-    "buy_retest_level": 29286.4,
+    "buy_retest_level": 29308.9,
     "buy_retest_zone": [
-      29280.17,
-      29292.63
+      29302.56,
+      29315.24
     ],
-    "next_up_trigger": 29371.8,
+    "next_up_trigger": 29331.9,
     "next_down_trigger": 29307.4
   },
   "python_decision": {
     "action": "WAIT",
-    "confidence_1_5": 3,
-    "reason": "Wait for SELL pullback/retest zone and bearish rejection.",
-    "wait_zone": [
-      29299.6,
-      29314.2
-    ],
+    "confidence_1_5": 2,
+    "reason": "No actionable alignment.",
+    "wait_zone": null,
     "dynamic_target": null,
     "technical_sl": null,
     "emergency_max_loss_points": 100.0
@@ -184,8 +183,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29311.8,
-        "profit": -2.7199999999999998,
+        "current": 29320.6,
+        "profit": -1.97,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -196,8 +195,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29312.8,
-        "profit": -1.1,
+        "current": 29321.6,
+        "profit": -1.85,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -209,8 +208,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 975,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-975m",
+    "minutes_to_event": 972,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-972m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -220,20 +219,12 @@
       "previous": ""
     }
   },
-  "position_management_actions": [
-    {
-      "ticket": 1355982918,
-      "action": "SL",
-      "reason": "SL invalidation reached.",
-      "target": 29352.2,
-      "sl": 29304.28436994853
-    }
-  ],
+  "position_management_actions": [],
   "ai_second_opinion": {
-    "agreement": "DISAGREE",
-    "ai_action": "EXIT_LONG",
-    "confidence": 1,
-    "comment": "Exit the long: its SL action is triggered at 29304.2844 while price is 29304.1. This overrides Python WAIT; it agrees with the position-management SL.",
+    "agreement": "AGREE",
+    "ai_action": "WAIT",
+    "confidence": 2,
+    "comment": "AGREE with Python WAIT. No position-management action is supplied; execution scores are balanced (44/46) and M3 conflicts with H4 bearish bias.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
