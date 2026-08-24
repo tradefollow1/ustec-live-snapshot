@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T11:09:23.256327+03:00",
-  "candle_time_sofia": "2026-08-24T11:06:00+03:00",
-  "price": 29099.4,
+  "generated_at_sofia": "2026-08-24T11:11:59.543123+03:00",
+  "candle_time_sofia": "2026-08-24T11:09:00+03:00",
+  "price": 29096.5,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.544,
@@ -47,11 +47,11 @@
       "trend": "TRANSITION",
       "active_leg": "BULLISH",
       "active_leg_origin": 29040.4,
-      "active_leg_points": 59.0,
+      "active_leg_points": 56.1,
       "macro_leg": "BEARISH",
       "macro_origin": 29371.8,
       "macro_start_time": "2026-08-24T04:18:00+03:00",
-      "macro_points": 272.4,
+      "macro_points": 275.3,
       "macro_peak": 29371.8,
       "macro_trough": 29048.4,
       "macro_state": "PULLBACK",
@@ -66,15 +66,8 @@
       "bos": false,
       "reversal_direction": "NONE",
       "reversal_state": "NONE",
-      "atr14": 24.5751,
+      "atr14": 24.0269,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T10:57:00+03:00",
-          "open": 29062.1,
-          "high": 29075.4,
-          "low": 29061.9,
-          "close": 29069.3
-        },
         {
           "time_sofia": "2026-08-24T11:00:00+03:00",
           "open": 29069.9,
@@ -95,35 +88,41 @@
           "high": 29131.4,
           "low": 29070.8,
           "close": 29099.4
+        },
+        {
+          "time_sofia": "2026-08-24T11:09:00+03:00",
+          "open": 29099.5,
+          "high": 29103.0,
+          "low": 29086.1,
+          "close": 29096.5
         }
       ]
     }
   },
   "ama": {
-    "value": 29073.2062,
-    "distance_points": 26.1938,
+    "value": 29073.4038,
+    "distance_points": 23.0962,
     "price_side": "ABOVE",
-    "slope": "FALLING ↓",
-    "role": "neutral",
+    "slope": "FLAT →",
+    "role": "support",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 28,
-    "bearish_execution_0_100": 24,
+    "bullish_execution_0_100": 24,
+    "bearish_execution_0_100": 31,
     "bullish_execution_1_5": 1,
     "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 54,
-    "bearish_exhaustion_0_100": 55,
+    "bullish_exhaustion_0_100": 50,
+    "bearish_exhaustion_0_100": 43,
     "bullish_exhaustion_1_5": 2,
-    "bearish_exhaustion_1_5": 3
+    "bearish_exhaustion_1_5": 2
   },
   "levels": {
     "day_high": 29403.6,
     "day_low": 29040.4,
-    "points_from_day_high": -304.2,
-    "points_from_day_low": 59.0,
+    "points_from_day_high": -307.1,
+    "points_from_day_low": 56.1,
     "supports": [
-      29096.8,
       29074.4,
       29070.0,
       29065.4,
@@ -147,13 +146,13 @@
     ],
     "sell_retest_level": 29101.5,
     "sell_retest_zone": [
-      29094.13,
-      29108.87
+      29094.29,
+      29108.71
     ],
-    "buy_retest_level": 29096.8,
+    "buy_retest_level": 29074.4,
     "buy_retest_zone": [
-      29089.43,
-      29104.17
+      29067.19,
+      29081.61
     ],
     "next_up_trigger": 29135.9,
     "next_down_trigger": 29040.4
@@ -178,8 +177,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29093.4,
-        "profit": -21.45,
+        "current": 29097.4,
+        "profit": -21.11,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -190,8 +189,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29094.4,
-        "profit": 17.63,
+        "current": 29098.4,
+        "profit": 17.28,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -203,8 +202,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 594,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-594m",
+    "minutes_to_event": 591,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-591m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -224,10 +223,10 @@
     }
   ],
   "ai_second_opinion": {
-    "agreement": "PARTIAL",
+    "agreement": "AGREE",
     "ai_action": "EXIT_LONG",
     "confidence": 5,
-    "comment": "Position-management SL for BUY 1355982918 has priority: emergency max-loss cap reached. EXIT_LONG is preferable to python WAIT for the long; hedged short is not assessed for closure.",
+    "comment": "Python is WAIT for new entries; the long has a priority SL action after its emergency max-loss cap. Preserve the short; no new entry alignment.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra",
