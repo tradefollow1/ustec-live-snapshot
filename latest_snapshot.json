@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T06:11:01.830403+03:00",
-  "candle_time_sofia": "2026-08-24T06:06:00+03:00",
-  "price": 29248.8,
+  "generated_at_sofia": "2026-08-24T06:14:02.444252+03:00",
+  "candle_time_sofia": "2026-08-24T06:09:00+03:00",
+  "price": 29236.0,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.544,
@@ -47,11 +47,11 @@
       "trend": "TRANSITION",
       "active_leg": "BEARISH",
       "active_leg_origin": 29300.9,
-      "active_leg_points": 52.1,
+      "active_leg_points": 64.9,
       "macro_leg": "BEARISH",
       "macro_origin": 29371.8,
       "macro_start_time": "2026-08-24T04:18:00+03:00",
-      "macro_points": 123.0,
+      "macro_points": 135.8,
       "macro_peak": 29371.8,
       "macro_trough": 29224.9,
       "macro_state": "CONTINUATION",
@@ -66,15 +66,8 @@
       "bos": false,
       "reversal_direction": "BEARISH",
       "reversal_state": "EARLY",
-      "atr14": 20.3463,
+      "atr14": 20.343,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T05:57:00+03:00",
-          "open": 29278.6,
-          "high": 29295.0,
-          "low": 29265.0,
-          "close": 29293.8
-        },
         {
           "time_sofia": "2026-08-24T06:00:00+03:00",
           "open": 29294.3,
@@ -95,33 +88,40 @@
           "high": 29264.0,
           "low": 29247.4,
           "close": 29248.8
+        },
+        {
+          "time_sofia": "2026-08-24T06:09:00+03:00",
+          "open": 29248.9,
+          "high": 29252.3,
+          "low": 29232.0,
+          "close": 29236.0
         }
       ]
     }
   },
   "ama": {
-    "value": 29275.79,
-    "distance_points": -26.99,
+    "value": 29268.6069,
+    "distance_points": -32.6069,
     "price_side": "BELOW",
     "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 27,
-    "bearish_execution_0_100": 49,
+    "bullish_execution_0_100": 32,
+    "bearish_execution_0_100": 42,
     "bullish_execution_1_5": 1,
     "bearish_execution_1_5": 2,
-    "bullish_exhaustion_0_100": 37,
-    "bearish_exhaustion_0_100": 35,
+    "bullish_exhaustion_0_100": 31,
+    "bearish_exhaustion_0_100": 47,
     "bullish_exhaustion_1_5": 1,
-    "bearish_exhaustion_1_5": 1
+    "bearish_exhaustion_1_5": 2
   },
   "levels": {
     "day_high": 29403.6,
     "day_low": 29224.9,
-    "points_from_day_high": -154.8,
-    "points_from_day_low": 23.9,
+    "points_from_day_high": -167.6,
+    "points_from_day_low": 11.1,
     "supports": [
       29230.0,
       29225.9,
@@ -178,8 +178,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29242.0,
-        "profit": -8.7,
+        "current": 29233.8,
+        "profit": -9.4,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -190,8 +190,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29243.0,
-        "profit": 4.88,
+        "current": 29234.8,
+        "profit": 5.58,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -203,8 +203,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 894,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-894m",
+    "minutes_to_event": 891,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-891m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -218,16 +218,16 @@
     {
       "ticket": 1355982918,
       "action": "SL",
-      "reason": "SL invalidation reached.",
+      "reason": "Emergency max-loss cap reached.",
       "target": 29296.1,
-      "sl": 29261.94805452264
+      "sl": 29243.6
     }
   ],
   "ai_second_opinion": {
-    "agreement": "DISAGREE",
-    "ai_action": "EXIT_LONG",
-    "confidence": 1,
-    "comment": "Position SL action has priority: long SL is 29261.95 while price is 29248.8. Python WAIT is not appropriate; close the long rather than maintain it below its specified SL.",
+    "agreement": "AGREE",
+    "ai_action": "SELL",
+    "confidence": 4,
+    "comment": "Bearish multi-timeframe context supports the short. For ticket 1355982918, the supplied SL action has priority because its emergency max-loss cap is reached.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
