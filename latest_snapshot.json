@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T05:13:38.746962+03:00",
-  "candle_time_sofia": "2026-08-24T05:09:00+03:00",
-  "price": 29258.4,
+  "generated_at_sofia": "2026-08-24T05:16:39.214959+03:00",
+  "candle_time_sofia": "2026-08-24T05:12:00+03:00",
+  "price": 29276.8,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.444,
@@ -45,36 +45,29 @@
     },
     "M3": {
       "trend": "BEARISH",
-      "active_leg": "BEARISH",
-      "active_leg_origin": 29327.5,
-      "active_leg_points": 69.1,
+      "active_leg": "BULLISH",
+      "active_leg_origin": 29224.9,
+      "active_leg_points": 51.9,
       "macro_leg": "BEARISH",
       "macro_origin": 29371.8,
       "macro_start_time": "2026-08-24T04:18:00+03:00",
-      "macro_points": 113.4,
+      "macro_points": 95.0,
       "macro_peak": 29371.8,
       "macro_trough": 29224.9,
-      "macro_state": "CONTINUATION",
+      "macro_state": "END_WATCH",
       "macro_source": "M3_ATR_PERSISTENT_4.5",
       "macro_reversal_atr_definition": 4.5,
       "macro_score_influence": false,
       "last_swing_high": 29327.5,
-      "last_swing_low": 29307.4,
+      "last_swing_low": 29224.9,
       "prev_swing_high": 29331.9,
-      "prev_swing_low": 29321.1,
+      "prev_swing_low": 29307.4,
       "choch": false,
-      "bos": true,
-      "reversal_direction": "BEARISH",
-      "reversal_state": "CONFIRMED",
-      "atr14": 24.7534,
+      "bos": false,
+      "reversal_direction": "BULLISH",
+      "reversal_state": "ANTICIPATION",
+      "atr14": 25.3138,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T05:00:00+03:00",
-          "open": 29245.8,
-          "high": 29255.8,
-          "low": 29232.8,
-          "close": 29237.3
-        },
         {
           "time_sofia": "2026-08-24T05:03:00+03:00",
           "open": 29237.0,
@@ -95,36 +88,57 @@
           "high": 29260.0,
           "low": 29224.9,
           "close": 29258.4
+        },
+        {
+          "time_sofia": "2026-08-24T05:12:00+03:00",
+          "open": 29258.1,
+          "high": 29280.5,
+          "low": 29247.9,
+          "close": 29276.8
         }
       ]
     }
   },
   "ama": {
-    "value": 29263.3354,
-    "distance_points": -4.9354,
-    "price_side": "BELOW",
+    "value": 29264.0214,
+    "distance_points": 12.7786,
+    "price_side": "ABOVE",
     "slope": "FALLING ↓",
-    "role": "resistance",
-    "confirmed_cross": null
+    "role": "neutral",
+    "confirmed_cross": {
+      "direction": "UP",
+      "price": 29276.8,
+      "ama": 29264.02137853895,
+      "distance": 12.778621461049624,
+      "slope": "FALLING ↓",
+      "role": "neutral",
+      "time_utc": "2026-08-24T02:12:00+00:00",
+      "time_sofia": "2026-08-24T05:12:00+03:00",
+      "candle_id": "2026-08-24T02:12:00Z"
+    }
   },
   "scores": {
-    "bullish_execution_0_100": 38,
-    "bearish_execution_0_100": 48,
-    "bullish_execution_1_5": 1,
+    "bullish_execution_0_100": 49,
+    "bearish_execution_0_100": 43,
+    "bullish_execution_1_5": 2,
     "bearish_execution_1_5": 2,
-    "bullish_exhaustion_0_100": 39,
+    "bullish_exhaustion_0_100": 47,
     "bearish_exhaustion_0_100": 44,
-    "bullish_exhaustion_1_5": 1,
+    "bullish_exhaustion_1_5": 2,
     "bearish_exhaustion_1_5": 2
   },
   "levels": {
     "day_high": 29403.6,
     "day_low": 29224.9,
-    "points_from_day_high": -145.2,
-    "points_from_day_low": 33.5,
+    "points_from_day_high": -126.8,
+    "points_from_day_low": 51.9,
     "supports": [
+      29275.5,
+      29274.2,
+      29258.6,
       29230.0,
       29225.9,
+      29224.9,
       29177.7,
       29149.9,
       29135.9,
@@ -146,16 +160,16 @@
     ],
     "sell_retest_level": 29307.7,
     "sell_retest_zone": [
-      29300.27,
-      29315.13
+      29300.11,
+      29315.29
     ],
-    "buy_retest_level": 29230.0,
+    "buy_retest_level": 29275.5,
     "buy_retest_zone": [
-      29222.57,
-      29237.43
+      29267.91,
+      29283.09
     ],
     "next_up_trigger": 29327.5,
-    "next_down_trigger": 29307.4
+    "next_down_trigger": 29224.9
   },
   "python_decision": {
     "action": "WAIT",
@@ -177,8 +191,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29258.6,
-        "profit": -7.28,
+        "current": 29285.5,
+        "profit": -4.97,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -189,8 +203,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29259.6,
-        "profit": 3.46,
+        "current": 29286.5,
+        "profit": 1.16,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -202,8 +216,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 951,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-951m",
+    "minutes_to_event": 948,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-948m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -213,20 +227,12 @@
       "previous": ""
     }
   },
-  "position_management_actions": [
-    {
-      "ticket": 1355982918,
-      "action": "SL",
-      "reason": "SL invalidation reached.",
-      "target": 29307.7,
-      "sl": 29303.68699366283
-    }
-  ],
+  "position_management_actions": [],
   "ai_second_opinion": {
-    "agreement": "DISAGREE",
-    "ai_action": "EXIT_LONG",
-    "confidence": 5,
-    "comment": "Python says WAIT, but the BUY has a position-management SL action for invalidation; EXIT_LONG is preferable because price 29258.4 is below the stated SL 29303.68699. This aligns with the position-management action.",
+    "agreement": "AGREE",
+    "ai_action": "WAIT",
+    "confidence": 1,
+    "comment": "Matches Python WAIT. No position-management action is supplied; execution scores are 2/5 on both sides and alignment is mixed.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
