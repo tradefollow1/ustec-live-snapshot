@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T03:15:43.346411+03:00",
-  "candle_time_sofia": "2026-08-24T03:12:00+03:00",
-  "price": 29359.1,
+  "generated_at_sofia": "2026-08-24T03:18:45.337472+03:00",
+  "candle_time_sofia": "2026-08-24T03:15:00+03:00",
+  "price": 29303.0,
   "market": {
     "overall_sentiment": "TRANSITION",
     "overall_sentiment_score": -0.204,
@@ -47,14 +47,14 @@
       "trend": "BULLISH",
       "active_leg": "BULLISH",
       "active_leg_origin": 29347.3,
-      "active_leg_points": 11.8,
+      "active_leg_points": -44.3,
       "macro_leg": "BULLISH",
       "macro_origin": 29226.4,
       "macro_start_time": "2026-08-24T01:03:00+03:00",
-      "macro_points": 132.7,
+      "macro_points": 76.6,
       "macro_peak": 29403.6,
       "macro_trough": 29226.4,
-      "macro_state": "CONTINUATION",
+      "macro_state": "END_CONFIRMED",
       "macro_source": "M3_ATR_PERSISTENT_4.5",
       "macro_reversal_atr_definition": 4.5,
       "macro_score_influence": false,
@@ -62,19 +62,12 @@
       "last_swing_low": 29347.3,
       "prev_swing_high": 29370.6,
       "prev_swing_low": 29341.6,
-      "choch": false,
+      "choch": true,
       "bos": false,
-      "reversal_direction": "NONE",
-      "reversal_state": "NONE",
-      "atr14": 19.1097,
+      "reversal_direction": "BEARISH",
+      "reversal_state": "EARLY",
+      "atr14": 22.0733,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T03:03:00+03:00",
-          "open": 29383.1,
-          "high": 29385.8,
-          "low": 29353.9,
-          "close": 29359.5
-        },
         {
           "time_sofia": "2026-08-24T03:06:00+03:00",
           "open": 29359.6,
@@ -95,77 +88,83 @@
           "high": 29376.1,
           "low": 29354.9,
           "close": 29359.1
+        },
+        {
+          "time_sofia": "2026-08-24T03:15:00+03:00",
+          "open": 29358.9,
+          "high": 29361.5,
+          "low": 29300.9,
+          "close": 29303.0
         }
       ]
     }
   },
   "ama": {
-    "value": 29369.8003,
-    "distance_points": -10.7003,
+    "value": 29355.4698,
+    "distance_points": -52.4698,
     "price_side": "BELOW",
-    "slope": "FLAT →",
+    "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 47,
-    "bearish_execution_0_100": 30,
-    "bullish_execution_1_5": 2,
-    "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 47,
-    "bearish_exhaustion_0_100": 53,
-    "bullish_exhaustion_1_5": 2,
+    "bullish_execution_0_100": 38,
+    "bearish_execution_0_100": 55,
+    "bullish_execution_1_5": 1,
+    "bearish_execution_1_5": 3,
+    "bullish_exhaustion_0_100": 60,
+    "bearish_exhaustion_0_100": 44,
+    "bullish_exhaustion_1_5": 3,
     "bearish_exhaustion_1_5": 2
   },
   "levels": {
     "day_high": 29403.6,
     "day_low": 29225.9,
-    "points_from_day_high": -44.5,
-    "points_from_day_low": 133.2,
+    "points_from_day_high": -100.6,
+    "points_from_day_low": 77.1,
     "supports": [
-      29347.3,
-      29347.04,
-      29341.9,
-      29341.6,
-      29325.81,
-      29308.9,
-      29307.4,
       29292.0,
       29287.9,
       29286.4,
       29274.2,
-      29237.1
+      29237.1,
+      29230.0,
+      29225.9,
+      29177.7,
+      29149.9,
+      29135.9,
+      29111.9
     ],
     "resistances": [
+      29306.9,
+      29307.7,
+      29308.5,
+      29322.5,
+      29325.5,
+      29325.81,
+      29333.3,
+      29347.04,
+      29352.2,
       29370.13,
       29370.54,
-      29370.6,
-      29370.86,
-      29403.6,
-      29441.35,
-      29454.5,
-      29481.45,
-      29491.9,
-      29539.29,
-      29577.3,
-      29595.2
+      29370.6
     ],
-    "sell_retest_level": 29370.13,
+    "sell_retest_level": 29306.9,
     "sell_retest_zone": [
-      29364.4,
-      29375.86
+      29300.28,
+      29313.52
     ],
-    "buy_retest_level": 29347.3,
+    "buy_retest_level": 29292.0,
     "buy_retest_zone": [
-      29341.57,
-      29353.03
+      29285.38,
+      29298.62
     ],
     "next_up_trigger": 29403.6,
     "next_down_trigger": 29347.3
   },
   "python_decision": {
     "action": "WAIT",
-    "confidence_1_5": 2,
+    "confidence_1_5": 3,
     "reason": "No actionable alignment.",
     "wait_zone": null,
     "dynamic_target": null,
@@ -183,8 +182,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29334.6,
-        "profit": -0.77,
+        "current": 29309.3,
+        "profit": -2.94,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -195,8 +194,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29335.6,
-        "profit": -3.05,
+        "current": 29310.3,
+        "profit": -0.88,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -208,8 +207,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 1068,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-1068m",
+    "minutes_to_event": 1065,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-1065m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -219,12 +218,20 @@
       "previous": ""
     }
   },
-  "position_management_actions": [],
+  "position_management_actions": [
+    {
+      "ticket": 1355982918,
+      "action": "SL",
+      "reason": "SL invalidation reached.",
+      "target": 29333.3,
+      "sl": 29343.989009685007
+    }
+  ],
   "ai_second_opinion": {
     "agreement": "AGREE",
-    "ai_action": "WAIT",
-    "confidence": 2,
-    "comment": "No position-management action is present. H4 is bearish while H1/M3 are bullish, and price is below flat AMA resistance; alignment remains unavailable.",
+    "ai_action": "EXIT_LONG",
+    "confidence": 5,
+    "comment": "Python WAIT fits new entries; the long has priority SL action. Price is below its 29343.6 entry and M3 reversal is bearish.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
