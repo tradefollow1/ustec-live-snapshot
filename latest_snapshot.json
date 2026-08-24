@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T06:32:08.344223+03:00",
-  "candle_time_sofia": "2026-08-24T06:27:00+03:00",
-  "price": 29218.9,
+  "generated_at_sofia": "2026-08-24T06:35:10.663327+03:00",
+  "candle_time_sofia": "2026-08-24T06:30:00+03:00",
+  "price": 29208.6,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.544,
@@ -44,37 +44,30 @@
       "bias_score": -1.0
     },
     "M3": {
-      "trend": "TRANSITION",
-      "active_leg": "BULLISH",
-      "active_leg_origin": 29213.4,
-      "active_leg_points": 5.5,
+      "trend": "BEARISH",
+      "active_leg": "BEARISH",
+      "active_leg_origin": 29233.5,
+      "active_leg_points": 24.9,
       "macro_leg": "BEARISH",
       "macro_origin": 29371.8,
       "macro_start_time": "2026-08-24T04:18:00+03:00",
-      "macro_points": 152.9,
+      "macro_points": 163.2,
       "macro_peak": 29371.8,
-      "macro_trough": 29213.4,
-      "macro_state": "PULLBACK",
+      "macro_trough": 29206.6,
+      "macro_state": "CONTINUATION",
       "macro_source": "M3_ATR_PERSISTENT_4.5",
       "macro_reversal_atr_definition": 4.5,
       "macro_score_influence": false,
-      "last_swing_high": 29300.9,
+      "last_swing_high": 29233.5,
       "last_swing_low": 29213.4,
-      "prev_swing_high": 29299.4,
+      "prev_swing_high": 29300.9,
       "prev_swing_low": 29265.0,
       "choch": false,
-      "bos": false,
-      "reversal_direction": "NONE",
-      "reversal_state": "NONE",
-      "atr14": 18.409,
+      "bos": true,
+      "reversal_direction": "BEARISH",
+      "reversal_state": "CONFIRMED",
+      "atr14": 17.9726,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T06:18:00+03:00",
-          "open": 29226.3,
-          "high": 29229.1,
-          "low": 29215.0,
-          "close": 29223.3
-        },
         {
           "time_sofia": "2026-08-24T06:21:00+03:00",
           "open": 29223.6,
@@ -95,41 +88,48 @@
           "high": 29224.6,
           "low": 29214.9,
           "close": 29218.9
+        },
+        {
+          "time_sofia": "2026-08-24T06:30:00+03:00",
+          "open": 29218.8,
+          "high": 29218.9,
+          "low": 29206.6,
+          "close": 29208.6
         }
       ]
     }
   },
   "ama": {
-    "value": 29225.9255,
-    "distance_points": -7.0255,
+    "value": 29220.5596,
+    "distance_points": -11.9596,
     "price_side": "BELOW",
     "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 41,
-    "bearish_execution_0_100": 19,
-    "bullish_execution_1_5": 2,
-    "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 15,
-    "bearish_exhaustion_0_100": 55,
-    "bullish_exhaustion_1_5": 1,
-    "bearish_exhaustion_1_5": 3
+    "bullish_execution_0_100": 20,
+    "bearish_execution_0_100": 66,
+    "bullish_execution_1_5": 1,
+    "bearish_execution_1_5": 3,
+    "bullish_exhaustion_0_100": 55,
+    "bearish_exhaustion_0_100": 33,
+    "bullish_exhaustion_1_5": 3,
+    "bearish_exhaustion_1_5": 1
   },
   "levels": {
     "day_high": 29403.6,
-    "day_low": 29213.4,
-    "points_from_day_high": -184.7,
-    "points_from_day_low": 5.5,
+    "day_low": 29206.6,
+    "points_from_day_high": -195.0,
+    "points_from_day_low": 2.0,
     "supports": [
-      29213.4,
       29177.7,
       29149.9,
       29135.9,
       29111.9
     ],
     "resistances": [
+      29233.5,
       29296.1,
       29296.9,
       29299.4,
@@ -139,28 +139,30 @@
       29327.5,
       29331.9,
       29352.2,
-      29359.0,
       29361.68,
       29362.09
     ],
-    "sell_retest_level": 29296.1,
+    "sell_retest_level": 29233.5,
     "sell_retest_zone": [
-      29290.58,
-      29301.62
+      29228.11,
+      29238.89
     ],
-    "buy_retest_level": 29213.4,
+    "buy_retest_level": 29177.7,
     "buy_retest_zone": [
-      29207.88,
-      29218.92
+      29172.31,
+      29183.09
     ],
-    "next_up_trigger": 29300.9,
+    "next_up_trigger": 29233.5,
     "next_down_trigger": 29213.4
   },
   "python_decision": {
     "action": "WAIT",
-    "confidence_1_5": 2,
-    "reason": "No actionable alignment.",
-    "wait_zone": null,
+    "confidence_1_5": 3,
+    "reason": "Wait for SELL pullback/retest zone and bearish rejection.",
+    "wait_zone": [
+      29227.2,
+      29239.8
+    ],
     "dynamic_target": null,
     "technical_sl": null,
     "emergency_max_loss_points": 100.0
@@ -176,8 +178,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29210.4,
-        "profit": -11.4,
+        "current": 29217.0,
+        "profit": -10.84,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -188,8 +190,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29211.4,
-        "profit": 7.58,
+        "current": 29218.0,
+        "profit": 7.02,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -201,8 +203,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 873,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-873m",
+    "minutes_to_event": 870,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-870m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -222,10 +224,10 @@
     }
   ],
   "ai_second_opinion": {
-    "agreement": "AGREE",
+    "agreement": "PARTIAL",
     "ai_action": "EXIT_LONG",
-    "confidence": 5,
-    "comment": "EXIT_LONG overrides Python WAIT: position-management emergency max-loss cap is reached for ticket 1355982918.",
+    "confidence": 4,
+    "comment": "Python WAIT is overridden for the long by the emergency-loss SL action. The long is losing while H4/H1/M3 are bearish; exit long is safer because the specified SL 29243.6 is above current 29208.4.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
