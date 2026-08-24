@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-24T04:16:11.594333+03:00",
-  "candle_time_sofia": "2026-08-24T04:12:00+03:00",
-  "price": 29359.5,
+  "generated_at_sofia": "2026-08-24T04:19:15.223224+03:00",
+  "candle_time_sofia": "2026-08-24T04:15:00+03:00",
+  "price": 29362.5,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.304,
@@ -47,11 +47,11 @@
       "trend": "TRANSITION",
       "active_leg": "BULLISH",
       "active_leg_origin": 29321.1,
-      "active_leg_points": 38.4,
+      "active_leg_points": 41.4,
       "macro_leg": "BEARISH",
       "macro_origin": 29403.6,
       "macro_start_time": "2026-08-24T02:51:00+03:00",
-      "macro_points": 44.1,
+      "macro_points": 41.1,
       "macro_peak": 29403.6,
       "macro_trough": 29258.6,
       "macro_state": "END_WATCH",
@@ -66,15 +66,8 @@
       "bos": true,
       "reversal_direction": "BULLISH",
       "reversal_state": "CONFIRMED",
-      "atr14": 25.3833,
+      "atr14": 24.3631,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-24T04:03:00+03:00",
-          "open": 29326.4,
-          "high": 29357.3,
-          "low": 29321.1,
-          "close": 29356.1
-        },
         {
           "time_sofia": "2026-08-24T04:06:00+03:00",
           "open": 29355.9,
@@ -95,33 +88,40 @@
           "high": 29366.8,
           "low": 29351.3,
           "close": 29359.5
+        },
+        {
+          "time_sofia": "2026-08-24T04:15:00+03:00",
+          "open": 29359.3,
+          "high": 29367.9,
+          "low": 29356.8,
+          "close": 29362.5
         }
       ]
     }
   },
   "ama": {
-    "value": 29332.4831,
-    "distance_points": 27.0169,
+    "value": 29337.7311,
+    "distance_points": 24.7689,
     "price_side": "ABOVE",
     "slope": "RISING ↑",
     "role": "support",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 42,
+    "bullish_execution_0_100": 43,
     "bearish_execution_0_100": 29,
     "bullish_execution_1_5": 2,
     "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 63,
-    "bearish_exhaustion_0_100": 52,
+    "bullish_exhaustion_0_100": 58,
+    "bearish_exhaustion_0_100": 55,
     "bullish_exhaustion_1_5": 3,
-    "bearish_exhaustion_1_5": 2
+    "bearish_exhaustion_1_5": 3
   },
   "levels": {
     "day_high": 29403.6,
     "day_low": 29225.9,
-    "points_from_day_high": -44.1,
-    "points_from_day_low": 133.6,
+    "points_from_day_high": -41.1,
+    "points_from_day_low": 136.6,
     "supports": [
       29347.3,
       29341.6,
@@ -152,13 +152,13 @@
     ],
     "sell_retest_level": 29369.3,
     "sell_retest_zone": [
-      29361.69,
-      29376.91
+      29361.99,
+      29376.61
     ],
     "buy_retest_level": 29347.3,
     "buy_retest_zone": [
-      29339.69,
-      29354.91
+      29339.99,
+      29354.61
     ],
     "next_up_trigger": 29359.0,
     "next_down_trigger": 29321.1
@@ -183,8 +183,8 @@
         "side": "BUY",
         "volume": 0.1,
         "entry": 29343.6,
-        "current": 29362.3,
-        "profit": 1.6,
+        "current": 29366.9,
+        "profit": 1.99,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -195,8 +195,8 @@
         "side": "SELL",
         "volume": 0.1,
         "entry": 29300.0,
-        "current": 29363.3,
-        "profit": -5.42,
+        "current": 29367.9,
+        "profit": -5.8100000000000005,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -208,8 +208,8 @@
     "enabled": true,
     "lock_active": false,
     "phase": "CLEAR",
-    "minutes_to_event": 1008,
-    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-1008m",
+    "minutes_to_event": 1005,
+    "status_line": "NEWS: Treasury Sec Bessent Speaks | USD MEDIUM | 21:00 Sofia | T-1005m",
     "next_event": {
       "title": "Treasury Sec Bessent Speaks",
       "currency": "USD",
@@ -224,7 +224,7 @@
     "agreement": "AGREE",
     "ai_action": "WAIT",
     "confidence": 3,
-    "comment": "Python WAIT is appropriate: H4 and overall sentiment are bearish while M3 reversal is bullish, with no actionable alignment. No position-management action is supplied; hedged positions remain open.",
+    "comment": "AGREE with Python WAIT. No position-management action is present; price is in the sell retest zone while bullish and bearish exhaustion are both elevated.",
     "status": "OK"
   },
   "ai_model": "gpt-5.6-terra"
