@@ -1,15 +1,15 @@
 {
   "schema_version": "USTEC_SNAPSHOT_1.7_LIVE",
-  "engine_build": "USTEC-LIVE-2026.08.24-v5.5-INDEPENDENT-POSITIONS",
+  "engine_build": "USTEC-LIVE-2026.08.25-v6.0-HOLD2-T4-RISK",
   "instrument": "USTEC",
   "time_system": {
     "display_timezone": "Europe/Sofia",
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-25T13:34:32.518929+03:00",
+  "generated_at_sofia": "2026-08-25T13:34:56.678640+03:00",
   "candle_time_sofia": "2026-08-25T13:30:00+03:00",
-  "price": 29293.6,
+  "price": 29295.5,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.304,
@@ -183,8 +183,8 @@
         "side": "BUY",
         "volume": 0.8,
         "entry": 29160.1,
-        "current": 29293.5,
-        "profit": 91.53,
+        "current": 29295.3,
+        "profit": 92.77,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -195,8 +195,8 @@
         "side": "SELL",
         "volume": 0.8,
         "entry": 29240.0,
-        "current": 29294.5,
-        "profit": -37.39,
+        "current": 29296.3,
+        "profit": -38.63,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -248,6 +248,52 @@
       "exhaustion_arrow": "↑"
     }
   },
+  "position_state_machine": [
+    {
+      "ticket": 1880706568,
+      "side": "BUY",
+      "volume": 0.8,
+      "entry": 29160.1,
+      "current": 29295.3,
+      "pnl_points": 135.20000000000073,
+      "pnl_eur": 92.77,
+      "state": "OPEN_POSITION",
+      "raw_candidate": "OPEN_POSITION",
+      "hold_confirmation_count": 0,
+      "hold_confirmation_required": 2,
+      "reason": "No validated signal.",
+      "t4": {
+        "state": "NONE",
+        "risk_0_100": 22,
+        "position_direction": "BULLISH",
+        "opposite_direction": "BEARISH",
+        "major_opposite": false,
+        "reversal_opposite": true
+      }
+    },
+    {
+      "ticket": 1882107610,
+      "side": "SELL",
+      "volume": 0.8,
+      "entry": 29240.0,
+      "current": 29296.3,
+      "pnl_points": -56.29999999999927,
+      "pnl_eur": -38.63,
+      "state": "OPEN_POSITION",
+      "raw_candidate": "OPEN_POSITION",
+      "hold_confirmation_count": 0,
+      "hold_confirmation_required": 2,
+      "reason": "No validated signal.",
+      "t4": {
+        "state": "NONE",
+        "risk_0_100": 22,
+        "position_direction": "BEARISH",
+        "opposite_direction": "BULLISH",
+        "major_opposite": true,
+        "reversal_opposite": false
+      }
+    }
+  ],
   "position_management_actions": [],
   "ai_second_opinion": {
     "status": "DISABLED",
@@ -256,13 +302,6 @@
   "ai_model": "gpt-5.6-terra",
   "telegram_delivery": {
     "recent": [
-      {
-        "time_sofia": "2026-08-25T12:26:59.984709+03:00",
-        "category": "AMA_CROSS",
-        "success": true,
-        "error": "",
-        "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29240.1 @ 12:24</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29242.7</b>\nDistance to M3 AMA: <b>-2.6 pts</b>\nM3 AMA slope: <b>RISING ↑</b>\nAMA role: neutral\nCandle: 12:24–12:27 Sofia\nConfirmed: 12:27:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~0s"
-      },
       {
         "time_sofia": "2026-08-25T12:30:02.081374+03:00",
         "category": "AMA_CROSS",
@@ -311,6 +350,13 @@
         "success": true,
         "error": "",
         "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29308.7 @ 13:15</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29315.2</b>\nDistance to M3 AMA: <b>-6.5 pts</b>\nM3 AMA slope: <b>RISING ↑</b>\nAMA role: neutral\nCandle: 13:15–13:18 Sofia\nConfirmed: 13:18:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~0s"
+      },
+      {
+        "time_sofia": "2026-08-25T13:34:56.395078+03:00",
+        "category": "STATUS",
+        "success": true,
+        "error": "",
+        "text": "<b>USTEC POSITION STATUS @ 13:33</b>\nОсновната M3 структура в момента е в преход. Major trend: <b>TRANSITION</b>\nИма ранни признаци, че основното движение може да приключва; HOLD не се счита за потвърден.\nMajor leg: <b>BULLISH</b> | END_WATCH | origin 29138.6 @ 25.08 11:09 | +155.4 pts\nТекущото локално M3 движение е низходяща. То показва какво прави цената в момента вътре в основното движение.\nExisting leg: <b>BEARISH</b> | origin 29336.5 | +42.5 pts\n\n🟢 <b>Отворена BUY позиция</b>\nОтворена на: <b>29160.1</b>\nProfit/Loss: <b>+135.2 USTEC точки</b> | P/L: <b>+92.77 EUR</b>\nПозицията е отворена, но в момента няма валидиран сигнал.\n⚪ <b>Няма валидиран сигнал.</b>\n\n🔴 <b>Отворена SELL позиция</b>\nОтворена на: <b>29240.0</b>\nProfit/Loss: <b>-56.3 USTEC точки</b> | P/L: <b>-38.63 EUR</b>\nПозицията е отворена, но в момента няма валидиран сигнал.\n⚪ <b>Няма валидиран сигнал.</b>"
       }
     ],
     "note": "Exact payloads; no Telegram credentials are stored."
@@ -326,8 +372,8 @@
         "side": "BUY",
         "volume": 0.8,
         "entry": 29160.1,
-        "current": 29293.6,
-        "profit": 91.6,
+        "current": 29295.5,
+        "profit": 92.9,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -338,8 +384,8 @@
         "side": "SELL",
         "volume": 0.8,
         "entry": 29240.0,
-        "current": 29294.6,
-        "profit": -37.46,
+        "current": 29296.5,
+        "profit": -38.77,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -356,54 +402,54 @@
     "note": "market/scores/python_decision are from the latest CLOSED M3; top-level price is current MT5 BID (same as chart); live.* is current/intrabar."
   },
   "chart": {
-    "price_bid": 29293.6,
-    "ask": 29294.6,
+    "price_bid": 29295.5,
+    "ask": 29296.5,
     "spread_points": 1.0,
     "M3": {
       "time_sofia": "2026-08-25T13:33:00+03:00",
       "open": 29294.1,
       "high": 29296.6,
       "low": 29286.5,
-      "close": 29293.6
+      "close": 29295.5
     },
     "H1": {
       "time_sofia": "2026-08-25T13:00:00+03:00",
       "open": 29316.1,
       "high": 29336.5,
       "low": 29286.5,
-      "close": 29293.6
+      "close": 29295.5
     },
     "H4": {
       "time_sofia": "2026-08-25T12:00:00+03:00",
       "open": 29227.6,
       "high": 29340.3,
       "low": 29211.3,
-      "close": 29293.6
+      "close": 29295.5
     },
     "D1": {
       "time_sofia": "2026-08-25T00:00:00+03:00",
       "open": 29070.5,
       "high": 29340.3,
       "low": 28943.3,
-      "close": 29293.6
+      "close": 29295.5
     },
-    "updated_at_sofia": "2026-08-25T13:34:32.518929+03:00",
+    "updated_at_sofia": "2026-08-25T13:34:56.678640+03:00",
     "note": "Exact MT5 chart-view layer: BID price + currently forming bars."
   },
   "live": {
     "snapshot_type": "INTRABAR_5S",
-    "received_at_sofia": "2026-08-25T13:34:32.518929+03:00",
-    "bid": 29293.6,
-    "ask": 29294.6,
-    "mid": 29294.1,
-    "chart_price": 29293.6,
+    "received_at_sofia": "2026-08-25T13:34:56.678640+03:00",
+    "bid": 29295.5,
+    "ask": 29296.5,
+    "mid": 29296.0,
+    "chart_price": 29295.5,
     "spread_points": 1.0,
     "M3_forming": {
       "time_sofia": "2026-08-25T13:33:00+03:00",
       "open": 29294.1,
       "high": 29296.6,
       "low": 29286.5,
-      "close": 29293.6
+      "close": 29295.5
     },
     "M3_chart_recent": [
       {
@@ -439,7 +485,7 @@
         "open": 29294.1,
         "high": 29296.6,
         "low": 29286.5,
-        "close": 29293.6
+        "close": 29295.5
       }
     ],
     "H1_forming": {
@@ -447,23 +493,23 @@
       "open": 29316.1,
       "high": 29336.5,
       "low": 29286.5,
-      "close": 29293.6
+      "close": 29295.5
     },
     "H4_forming": {
       "time_sofia": "2026-08-25T12:00:00+03:00",
       "open": 29227.6,
       "high": 29340.3,
       "low": 29211.3,
-      "close": 29293.6
+      "close": 29295.5
     },
     "D1_forming": {
       "time_sofia": "2026-08-25T00:00:00+03:00",
       "open": 29070.5,
       "high": 29340.3,
       "low": 28943.3,
-      "close": 29293.6
+      "close": 29295.5
     },
-    "M3_intrabar_ama": 29297.8301,
-    "M3_intrabar_distance_to_ama": -3.7301
+    "M3_intrabar_ama": 29300.3672,
+    "M3_intrabar_distance_to_ama": -4.3672
   }
 }
