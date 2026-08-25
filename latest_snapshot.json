@@ -1,5 +1,5 @@
 {
-  "schema_version": "USTEC_SNAPSHOT_1.7_LIVE",
+  "schema_version": "USTEC_SNAPSHOT_1.6",
   "engine_build": "USTEC-LIVE-2026.08.25-v6.4-TELEGRAM-PLAN-TERRA-WATCH",
   "instrument": "USTEC",
   "time_system": {
@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-25T21:44:56.913057+03:00",
-  "candle_time_sofia": "2026-08-25T21:39:00+03:00",
-  "price": 29184.5,
+  "generated_at_sofia": "2026-08-25T21:45:03.728625+03:00",
+  "candle_time_sofia": "2026-08-25T21:42:00+03:00",
+  "price": 29185.5,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.704,
@@ -47,11 +47,11 @@
       "trend": "BULLISH",
       "active_leg": "BEARISH",
       "active_leg_origin": 29154.9,
-      "active_leg_points": -18.1,
+      "active_leg_points": -30.6,
       "macro_leg": "BEARISH",
       "macro_origin": 29232.3,
       "macro_start_time": "2026-08-25T18:33:00+03:00",
-      "macro_points": 59.3,
+      "macro_points": 46.8,
       "macro_peak": 29232.3,
       "macro_trough": 29130.1,
       "macro_state": "END_WATCH",
@@ -66,15 +66,8 @@
       "bos": true,
       "reversal_direction": "BULLISH",
       "reversal_state": "CONFIRMED",
-      "atr14": 12.5384,
+      "atr14": 12.8499,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-25T21:30:00+03:00",
-          "open": 29147.0,
-          "high": 29159.7,
-          "low": 29146.4,
-          "close": 29159.7
-        },
         {
           "time_sofia": "2026-08-25T21:33:00+03:00",
           "open": 29159.7,
@@ -95,34 +88,44 @@
           "high": 29178.0,
           "low": 29169.5,
           "close": 29173.0
+        },
+        {
+          "time_sofia": "2026-08-25T21:42:00+03:00",
+          "open": 29172.4,
+          "high": 29186.4,
+          "low": 29169.5,
+          "close": 29185.5
         }
       ]
     }
   },
   "ama": {
-    "value": 29166.8359,
-    "distance_points": 6.1641,
+    "value": 29172.877,
+    "distance_points": 12.623,
     "price_side": "ABOVE",
     "slope": "RISING ↑",
     "role": "support",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 56,
-    "bearish_execution_0_100": 35,
-    "bullish_execution_1_5": 3,
+    "bullish_execution_0_100": 71,
+    "bearish_execution_0_100": 21,
+    "bullish_execution_1_5": 4,
     "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 35,
-    "bearish_exhaustion_0_100": 42,
+    "bullish_exhaustion_0_100": 28,
+    "bearish_exhaustion_0_100": 56,
     "bullish_exhaustion_1_5": 1,
-    "bearish_exhaustion_1_5": 2
+    "bearish_exhaustion_1_5": 3
   },
   "levels": {
     "day_high": 29340.3,
     "day_low": 28943.3,
-    "points_from_day_high": -167.3,
-    "points_from_day_low": 229.7,
+    "points_from_day_high": -154.8,
+    "points_from_day_low": 242.2,
     "supports": [
+      29184.9,
+      29180.23,
+      29178.8,
       29164.09,
       29150.1,
       29144.5,
@@ -131,14 +134,9 @@
       29135.9,
       29130.5,
       29130.1,
-      29111.9,
-      29083.9,
-      29040.4,
-      28943.3
+      29111.9
     ],
     "resistances": [
-      29180.23,
-      29184.1,
       29196.03,
       29206.6,
       29207.6,
@@ -148,28 +146,30 @@
       29257.93,
       29307.0,
       29340.0,
-      29340.3
+      29340.3,
+      29351.9,
+      29365.76
     ],
-    "sell_retest_level": 29180.23,
+    "sell_retest_level": 29196.03,
     "sell_retest_zone": [
-      29176.23,
-      29184.23
+      29192.03,
+      29200.03
     ],
-    "buy_retest_level": 29164.09,
+    "buy_retest_level": 29184.9,
     "buy_retest_zone": [
-      29160.09,
-      29168.09
+      29180.9,
+      29188.9
     ],
     "next_up_trigger": 29154.9,
     "next_down_trigger": 29130.5
   },
   "python_decision": {
-    "action": "WAIT",
-    "confidence_1_5": 3,
-    "reason": "No actionable alignment.",
+    "action": "BUY",
+    "confidence_1_5": 4,
+    "reason": "Bullish execution aligned; bullish exhaustion not high.",
     "wait_zone": null,
-    "dynamic_target": null,
-    "technical_sl": null,
+    "dynamic_target": 29215.4,
+    "technical_sl": 29128.5,
     "emergency_max_loss_points": 100.0
   },
   "positions": {
@@ -183,8 +183,8 @@
         "side": "BUY",
         "volume": 0.8,
         "entry": 29160.1,
-        "current": 29172.4,
-        "profit": 8.43,
+        "current": 29186.7,
+        "profit": 18.23,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -195,8 +195,8 @@
         "side": "SELL",
         "volume": 0.8,
         "entry": 29240.0,
-        "current": 29173.3,
-        "profit": 45.71,
+        "current": 29187.6,
+        "profit": 35.91,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -209,8 +209,8 @@
     "lock_active": false,
     "source": "ForexFactory LIVE",
     "phase": "CLEAR",
-    "minutes_to_event": 1245,
-    "status_line": "NEWS: Core PCE Price Index m/m | USD HIGH | 26.08 18:30 Sofia | T-1245m",
+    "minutes_to_event": 1248,
+    "status_line": "NEWS: Core PCE Price Index m/m | USD HIGH | 26.08 18:30 Sofia | T-1248m",
     "next_event": {
       "title": "Core PCE Price Index m/m",
       "currency": "USD",
@@ -226,12 +226,12 @@
       "direction": "BEARISH",
       "origin": 29232.3,
       "start_time": "2026-08-25T18:33:00+03:00",
-      "candle_count": 63,
-      "execution_0_100": 32,
-      "execution_previous_0_100": 29,
+      "candle_count": 64,
+      "execution_0_100": 19,
+      "execution_previous_0_100": 27,
       "execution_arrow": "↓",
-      "exhaustion_0_100": 50,
-      "exhaustion_previous_0_100": 47,
+      "exhaustion_0_100": 63,
+      "exhaustion_previous_0_100": 50,
       "exhaustion_arrow": "↑"
     },
     "existing": {
@@ -239,12 +239,12 @@
       "direction": "BEARISH",
       "origin": 29154.9,
       "start_time": "2026-08-25T21:21:00+03:00",
-      "candle_count": 7,
-      "execution_0_100": 35,
-      "execution_previous_0_100": 32,
-      "execution_arrow": "↑",
-      "exhaustion_0_100": 42,
-      "exhaustion_previous_0_100": 39,
+      "candle_count": 8,
+      "execution_0_100": 21,
+      "execution_previous_0_100": 30,
+      "execution_arrow": "↓",
+      "exhaustion_0_100": 56,
+      "exhaustion_previous_0_100": 42,
       "exhaustion_arrow": "↑"
     },
     "parent": {
@@ -252,12 +252,12 @@
       "direction": "BEARISH",
       "origin": 29232.3,
       "start_time": "2026-08-25T18:33:00+03:00",
-      "candle_count": 63,
-      "execution_0_100": 32,
-      "execution_previous_0_100": 29,
+      "candle_count": 64,
+      "execution_0_100": 19,
+      "execution_previous_0_100": 27,
       "execution_arrow": "↓",
-      "exhaustion_0_100": 50,
-      "exhaustion_previous_0_100": 47,
+      "exhaustion_0_100": 63,
+      "exhaustion_previous_0_100": 50,
       "exhaustion_arrow": "↑"
     },
     "current": {
@@ -265,12 +265,12 @@
       "direction": "BEARISH",
       "origin": 29154.9,
       "start_time": "2026-08-25T21:21:00+03:00",
-      "candle_count": 7,
-      "execution_0_100": 35,
-      "execution_previous_0_100": 32,
-      "execution_arrow": "↑",
-      "exhaustion_0_100": 42,
-      "exhaustion_previous_0_100": 39,
+      "candle_count": 8,
+      "execution_0_100": 21,
+      "execution_previous_0_100": 30,
+      "execution_arrow": "↓",
+      "exhaustion_0_100": 56,
+      "exhaustion_previous_0_100": 42,
       "exhaustion_arrow": "↑"
     }
   },
@@ -433,8 +433,8 @@
     "current": {
       "direction": "BEARISH",
       "origin": 29154.9,
-      "current_price": 29173.0,
-      "points": -18.099999999998545,
+      "current_price": 29185.5,
+      "points": -30.599999999998545,
       "completed": false
     },
     "last_parent_transition": {
@@ -454,7 +454,7 @@
   },
   "market_event_filters": {
     "nasdaq_calendar": {
-      "ny_time": "2026-08-25T14:39:00-04:00",
+      "ny_time": "2026-08-25T14:42:00-04:00",
       "cash_open_et": "2026-08-25T09:30:00-04:00",
       "cash_open_sofia": "2026-08-25T16:30:00+03:00",
       "cash_close_et": "2026-08-25T16:00:00-04:00",
@@ -507,219 +507,7 @@
   "position_management_actions": [],
   "ai_second_opinion": {
     "status": "DISABLED",
-    "reason": "Disabled to avoid OpenAI API credit usage; report AI runs in ChatGPT."
+    "model": "gpt-5.6-terra"
   },
-  "ai_model": "gpt-5.6-terra",
-  "telegram_delivery": {
-    "recent": [
-      {
-        "time_sofia": "2026-08-25T20:03:05.410427+03:00",
-        "category": "AMA_CROSS",
-        "success": true,
-        "error": "",
-        "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29184.9 @ 20:00</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29196.6</b>\nDistance to M3 AMA: <b>-11.7 pts</b>\nM3 AMA slope: <b>FALLING ↓</b>\nAMA role: resistance\nCandle: 20:00–20:03 Sofia\nConfirmed: 20:03:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~5s"
-      },
-      {
-        "time_sofia": "2026-08-25T20:12:03.065885+03:00",
-        "category": "WATCH_CANCELLED",
-        "success": true,
-        "error": "",
-        "text": "⚠️ <b>WATCH #4 CANCELLED</b>\nТекущият Parent е приключил след потвърден структурен пробив."
-      },
-      {
-        "time_sofia": "2026-08-25T20:27:52.420645+03:00",
-        "category": "USER_PLAN_LOCAL",
-        "success": true,
-        "error": "",
-        "text": "⚪ <b>USTEC: WAIT</b>\nUSTEC: <b>29149.2</b>\nParent: <b>BEARISH</b> | Current: <b>BEARISH</b>\nНяма валиден GO вход по текущата система.\nСледя <b>SELL</b> при връщане <b>29150.8–29161.2</b>.\n<b>WATCH SELL #5 ACTIVE</b> | 29150.8–29161.2"
-      },
-      {
-        "time_sofia": "2026-08-25T20:33:06.016697+03:00",
-        "category": "STATUS",
-        "success": true,
-        "error": "",
-        "text": "<b>USTEC POSITION STATUS @ 20:33</b>\n🟢 Предишният <b>BULLISH Parent</b> приключи след потвърден пробив/обръщане на неговия тренд.\n🔴 След него е формиран нов <b>BEARISH Parent</b>.\n🔴 <b>Parent M3: BEARISH</b> (мечи / низходящ). Това е по-големият активен M3 тренд.\nParent: начало <b>29232.3</b> @ 25.08 18:33 | достигнато <b>29142.6</b> | <b>89.7 pts</b> | CONTINUATION\nЗавършени Child legs в текущия Parent: <b>8</b>.\n🔴 Child 5: <b>BEARISH</b> | 29225.1 → 29178.8 | 46.3 pts\n🟢 Child 6: <b>BULLISH</b> | 29178.8 → 29207.6 | 28.8 pts\n🔴 Child 7: <b>BEARISH</b> | 29207.6 → 29150.1 | 57.5 pts\n🟢 Child 8: <b>BULLISH</b> | 29150.1 → 29184.1 | 34.0 pts\n🔴 <b>Current: BEARISH</b> — последният leg, който още се развива в момента.\nCurrent: начало <b>29184.1</b> | +35.6 pts\nЛокална pivot структура: <b>TRANSITION</b> (в преход).\n\nNEWS: Core PCE Price Index m/m | USD HIGH | 26.08 18:30 Sofia | T-1320m\n\n⚪ Балансиран hedge: BUY <b>0.80</b> = SELL <b>0.80</b>. Двата leg-а се неутрализират и за position management приемаме, че няма активна отворена позиция.\n⚪ <b>Нетна активна позиция: НЯМА</b>"
-      },
-      {
-        "time_sofia": "2026-08-25T20:36:33.309861+03:00",
-        "category": "USER_PLAN_LOCAL",
-        "success": true,
-        "error": "",
-        "text": "⚪ <b>USTEC: WAIT</b>\nUSTEC: <b>29151.4</b>\nParent: <b>BEARISH</b> | Current: <b>BULLISH</b>\nНяма валиден GO вход по текущата система.\nСледя <b>SELL</b> при връщане <b>29151.1–29160.9</b>.\n<b>WATCH SELL #6 ACTIVE</b> | 29151.1–29160.9"
-      },
-      {
-        "time_sofia": "2026-08-25T21:06:05.761842+03:00",
-        "category": "STATUS",
-        "success": true,
-        "error": "",
-        "text": "<b>USTEC POSITION STATUS @ 21:06</b>\n🟢 Предишният <b>BULLISH Parent</b> приключи след потвърден пробив/обръщане на неговия тренд.\n🔴 След него е формиран нов <b>BEARISH Parent</b>.\n🔴 <b>Parent M3: BEARISH</b> (мечи / низходящ). Това е по-големият активен M3 тренд.\nParent: начало <b>29232.3</b> @ 25.08 18:33 | достигнато <b>29130.4</b> | <b>101.9 pts</b> | CONTINUATION\nЗавършени Child legs в текущия Parent: <b>12</b>.\n🔴 Child 9: <b>BEARISH</b> | 29184.1 → 29142.6 | 41.5 pts\n🟢 Child 10: <b>BULLISH</b> | 29142.6 → 29161.5 | 18.9 pts\n🔴 Child 11: <b>BEARISH</b> | 29161.5 → 29144.5 | 17.0 pts\n🟢 Child 12: <b>BULLISH</b> | 29144.5 → 29159.5 | 15.0 pts\n🔴 <b>Current: BEARISH</b> — последният leg, който още се развива в момента.\nCurrent: начало <b>29159.5</b> | +22.5 pts\nЛокална pivot структура: <b>TRANSITION</b> (в преход).\n\nNEWS: Core PCE Price Index m/m | USD HIGH | 26.08 18:30 Sofia | T-1287m\n\n⚪ Балансиран hedge: BUY <b>0.80</b> = SELL <b>0.80</b>. Двата leg-а се неутрализират и за position management приемаме, че няма активна отворена позиция.\n⚪ <b>Нетна активна позиция: НЯМА</b>"
-      },
-      {
-        "time_sofia": "2026-08-25T21:33:07.221647+03:00",
-        "category": "AMA_CROSS",
-        "success": true,
-        "error": "",
-        "text": "🟢 <b>PRICE CROSSED AMA ↑</b>\n<b>USTEC: 29159.7 @ 21:30</b>\nPrice crossed AMA from BELOW to ABOVE\nM3 AMA: <b>29151.1</b>\nDistance to M3 AMA: <b>+8.6 pts</b>\nM3 AMA slope: <b>RISING ↑</b>\nAMA role: support\nCandle: 21:30–21:33 Sofia\nConfirmed: 21:33:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~7s"
-      },
-      {
-        "time_sofia": "2026-08-25T21:37:12.152336+03:00",
-        "category": "USER_PLAN_LOCAL",
-        "success": true,
-        "error": "",
-        "text": "⚪ <b>USTEC: WAIT</b>\nUSTEC: <b>29169.7</b>\nParent: <b>BEARISH</b> | Current: <b>BEARISH</b>\nNo actionable alignment.\nНяма валидна engine WATCH зона в момента."
-      }
-    ],
-    "note": "Exact payloads; no Telegram credentials are stored."
-  },
-  "positions_live": {
-    "state": "HEDGED",
-    "long_volume": 0.8,
-    "short_volume": 0.8,
-    "net_volume": 0.0,
-    "tickets": [
-      {
-        "ticket": 1880706568,
-        "side": "BUY",
-        "volume": 0.8,
-        "entry": 29160.1,
-        "current": 29184.7,
-        "profit": 16.86,
-        "sl": 0.0,
-        "tp": 0.0,
-        "magic": 0,
-        "comment": ""
-      },
-      {
-        "ticket": 1882107610,
-        "side": "SELL",
-        "volume": 0.8,
-        "entry": 29240.0,
-        "current": 29185.6,
-        "profit": 37.28,
-        "sl": 0.0,
-        "tp": 0.0,
-        "magic": 0,
-        "comment": ""
-      }
-    ]
-  },
-  "analysis_basis": {
-    "strategy_timeframe": "M3",
-    "strategy_uses_closed_m3_only": true,
-    "closed_m3_candle_time_sofia": "2026-08-25T21:39:00+03:00",
-    "closed_m3_price": 29173.0,
-    "live_overlay_interval_seconds": 5,
-    "note": "market/scores/python_decision are from the latest CLOSED M3; top-level price is current MT5 BID (same as chart); live.* is current/intrabar."
-  },
-  "chart": {
-    "price_bid": 29184.5,
-    "ask": 29185.4,
-    "spread_points": 0.9,
-    "M3": {
-      "time_sofia": "2026-08-25T21:42:00+03:00",
-      "open": 29172.4,
-      "high": 29186.4,
-      "low": 29169.5,
-      "close": 29184.5
-    },
-    "H1": {
-      "time_sofia": "2026-08-25T21:00:00+03:00",
-      "open": 29154.2,
-      "high": 29186.4,
-      "low": 29130.1,
-      "close": 29184.5
-    },
-    "H4": {
-      "time_sofia": "2026-08-25T20:00:00+03:00",
-      "open": 29201.5,
-      "high": 29204.1,
-      "low": 29130.1,
-      "close": 29184.5
-    },
-    "D1": {
-      "time_sofia": "2026-08-25T00:00:00+03:00",
-      "open": 29070.5,
-      "high": 29340.3,
-      "low": 28943.3,
-      "close": 29184.5
-    },
-    "updated_at_sofia": "2026-08-25T21:44:56.913057+03:00",
-    "note": "Exact MT5 chart-view layer: BID price + currently forming bars."
-  },
-  "live": {
-    "snapshot_type": "INTRABAR_5S",
-    "received_at_sofia": "2026-08-25T21:44:56.913057+03:00",
-    "bid": 29184.5,
-    "ask": 29185.4,
-    "mid": 29184.95,
-    "chart_price": 29184.5,
-    "spread_points": 0.9,
-    "M3_forming": {
-      "time_sofia": "2026-08-25T21:42:00+03:00",
-      "open": 29172.4,
-      "high": 29186.4,
-      "low": 29169.5,
-      "close": 29184.5
-    },
-    "M3_chart_recent": [
-      {
-        "time_sofia": "2026-08-25T21:30:00+03:00",
-        "open": 29147.0,
-        "high": 29159.7,
-        "low": 29146.4,
-        "close": 29159.7
-      },
-      {
-        "time_sofia": "2026-08-25T21:33:00+03:00",
-        "open": 29159.7,
-        "high": 29172.2,
-        "low": 29158.9,
-        "close": 29170.4
-      },
-      {
-        "time_sofia": "2026-08-25T21:36:00+03:00",
-        "open": 29170.2,
-        "high": 29178.5,
-        "low": 29167.5,
-        "close": 29176.4
-      },
-      {
-        "time_sofia": "2026-08-25T21:39:00+03:00",
-        "open": 29176.5,
-        "high": 29178.0,
-        "low": 29169.5,
-        "close": 29173.0
-      },
-      {
-        "time_sofia": "2026-08-25T21:42:00+03:00",
-        "open": 29172.4,
-        "high": 29186.4,
-        "low": 29169.5,
-        "close": 29184.5
-      }
-    ],
-    "H1_forming": {
-      "time_sofia": "2026-08-25T21:00:00+03:00",
-      "open": 29154.2,
-      "high": 29186.4,
-      "low": 29130.1,
-      "close": 29184.5
-    },
-    "H4_forming": {
-      "time_sofia": "2026-08-25T20:00:00+03:00",
-      "open": 29201.5,
-      "high": 29204.1,
-      "low": 29130.1,
-      "close": 29184.5
-    },
-    "D1_forming": {
-      "time_sofia": "2026-08-25T00:00:00+03:00",
-      "open": 29070.5,
-      "high": 29340.3,
-      "low": 28943.3,
-      "close": 29184.5
-    },
-    "M3_intrabar_ama": 29172.5128,
-    "M3_intrabar_distance_to_ama": 12.4372
-  }
+  "ai_model": "gpt-5.6-terra"
 }
