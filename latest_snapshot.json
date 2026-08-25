@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-25T14:20:55.865140+03:00",
-  "candle_time_sofia": "2026-08-25T14:15:00+03:00",
-  "price": 29270.3,
+  "generated_at_sofia": "2026-08-25T14:21:02.322999+03:00",
+  "candle_time_sofia": "2026-08-25T14:18:00+03:00",
+  "price": 29270.0,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.304,
@@ -47,14 +47,14 @@
       "trend": "BEARISH",
       "active_leg": "BULLISH",
       "active_leg_origin": 29233.8,
-      "active_leg_points": 18.0,
+      "active_leg_points": 35.8,
       "macro_leg": "BEARISH",
       "macro_origin": 29340.3,
       "macro_start_time": "2026-08-25T12:57:00+03:00",
-      "macro_points": 88.5,
+      "macro_points": 70.7,
       "macro_peak": 29340.3,
       "macro_trough": 29233.8,
-      "macro_state": "PULLBACK",
+      "macro_state": "END_WATCH",
       "macro_source": "M3_ATR_PERSISTENT_4.5",
       "macro_reversal_atr_definition": 4.5,
       "macro_score_influence": false,
@@ -64,17 +64,10 @@
       "prev_swing_low": 29272.1,
       "choch": false,
       "bos": false,
-      "reversal_direction": "NONE",
-      "reversal_state": "NONE",
-      "atr14": 15.9837,
+      "reversal_direction": "BULLISH",
+      "reversal_state": "ANTICIPATION",
+      "atr14": 16.7634,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-25T14:06:00+03:00",
-          "open": 29261.5,
-          "high": 29262.2,
-          "low": 29251.2,
-          "close": 29256.7
-        },
         {
           "time_sofia": "2026-08-25T14:09:00+03:00",
           "open": 29256.6,
@@ -95,34 +88,42 @@
           "high": 29270.3,
           "low": 29250.0,
           "close": 29251.8
+        },
+        {
+          "time_sofia": "2026-08-25T14:18:00+03:00",
+          "open": 29251.1,
+          "high": 29274.1,
+          "low": 29247.2,
+          "close": 29269.6
         }
       ]
     }
   },
   "ama": {
-    "value": 29270.5563,
-    "distance_points": -18.7563,
+    "value": 29270.5013,
+    "distance_points": -0.9013,
     "price_side": "BELOW",
     "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 19,
-    "bearish_execution_0_100": 74,
-    "bullish_execution_1_5": 1,
-    "bearish_execution_1_5": 4,
-    "bullish_exhaustion_0_100": 47,
-    "bearish_exhaustion_0_100": 17,
-    "bullish_exhaustion_1_5": 2,
+    "bullish_execution_0_100": 56,
+    "bearish_execution_0_100": 45,
+    "bullish_execution_1_5": 3,
+    "bearish_execution_1_5": 2,
+    "bullish_exhaustion_0_100": 32,
+    "bearish_exhaustion_0_100": 37,
+    "bullish_exhaustion_1_5": 1,
     "bearish_exhaustion_1_5": 1
   },
   "levels": {
     "day_high": 29340.3,
     "day_low": 28943.3,
-    "points_from_day_high": -88.5,
-    "points_from_day_low": 308.5,
+    "points_from_day_high": -70.7,
+    "points_from_day_low": 326.3,
     "supports": [
+      29264.38,
       29233.8,
       29231.5,
       29230.0,
@@ -133,13 +134,9 @@
       29191.22,
       29182.8,
       29158.48,
-      29154.06,
-      29138.6
+      29154.06
     ],
     "resistances": [
-      29259.1,
-      29260.3,
-      29264.38,
       29294.5,
       29307.0,
       29336.5,
@@ -148,28 +145,31 @@
       29401.54,
       29402.9,
       29419.51,
-      29420.85
+      29420.85,
+      29453.6,
+      29491.8,
+      29595.2
     ],
-    "sell_retest_level": 29259.1,
+    "sell_retest_level": 29294.5,
     "sell_retest_zone": [
-      29254.3,
-      29263.9
+      29289.47,
+      29299.53
     ],
-    "buy_retest_level": 29233.8,
+    "buy_retest_level": 29264.38,
     "buy_retest_zone": [
-      29229.0,
-      29238.6
+      29259.35,
+      29269.41
     ],
     "next_up_trigger": 29294.5,
     "next_down_trigger": 29233.8
   },
   "python_decision": {
-    "action": "SELL",
-    "confidence_1_5": 4,
-    "reason": "Bearish execution aligned; bearish exhaustion not high.",
+    "action": "WAIT",
+    "confidence_1_5": 3,
+    "reason": "No actionable alignment.",
     "wait_zone": null,
-    "dynamic_target": 29226.6,
-    "technical_sl": 29296.8976,
+    "dynamic_target": null,
+    "technical_sl": null,
     "emergency_max_loss_points": 100.0
   },
   "positions": {
@@ -183,8 +183,8 @@
         "side": "BUY",
         "volume": 0.8,
         "entry": 29160.1,
-        "current": 29252.1,
-        "profit": 63.13,
+        "current": 29270.0,
+        "profit": 75.39,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -195,8 +195,8 @@
         "side": "SELL",
         "volume": 0.8,
         "entry": 29240.0,
-        "current": 29253.1,
-        "profit": -8.99,
+        "current": 29271.0,
+        "profit": -21.27,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -226,12 +226,12 @@
       "direction": "BEARISH",
       "origin": 29340.3,
       "start_time": "2026-08-25T12:57:00+03:00",
-      "candle_count": 27,
-      "execution_0_100": 71,
-      "execution_previous_0_100": 64,
-      "execution_arrow": "↑",
-      "exhaustion_0_100": 21,
-      "exhaustion_previous_0_100": 19,
+      "candle_count": 28,
+      "execution_0_100": 43,
+      "execution_previous_0_100": 61,
+      "execution_arrow": "↓",
+      "exhaustion_0_100": 41,
+      "exhaustion_previous_0_100": 21,
       "exhaustion_arrow": "↑"
     },
     "existing": {
@@ -239,12 +239,12 @@
       "direction": "BULLISH",
       "origin": 29233.8,
       "start_time": "2026-08-25T14:09:00+03:00",
-      "candle_count": 3,
-      "execution_0_100": 19,
-      "execution_previous_0_100": 31,
-      "execution_arrow": "↓",
-      "exhaustion_0_100": 47,
-      "exhaustion_previous_0_100": 39,
+      "candle_count": 4,
+      "execution_0_100": 56,
+      "execution_previous_0_100": 27,
+      "execution_arrow": "↑",
+      "exhaustion_0_100": 32,
+      "exhaustion_previous_0_100": 31,
       "exhaustion_arrow": "↓"
     }
   },
@@ -254,9 +254,9 @@
       "side": "BUY",
       "volume": 0.8,
       "entry": 29160.1,
-      "current": 29252.1,
-      "pnl_points": 92.0,
-      "pnl_eur": 63.13,
+      "current": 29270.0,
+      "pnl_points": 109.90000000000146,
+      "pnl_eur": 75.39,
       "state": "OPEN_POSITION",
       "raw_candidate": "OPEN_POSITION",
       "hold_confirmation_count": 0,
@@ -276,21 +276,21 @@
       "side": "SELL",
       "volume": 0.8,
       "entry": 29240.0,
-      "current": 29253.1,
-      "pnl_points": -13.099999999998545,
-      "pnl_eur": -8.99,
+      "current": 29271.0,
+      "pnl_points": -31.0,
+      "pnl_eur": -21.27,
       "state": "OPEN_POSITION",
-      "raw_candidate": "HOLD_PULLBACK",
-      "hold_confirmation_count": 1,
+      "raw_candidate": "OPEN_POSITION",
+      "hold_confirmation_count": 0,
       "hold_confirmation_required": 2,
-      "reason": "HOLD_PULLBACK candidate is waiting for 2 consecutive closed M3 candles.",
+      "reason": "No validated signal.",
       "t4": {
         "state": "NONE",
         "risk_0_100": 22,
         "position_direction": "BEARISH",
         "opposite_direction": "BULLISH",
         "major_opposite": false,
-        "reversal_opposite": false
+        "reversal_opposite": true
       }
     }
   ],
@@ -372,8 +372,8 @@
         "side": "BUY",
         "volume": 0.8,
         "entry": 29160.1,
-        "current": 29270.3,
-        "profit": 75.6,
+        "current": 29269.8,
+        "profit": 75.26,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -384,8 +384,8 @@
         "side": "SELL",
         "volume": 0.8,
         "entry": 29240.0,
-        "current": 29271.3,
-        "profit": -21.47,
+        "current": 29270.8,
+        "profit": -21.13,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -396,69 +396,62 @@
   "analysis_basis": {
     "strategy_timeframe": "M3",
     "strategy_uses_closed_m3_only": true,
-    "closed_m3_candle_time_sofia": "2026-08-25T14:15:00+03:00",
-    "closed_m3_price": 29251.8,
+    "closed_m3_candle_time_sofia": "2026-08-25T14:18:00+03:00",
+    "closed_m3_price": 29269.6,
     "live_overlay_interval_seconds": 5,
     "note": "market/scores/python_decision are from the latest CLOSED M3; top-level price is current MT5 BID (same as chart); live.* is current/intrabar."
   },
   "chart": {
-    "price_bid": 29270.3,
-    "ask": 29271.3,
+    "price_bid": 29270.0,
+    "ask": 29271.0,
     "spread_points": 1.0,
     "M3": {
-      "time_sofia": "2026-08-25T14:18:00+03:00",
-      "open": 29251.1,
-      "high": 29274.1,
-      "low": 29247.2,
-      "close": 29270.3
+      "time_sofia": "2026-08-25T14:21:00+03:00",
+      "open": 29269.7,
+      "high": 29270.0,
+      "low": 29268.1,
+      "close": 29270.0
     },
     "H1": {
       "time_sofia": "2026-08-25T14:00:00+03:00",
       "open": 29283.5,
       "high": 29288.7,
       "low": 29233.8,
-      "close": 29270.3
+      "close": 29270.0
     },
     "H4": {
       "time_sofia": "2026-08-25T12:00:00+03:00",
       "open": 29227.6,
       "high": 29340.3,
       "low": 29211.3,
-      "close": 29270.3
+      "close": 29270.0
     },
     "D1": {
       "time_sofia": "2026-08-25T00:00:00+03:00",
       "open": 29070.5,
       "high": 29340.3,
       "low": 28943.3,
-      "close": 29270.3
+      "close": 29270.0
     },
-    "updated_at_sofia": "2026-08-25T14:20:55.865140+03:00",
+    "updated_at_sofia": "2026-08-25T14:21:02.322999+03:00",
     "note": "Exact MT5 chart-view layer: BID price + currently forming bars."
   },
   "live": {
     "snapshot_type": "INTRABAR_5S",
-    "received_at_sofia": "2026-08-25T14:20:55.865140+03:00",
-    "bid": 29270.3,
-    "ask": 29271.3,
-    "mid": 29270.8,
-    "chart_price": 29270.3,
+    "received_at_sofia": "2026-08-25T14:21:02.322999+03:00",
+    "bid": 29270.0,
+    "ask": 29271.0,
+    "mid": 29270.5,
+    "chart_price": 29270.0,
     "spread_points": 1.0,
     "M3_forming": {
-      "time_sofia": "2026-08-25T14:18:00+03:00",
-      "open": 29251.1,
-      "high": 29274.1,
-      "low": 29247.2,
-      "close": 29270.3
+      "time_sofia": "2026-08-25T14:21:00+03:00",
+      "open": 29269.7,
+      "high": 29270.0,
+      "low": 29268.1,
+      "close": 29270.0
     },
     "M3_chart_recent": [
-      {
-        "time_sofia": "2026-08-25T14:06:00+03:00",
-        "open": 29261.5,
-        "high": 29262.2,
-        "low": 29251.2,
-        "close": 29256.7
-      },
       {
         "time_sofia": "2026-08-25T14:09:00+03:00",
         "open": 29256.6,
@@ -485,7 +478,14 @@
         "open": 29251.1,
         "high": 29274.1,
         "low": 29247.2,
-        "close": 29270.3
+        "close": 29269.6
+      },
+      {
+        "time_sofia": "2026-08-25T14:21:00+03:00",
+        "open": 29269.7,
+        "high": 29270.0,
+        "low": 29268.1,
+        "close": 29270.0
       }
     ],
     "H1_forming": {
@@ -493,23 +493,23 @@
       "open": 29283.5,
       "high": 29288.7,
       "low": 29233.8,
-      "close": 29270.3
+      "close": 29270.0
     },
     "H4_forming": {
       "time_sofia": "2026-08-25T12:00:00+03:00",
       "open": 29227.6,
       "high": 29340.3,
       "low": 29211.3,
-      "close": 29270.3
+      "close": 29270.0
     },
     "D1_forming": {
       "time_sofia": "2026-08-25T00:00:00+03:00",
       "open": 29070.5,
       "high": 29340.3,
       "low": 28943.3,
-      "close": 29270.3
+      "close": 29270.0
     },
-    "M3_intrabar_ama": 29270.5424,
-    "M3_intrabar_distance_to_ama": 0.2576
+    "M3_intrabar_ama": 29270.4698,
+    "M3_intrabar_distance_to_ama": 0.0302
   }
 }
