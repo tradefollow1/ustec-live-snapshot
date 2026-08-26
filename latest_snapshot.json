@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-26T07:44:53.737724+03:00",
-  "candle_time_sofia": "2026-08-26T07:39:00+03:00",
-  "price": 29182.8,
+  "generated_at_sofia": "2026-08-26T07:45:11.195179+03:00",
+  "candle_time_sofia": "2026-08-26T07:42:00+03:00",
+  "price": 29178.3,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.304,
@@ -47,11 +47,11 @@
       "trend": "BULLISH",
       "active_leg": "BEARISH",
       "active_leg_origin": 29212.9,
-      "active_leg_points": 21.6,
+      "active_leg_points": 30.6,
       "macro_leg": "BULLISH",
       "macro_origin": 29028.5,
       "macro_start_time": "2026-08-26T04:33:00+03:00",
-      "macro_points": 162.8,
+      "macro_points": 153.8,
       "macro_peak": 29212.9,
       "macro_trough": 29028.5,
       "macro_state": "END_WATCH",
@@ -66,15 +66,8 @@
       "bos": false,
       "reversal_direction": "BEARISH",
       "reversal_state": "EARLY",
-      "atr14": 10.2162,
+      "atr14": 10.2936,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-26T07:30:00+03:00",
-          "open": 29203.7,
-          "high": 29206.9,
-          "low": 29200.2,
-          "close": 29201.2
-        },
         {
           "time_sofia": "2026-08-26T07:33:00+03:00",
           "open": 29201.3,
@@ -95,41 +88,47 @@
           "high": 29193.9,
           "low": 29185.8,
           "close": 29191.3
+        },
+        {
+          "time_sofia": "2026-08-26T07:42:00+03:00",
+          "open": 29191.5,
+          "high": 29191.7,
+          "low": 29180.4,
+          "close": 29182.3
         }
       ],
       "current_leg": "BULLISH",
       "current_origin": 29048.5,
       "current_start_time": "2026-08-26T04:54:00+03:00",
       "current_recognition_time": "2026-08-26T05:09:00+03:00",
-      "current_points": 142.8,
+      "current_points": 133.8,
       "current_source": "STRUCTURAL_TREND_PERSISTENT"
     }
   },
   "ama": {
-    "value": 29197.3961,
-    "distance_points": -6.0961,
+    "value": 29193.3164,
+    "distance_points": -11.0164,
     "price_side": "BELOW",
-    "slope": "FLAT →",
+    "slope": "FALLING ↓",
     "role": "resistance",
     "confirmed_cross": null
   },
   "scores": {
-    "bullish_execution_0_100": 63,
-    "bearish_execution_0_100": 46,
-    "bullish_execution_1_5": 3,
-    "bearish_execution_1_5": 2,
-    "bullish_exhaustion_0_100": 21,
-    "bearish_exhaustion_0_100": 40,
+    "bullish_execution_0_100": 45,
+    "bearish_execution_0_100": 60,
+    "bullish_execution_1_5": 2,
+    "bearish_execution_1_5": 3,
+    "bullish_exhaustion_0_100": 37,
+    "bearish_exhaustion_0_100": 34,
     "bullish_exhaustion_1_5": 1,
-    "bearish_exhaustion_1_5": 2
+    "bearish_exhaustion_1_5": 1
   },
   "levels": {
     "day_high": 29238.7,
     "day_low": 29028.5,
-    "points_from_day_high": -47.4,
-    "points_from_day_low": 162.8,
+    "points_from_day_high": -56.4,
+    "points_from_day_low": 153.8,
     "supports": [
-      29183.37,
       29172.22,
       29164.15,
       29163.02,
@@ -140,9 +139,11 @@
       29135.9,
       29130.1,
       29111.9,
-      29083.9
+      29083.9,
+      29050.3
     ],
     "resistances": [
+      29183.37,
       29206.6,
       29206.9,
       29211.7,
@@ -153,18 +154,17 @@
       29340.3,
       29351.9,
       29352.67,
-      29384.56,
-      29386.83
+      29384.56
     ],
-    "sell_retest_level": 29206.6,
+    "sell_retest_level": 29183.37,
     "sell_retest_zone": [
-      29202.6,
-      29210.6
-    ],
-    "buy_retest_level": 29183.37,
-    "buy_retest_zone": [
       29179.37,
       29187.37
+    ],
+    "buy_retest_level": 29172.22,
+    "buy_retest_zone": [
+      29168.22,
+      29176.22
     ],
     "next_up_trigger": 29212.9,
     "next_down_trigger": 29192.5
@@ -172,8 +172,11 @@
   "python_decision": {
     "action": "WAIT",
     "confidence_1_5": 3,
-    "reason": "No actionable alignment.",
-    "wait_zone": null,
+    "reason": "Wait for SELL pullback/retest zone and bearish rejection.",
+    "wait_zone": [
+      29178.4,
+      29188.4
+    ],
     "dynamic_target": null,
     "technical_sl": null,
     "emergency_max_loss_points": 100.0
@@ -207,12 +210,12 @@
       "direction": "BULLISH",
       "origin": 29028.5,
       "start_time": "2026-08-26T04:33:00+03:00",
-      "candle_count": 63,
-      "execution_0_100": 51,
-      "execution_previous_0_100": 46,
-      "execution_arrow": "↑",
-      "exhaustion_0_100": 41,
-      "exhaustion_previous_0_100": 36,
+      "candle_count": 64,
+      "execution_0_100": 36,
+      "execution_previous_0_100": 47,
+      "execution_arrow": "↓",
+      "exhaustion_0_100": 57,
+      "exhaustion_previous_0_100": 41,
       "exhaustion_arrow": "↑"
     },
     "existing": {
@@ -220,12 +223,12 @@
       "direction": "BULLISH",
       "origin": 29048.5,
       "start_time": "2026-08-26T04:54:00+03:00",
-      "candle_count": 56,
-      "execution_0_100": 51,
-      "execution_previous_0_100": 46,
-      "execution_arrow": "↑",
-      "exhaustion_0_100": 41,
-      "exhaustion_previous_0_100": 36,
+      "candle_count": 57,
+      "execution_0_100": 36,
+      "execution_previous_0_100": 47,
+      "execution_arrow": "↓",
+      "exhaustion_0_100": 57,
+      "exhaustion_previous_0_100": 41,
       "exhaustion_arrow": "↑",
       "source": "STRUCTURAL_TREND_PERSISTENT",
       "recognition_time": "2026-08-26T05:09:00+03:00"
@@ -235,12 +238,12 @@
       "direction": "BULLISH",
       "origin": 29028.5,
       "start_time": "2026-08-26T04:33:00+03:00",
-      "candle_count": 63,
-      "execution_0_100": 51,
-      "execution_previous_0_100": 46,
-      "execution_arrow": "↑",
-      "exhaustion_0_100": 41,
-      "exhaustion_previous_0_100": 36,
+      "candle_count": 64,
+      "execution_0_100": 36,
+      "execution_previous_0_100": 47,
+      "execution_arrow": "↓",
+      "exhaustion_0_100": 57,
+      "exhaustion_previous_0_100": 41,
       "exhaustion_arrow": "↑"
     },
     "current": {
@@ -248,12 +251,12 @@
       "direction": "BULLISH",
       "origin": 29048.5,
       "start_time": "2026-08-26T04:54:00+03:00",
-      "candle_count": 56,
-      "execution_0_100": 51,
-      "execution_previous_0_100": 46,
-      "execution_arrow": "↑",
-      "exhaustion_0_100": 41,
-      "exhaustion_previous_0_100": 36,
+      "candle_count": 57,
+      "execution_0_100": 36,
+      "execution_previous_0_100": 47,
+      "execution_arrow": "↓",
+      "exhaustion_0_100": 57,
+      "exhaustion_previous_0_100": 41,
       "exhaustion_arrow": "↑",
       "source": "STRUCTURAL_TREND_PERSISTENT",
       "recognition_time": "2026-08-26T05:09:00+03:00"
@@ -413,8 +416,8 @@
       "origin": 29048.5,
       "start_time": "2026-08-26T04:54:00+03:00",
       "recognition_time": "2026-08-26T05:09:00+03:00",
-      "current_price": 29191.3,
-      "points": 142.79999999999927,
+      "current_price": 29182.3,
+      "points": 133.79999999999927,
       "completed": false,
       "source": "STRUCTURAL_TREND_PERSISTENT",
       "legacy_latest_pivot_leg": "BEARISH",
@@ -450,7 +453,7 @@
         "structure_trend": "BULLISH",
         "current_leg": "BULLISH",
         "current_origin": 29048.5,
-        "current_points": 142.79999999999927,
+        "current_points": 133.79999999999927,
         "current_start_time": "2026-08-26T04:54:00+03:00",
         "current_recognition_time": "2026-08-26T05:09:00+03:00",
         "current_source": "STRUCTURAL_TREND_PERSISTENT",
@@ -461,56 +464,56 @@
           {
             "tf": "M3",
             "ma": "AMA8",
-            "value": 29197.39611871489,
-            "distance_from_m3_price": 6.096118714889599,
+            "value": 29193.316442406536,
+            "distance_from_m3_price": 11.016442406536953,
             "side": "ABOVE",
             "slope": "FALLING",
-            "slope_value": -0.2933352564226273
+            "slope_value": -1.6551109499620604
           },
           {
             "tf": "M3",
             "ma": "SMA10",
-            "value": 29200.180000000004,
-            "distance_from_m3_price": 8.880000000004657,
+            "value": 29197.930000000004,
+            "distance_from_m3_price": 15.630000000004657,
             "side": "ABOVE",
             "slope": "FALLING",
-            "slope_value": -0.6299999999985934
+            "slope_value": -1.166666666665454
           },
           {
             "tf": "M3",
             "ma": "EMA20",
-            "value": 29191.7526157175,
-            "distance_from_m3_price": 0.45261571750234,
+            "value": 29190.85236660155,
+            "distance_from_m3_price": 8.552366601550602,
             "side": "ABOVE",
-            "slope": "RISING",
-            "slope_value": 0.2991503643158164
+            "slope": "FALLING",
+            "slope_value": -0.25632427355473436
           },
           {
             "tf": "M3",
             "ma": "EMA30",
-            "value": 29182.64142922076,
-            "distance_from_m3_price": -8.658570779240108,
-            "side": "BELOW",
+            "value": 29182.619401529097,
+            "distance_from_m3_price": 0.3194015290973766,
+            "side": "ABOVE",
             "slope": "RISING",
-            "slope_value": 0.8680470615120915
+            "slope_value": 0.4550547779726912
           },
           {
             "tf": "M3",
             "ma": "EMA50",
-            "value": 29166.86855682989,
-            "distance_from_m3_price": -24.43144317010956,
+            "value": 29167.473711429353,
+            "distance_from_m3_price": -14.826288570646284,
             "side": "BELOW",
             "slope": "RISING",
-            "slope_value": 1.173012691531767
+            "slope_value": 0.9100187312457516
           },
           {
             "tf": "M3",
             "ma": "EMA232",
-            "value": 29159.56823169425,
-            "distance_from_m3_price": -31.73176830574812,
+            "value": 29159.54392801616,
+            "distance_from_m3_price": -22.75607198384023,
             "side": "BELOW",
             "slope": "RISING",
-            "slope_value": 0.3054572379793778
+            "slope_value": 0.2572551534055189
           }
         ]
       },
@@ -540,7 +543,7 @@
             "tf": "H1",
             "ma": "AMA8",
             "value": 29172.223691734478,
-            "distance_from_m3_price": -19.07630826552122,
+            "distance_from_m3_price": -10.07630826552122,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -6.318525753629122
@@ -549,7 +552,7 @@
             "tf": "H1",
             "ma": "SMA10",
             "value": 29156.25,
-            "distance_from_m3_price": -35.04999999999927,
+            "distance_from_m3_price": -26.049999999999272,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -4.433333333333091
@@ -558,7 +561,7 @@
             "tf": "H1",
             "ma": "EMA20",
             "value": 29163.022021368757,
-            "distance_from_m3_price": -28.27797863124215,
+            "distance_from_m3_price": -19.27797863124215,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -2.3770566811375224
@@ -567,7 +570,7 @@
             "tf": "H1",
             "ma": "EMA30",
             "value": 29165.47924834238,
-            "distance_from_m3_price": -25.82075165761853,
+            "distance_from_m3_price": -16.82075165761853,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -1.7916369339376008
@@ -576,8 +579,8 @@
             "tf": "H1",
             "ma": "EMA50",
             "value": 29183.37475202277,
-            "distance_from_m3_price": -7.925247977229446,
-            "side": "BELOW",
+            "distance_from_m3_price": 1.0747520227705536,
+            "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -1.8414941332424253
           },
@@ -585,7 +588,7 @@
             "tf": "H1",
             "ma": "EMA232",
             "value": 29386.829713743475,
-            "distance_from_m3_price": 195.52971374347544,
+            "distance_from_m3_price": 204.52971374347544,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -2.1671552939951653
@@ -618,7 +621,7 @@
             "tf": "H4",
             "ma": "AMA8",
             "value": 29164.153472895207,
-            "distance_from_m3_price": -27.146527104792767,
+            "distance_from_m3_price": -18.146527104792767,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 0.4146806643596695
@@ -627,7 +630,7 @@
             "tf": "H4",
             "ma": "SMA10",
             "value": 29139.940000000002,
-            "distance_from_m3_price": -51.359999999996944,
+            "distance_from_m3_price": -42.359999999996944,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -7.3866666666654055
@@ -636,7 +639,7 @@
             "tf": "H4",
             "ma": "EMA20",
             "value": 29233.44475420339,
-            "distance_from_m3_price": 42.14475420338931,
+            "distance_from_m3_price": 51.14475420338931,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -10.1609320890578
@@ -645,7 +648,7 @@
             "tf": "H4",
             "ma": "EMA30",
             "value": 29304.597879028184,
-            "distance_from_m3_price": 113.29787902818498,
+            "distance_from_m3_price": 122.29787902818498,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -11.547185787448447
@@ -654,7 +657,7 @@
             "tf": "H4",
             "ma": "EMA50",
             "value": 29384.560068228235,
-            "distance_from_m3_price": 193.26006822823547,
+            "distance_from_m3_price": 202.26006822823547,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -9.986035703830566
@@ -663,7 +666,7 @@
             "tf": "H4",
             "ma": "EMA232",
             "value": 29352.671722449315,
-            "distance_from_m3_price": 161.3717224493157,
+            "distance_from_m3_price": 170.3717224493157,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -1.758783661225607
@@ -696,7 +699,7 @@
             "tf": "D1",
             "ma": "AMA8",
             "value": 29500.880424255058,
-            "distance_from_m3_price": 309.58042425505846,
+            "distance_from_m3_price": 318.58042425505846,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -63.93520816545546
@@ -705,7 +708,7 @@
             "tf": "D1",
             "ma": "SMA10",
             "value": 29557.340000000004,
-            "distance_from_m3_price": 366.0400000000045,
+            "distance_from_m3_price": 375.0400000000045,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -45.15999999999743
@@ -714,7 +717,7 @@
             "tf": "D1",
             "ma": "EMA20",
             "value": 29322.291684396983,
-            "distance_from_m3_price": 130.99168439698406,
+            "distance_from_m3_price": 139.99168439698406,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -16.09276502510329
@@ -723,7 +726,7 @@
             "tf": "D1",
             "ma": "EMA30",
             "value": 29280.001320464475,
-            "distance_from_m3_price": 88.70132046447543,
+            "distance_from_m3_price": 97.70132046447543,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -6.995658331610078
@@ -732,7 +735,7 @@
             "tf": "D1",
             "ma": "EMA50",
             "value": 29156.743559622817,
-            "distance_from_m3_price": -34.5564403771823,
+            "distance_from_m3_price": -25.556440377182298,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 1.2409594600285345
@@ -741,7 +744,7 @@
             "tf": "D1",
             "ma": "EMA232",
             "value": 27292.38770890592,
-            "distance_from_m3_price": -1898.9122910940787,
+            "distance_from_m3_price": -1889.9122910940787,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 16.544181503457366
@@ -788,14 +791,23 @@
       }
     ],
     "ma_chain": {
-      "reference_price": 29191.3,
+      "reference_price": 29182.3,
       "m3_parent_direction": "BULLISH",
       "nearest_above": [
+        {
+          "tf": "H1",
+          "ma": "EMA50",
+          "value": 29183.37475202277,
+          "distance_from_m3_price": 1.0747520227705536,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -1.8414941332424253
+        },
         {
           "tf": "H4",
           "ma": "EMA20",
           "value": 29233.44475420339,
-          "distance_from_m3_price": 42.14475420338931,
+          "distance_from_m3_price": 51.14475420338931,
           "side": "ABOVE",
           "slope": "FALLING",
           "slope_value": -10.1609320890578
@@ -804,7 +816,7 @@
           "tf": "D1",
           "ma": "EMA30",
           "value": 29280.001320464475,
-          "distance_from_m3_price": 88.70132046447543,
+          "distance_from_m3_price": 97.70132046447543,
           "side": "ABOVE",
           "slope": "FALLING",
           "slope_value": -6.995658331610078
@@ -813,7 +825,7 @@
           "tf": "H4",
           "ma": "EMA30",
           "value": 29304.597879028184,
-          "distance_from_m3_price": 113.29787902818498,
+          "distance_from_m3_price": 122.29787902818498,
           "side": "ABOVE",
           "slope": "FALLING",
           "slope_value": -11.547185787448447
@@ -822,7 +834,7 @@
           "tf": "D1",
           "ma": "EMA20",
           "value": 29322.291684396983,
-          "distance_from_m3_price": 130.99168439698406,
+          "distance_from_m3_price": 139.99168439698406,
           "side": "ABOVE",
           "slope": "FALLING",
           "slope_value": -16.09276502510329
@@ -831,36 +843,18 @@
           "tf": "H4",
           "ma": "EMA232",
           "value": 29352.671722449315,
-          "distance_from_m3_price": 161.3717224493157,
+          "distance_from_m3_price": 170.3717224493157,
           "side": "ABOVE",
           "slope": "FALLING",
           "slope_value": -1.758783661225607
-        },
-        {
-          "tf": "H4",
-          "ma": "EMA50",
-          "value": 29384.560068228235,
-          "distance_from_m3_price": 193.26006822823547,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -9.986035703830566
         }
       ],
       "nearest_below": [
         {
           "tf": "H1",
-          "ma": "EMA50",
-          "value": 29183.37475202277,
-          "distance_from_m3_price": -7.925247977229446,
-          "side": "BELOW",
-          "slope": "FALLING",
-          "slope_value": -1.8414941332424253
-        },
-        {
-          "tf": "H1",
           "ma": "AMA8",
           "value": 29172.223691734478,
-          "distance_from_m3_price": -19.07630826552122,
+          "distance_from_m3_price": -10.07630826552122,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -6.318525753629122
@@ -869,7 +863,7 @@
           "tf": "H1",
           "ma": "EMA30",
           "value": 29165.47924834238,
-          "distance_from_m3_price": -25.82075165761853,
+          "distance_from_m3_price": -16.82075165761853,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -1.7916369339376008
@@ -878,7 +872,7 @@
           "tf": "H4",
           "ma": "AMA8",
           "value": 29164.153472895207,
-          "distance_from_m3_price": -27.146527104792767,
+          "distance_from_m3_price": -18.146527104792767,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 0.4146806643596695
@@ -887,7 +881,7 @@
           "tf": "H1",
           "ma": "EMA20",
           "value": 29163.022021368757,
-          "distance_from_m3_price": -28.27797863124215,
+          "distance_from_m3_price": -19.27797863124215,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -2.3770566811375224
@@ -896,137 +890,7 @@
           "tf": "D1",
           "ma": "EMA50",
           "value": 29156.743559622817,
-          "distance_from_m3_price": -34.5564403771823,
-          "side": "BELOW",
-          "slope": "RISING",
-          "slope_value": 1.2409594600285345
-        }
-      ],
-      "ahead_of_parent": [
-        {
-          "tf": "H4",
-          "ma": "EMA20",
-          "value": 29233.44475420339,
-          "distance_from_m3_price": 42.14475420338931,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -10.1609320890578
-        },
-        {
-          "tf": "D1",
-          "ma": "EMA30",
-          "value": 29280.001320464475,
-          "distance_from_m3_price": 88.70132046447543,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -6.995658331610078
-        },
-        {
-          "tf": "H4",
-          "ma": "EMA30",
-          "value": 29304.597879028184,
-          "distance_from_m3_price": 113.29787902818498,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -11.547185787448447
-        },
-        {
-          "tf": "D1",
-          "ma": "EMA20",
-          "value": 29322.291684396983,
-          "distance_from_m3_price": 130.99168439698406,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -16.09276502510329
-        },
-        {
-          "tf": "H4",
-          "ma": "EMA232",
-          "value": 29352.671722449315,
-          "distance_from_m3_price": 161.3717224493157,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -1.758783661225607
-        },
-        {
-          "tf": "H4",
-          "ma": "EMA50",
-          "value": 29384.560068228235,
-          "distance_from_m3_price": 193.26006822823547,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -9.986035703830566
-        },
-        {
-          "tf": "H1",
-          "ma": "EMA232",
-          "value": 29386.829713743475,
-          "distance_from_m3_price": 195.52971374347544,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -2.1671552939951653
-        },
-        {
-          "tf": "D1",
-          "ma": "AMA8",
-          "value": 29500.880424255058,
-          "distance_from_m3_price": 309.58042425505846,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -63.93520816545546
-        }
-      ],
-      "behind_parent": [
-        {
-          "tf": "H1",
-          "ma": "EMA50",
-          "value": 29183.37475202277,
-          "distance_from_m3_price": -7.925247977229446,
-          "side": "BELOW",
-          "slope": "FALLING",
-          "slope_value": -1.8414941332424253
-        },
-        {
-          "tf": "H1",
-          "ma": "AMA8",
-          "value": 29172.223691734478,
-          "distance_from_m3_price": -19.07630826552122,
-          "side": "BELOW",
-          "slope": "FALLING",
-          "slope_value": -6.318525753629122
-        },
-        {
-          "tf": "H1",
-          "ma": "EMA30",
-          "value": 29165.47924834238,
-          "distance_from_m3_price": -25.82075165761853,
-          "side": "BELOW",
-          "slope": "FALLING",
-          "slope_value": -1.7916369339376008
-        },
-        {
-          "tf": "H4",
-          "ma": "AMA8",
-          "value": 29164.153472895207,
-          "distance_from_m3_price": -27.146527104792767,
-          "side": "BELOW",
-          "slope": "RISING",
-          "slope_value": 0.4146806643596695
-        },
-        {
-          "tf": "H1",
-          "ma": "EMA20",
-          "value": 29163.022021368757,
-          "distance_from_m3_price": -28.27797863124215,
-          "side": "BELOW",
-          "slope": "FALLING",
-          "slope_value": -2.3770566811375224
-        },
-        {
-          "tf": "D1",
-          "ma": "EMA50",
-          "value": 29156.743559622817,
-          "distance_from_m3_price": -34.5564403771823,
+          "distance_from_m3_price": -25.556440377182298,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 1.2409594600285345
@@ -1035,7 +899,137 @@
           "tf": "H1",
           "ma": "SMA10",
           "value": 29156.25,
-          "distance_from_m3_price": -35.04999999999927,
+          "distance_from_m3_price": -26.049999999999272,
+          "side": "BELOW",
+          "slope": "FALLING",
+          "slope_value": -4.433333333333091
+        }
+      ],
+      "ahead_of_parent": [
+        {
+          "tf": "H1",
+          "ma": "EMA50",
+          "value": 29183.37475202277,
+          "distance_from_m3_price": 1.0747520227705536,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -1.8414941332424253
+        },
+        {
+          "tf": "H4",
+          "ma": "EMA20",
+          "value": 29233.44475420339,
+          "distance_from_m3_price": 51.14475420338931,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -10.1609320890578
+        },
+        {
+          "tf": "D1",
+          "ma": "EMA30",
+          "value": 29280.001320464475,
+          "distance_from_m3_price": 97.70132046447543,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -6.995658331610078
+        },
+        {
+          "tf": "H4",
+          "ma": "EMA30",
+          "value": 29304.597879028184,
+          "distance_from_m3_price": 122.29787902818498,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -11.547185787448447
+        },
+        {
+          "tf": "D1",
+          "ma": "EMA20",
+          "value": 29322.291684396983,
+          "distance_from_m3_price": 139.99168439698406,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -16.09276502510329
+        },
+        {
+          "tf": "H4",
+          "ma": "EMA232",
+          "value": 29352.671722449315,
+          "distance_from_m3_price": 170.3717224493157,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -1.758783661225607
+        },
+        {
+          "tf": "H4",
+          "ma": "EMA50",
+          "value": 29384.560068228235,
+          "distance_from_m3_price": 202.26006822823547,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -9.986035703830566
+        },
+        {
+          "tf": "H1",
+          "ma": "EMA232",
+          "value": 29386.829713743475,
+          "distance_from_m3_price": 204.52971374347544,
+          "side": "ABOVE",
+          "slope": "FALLING",
+          "slope_value": -2.1671552939951653
+        }
+      ],
+      "behind_parent": [
+        {
+          "tf": "H1",
+          "ma": "AMA8",
+          "value": 29172.223691734478,
+          "distance_from_m3_price": -10.07630826552122,
+          "side": "BELOW",
+          "slope": "FALLING",
+          "slope_value": -6.318525753629122
+        },
+        {
+          "tf": "H1",
+          "ma": "EMA30",
+          "value": 29165.47924834238,
+          "distance_from_m3_price": -16.82075165761853,
+          "side": "BELOW",
+          "slope": "FALLING",
+          "slope_value": -1.7916369339376008
+        },
+        {
+          "tf": "H4",
+          "ma": "AMA8",
+          "value": 29164.153472895207,
+          "distance_from_m3_price": -18.146527104792767,
+          "side": "BELOW",
+          "slope": "RISING",
+          "slope_value": 0.4146806643596695
+        },
+        {
+          "tf": "H1",
+          "ma": "EMA20",
+          "value": 29163.022021368757,
+          "distance_from_m3_price": -19.27797863124215,
+          "side": "BELOW",
+          "slope": "FALLING",
+          "slope_value": -2.3770566811375224
+        },
+        {
+          "tf": "D1",
+          "ma": "EMA50",
+          "value": 29156.743559622817,
+          "distance_from_m3_price": -25.556440377182298,
+          "side": "BELOW",
+          "slope": "RISING",
+          "slope_value": 1.2409594600285345
+        },
+        {
+          "tf": "H1",
+          "ma": "SMA10",
+          "value": 29156.25,
+          "distance_from_m3_price": -26.049999999999272,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -4.433333333333091
@@ -1044,10 +1038,19 @@
           "tf": "H4",
           "ma": "SMA10",
           "value": 29139.940000000002,
-          "distance_from_m3_price": -51.359999999996944,
+          "distance_from_m3_price": -42.359999999996944,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -7.3866666666654055
+        },
+        {
+          "tf": "D1",
+          "ma": "EMA232",
+          "value": 27292.38770890592,
+          "distance_from_m3_price": -1889.9122910940787,
+          "side": "BELOW",
+          "slope": "RISING",
+          "slope_value": 16.544181503457366
         }
       ],
       "note": "Cross-TF MA chain is spatial/context only. No MA cluster threshold or trading filter is applied."
@@ -1056,7 +1059,7 @@
   },
   "market_event_filters": {
     "nasdaq_calendar": {
-      "ny_time": "2026-08-26T00:39:00-04:00",
+      "ny_time": "2026-08-26T00:42:00-04:00",
       "cash_open_et": "2026-08-26T09:30:00-04:00",
       "cash_open_sofia": "2026-08-26T16:30:00+03:00",
       "cash_close_et": "2026-08-26T16:00:00-04:00",
@@ -1184,69 +1187,62 @@
   "analysis_basis": {
     "strategy_timeframe": "M3",
     "strategy_uses_closed_m3_only": true,
-    "closed_m3_candle_time_sofia": "2026-08-26T07:39:00+03:00",
-    "closed_m3_price": 29191.3,
+    "closed_m3_candle_time_sofia": "2026-08-26T07:42:00+03:00",
+    "closed_m3_price": 29182.3,
     "live_overlay_interval_seconds": 5,
     "note": "market/scores/python_decision are from the latest CLOSED M3; top-level price is current MT5 BID (same as chart); live.* is current/intrabar."
   },
   "chart": {
-    "price_bid": 29182.8,
-    "ask": 29183.8,
+    "price_bid": 29178.3,
+    "ask": 29179.3,
     "spread_points": 1.0,
     "M3": {
-      "time_sofia": "2026-08-26T07:42:00+03:00",
-      "open": 29191.5,
-      "high": 29191.7,
-      "low": 29180.4,
-      "close": 29182.8
+      "time_sofia": "2026-08-26T07:45:00+03:00",
+      "open": 29183.0,
+      "high": 29183.7,
+      "low": 29177.3,
+      "close": 29178.3
     },
     "H1": {
       "time_sofia": "2026-08-26T07:00:00+03:00",
       "open": 29197.2,
       "high": 29212.9,
-      "low": 29180.4,
-      "close": 29182.8
+      "low": 29177.3,
+      "close": 29178.3
     },
     "H4": {
       "time_sofia": "2026-08-26T04:00:00+03:00",
       "open": 29044.5,
       "high": 29212.9,
       "low": 29028.5,
-      "close": 29182.8
+      "close": 29178.3
     },
     "D1": {
       "time_sofia": "2026-08-26T00:00:00+03:00",
       "open": 29227.7,
       "high": 29238.7,
       "low": 29028.5,
-      "close": 29182.8
+      "close": 29178.3
     },
-    "updated_at_sofia": "2026-08-26T07:44:53.737724+03:00",
+    "updated_at_sofia": "2026-08-26T07:45:11.195179+03:00",
     "note": "Exact MT5 chart-view layer: BID price + currently forming bars."
   },
   "live": {
     "snapshot_type": "INTRABAR_5S",
-    "received_at_sofia": "2026-08-26T07:44:53.737724+03:00",
-    "bid": 29182.8,
-    "ask": 29183.8,
-    "mid": 29183.3,
-    "chart_price": 29182.8,
+    "received_at_sofia": "2026-08-26T07:45:11.195179+03:00",
+    "bid": 29178.3,
+    "ask": 29179.3,
+    "mid": 29178.8,
+    "chart_price": 29178.3,
     "spread_points": 1.0,
     "M3_forming": {
-      "time_sofia": "2026-08-26T07:42:00+03:00",
-      "open": 29191.5,
-      "high": 29191.7,
-      "low": 29180.4,
-      "close": 29182.8
+      "time_sofia": "2026-08-26T07:45:00+03:00",
+      "open": 29183.0,
+      "high": 29183.7,
+      "low": 29177.3,
+      "close": 29178.3
     },
     "M3_chart_recent": [
-      {
-        "time_sofia": "2026-08-26T07:30:00+03:00",
-        "open": 29203.7,
-        "high": 29206.9,
-        "low": 29200.2,
-        "close": 29201.2
-      },
       {
         "time_sofia": "2026-08-26T07:33:00+03:00",
         "open": 29201.3,
@@ -1273,31 +1269,38 @@
         "open": 29191.5,
         "high": 29191.7,
         "low": 29180.4,
-        "close": 29182.8
+        "close": 29182.3
+      },
+      {
+        "time_sofia": "2026-08-26T07:45:00+03:00",
+        "open": 29183.0,
+        "high": 29183.7,
+        "low": 29177.3,
+        "close": 29178.3
       }
     ],
     "H1_forming": {
       "time_sofia": "2026-08-26T07:00:00+03:00",
       "open": 29197.2,
       "high": 29212.9,
-      "low": 29180.4,
-      "close": 29182.8
+      "low": 29177.3,
+      "close": 29178.3
     },
     "H4_forming": {
       "time_sofia": "2026-08-26T04:00:00+03:00",
       "open": 29044.5,
       "high": 29212.9,
       "low": 29028.5,
-      "close": 29182.8
+      "close": 29178.3
     },
     "D1_forming": {
       "time_sofia": "2026-08-26T00:00:00+03:00",
       "open": 29227.7,
       "high": 29238.7,
       "low": 29028.5,
-      "close": 29182.8
+      "close": 29178.3
     },
-    "M3_intrabar_ama": 29193.4915,
-    "M3_intrabar_distance_to_ama": -10.1915
+    "M3_intrabar_ama": 29188.4944,
+    "M3_intrabar_distance_to_ama": -9.6944
   }
 }
