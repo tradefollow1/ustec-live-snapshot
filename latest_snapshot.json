@@ -1,5 +1,5 @@
 {
-  "schema_version": "USTEC_SNAPSHOT_1.6",
+  "schema_version": "USTEC_SNAPSHOT_1.7_LIVE",
   "engine_build": "USTEC-LIVE-2026.08.25-v6.5G-STABLE-CURRENT-LEG-ALERTS",
   "instrument": "USTEC",
   "time_system": {
@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-26T08:18:09.899871+03:00",
+  "generated_at_sofia": "2026-08-26T08:18:15.463409+03:00",
   "candle_time_sofia": "2026-08-26T08:15:00+03:00",
-  "price": 29163.8,
+  "price": 29165.4,
   "market": {
     "overall_sentiment": "BEARISH",
     "overall_sentiment_score": -0.444,
@@ -203,8 +203,8 @@
     "lock_active": false,
     "source": "ForexFactory LIVE",
     "phase": "CLEAR",
-    "minutes_to_event": 615,
-    "status_line": "NEWS: Core PCE Price Index m/m | USD HIGH | 26.08 18:30 Sofia | T-615m",
+    "minutes_to_event": 612,
+    "status_line": "NEWS: Core PCE Price Index m/m | USD HIGH | 26.08 18:30 Sofia | T-612m",
     "next_event": {
       "title": "Core PCE Price Index m/m",
       "currency": "USD",
@@ -969,7 +969,208 @@
   "position_management_actions": [],
   "ai_second_opinion": {
     "status": "DISABLED",
-    "model": "gpt-5.6-terra"
+    "reason": "Disabled to avoid OpenAI API credit usage; report AI runs in ChatGPT."
   },
-  "ai_model": "gpt-5.6-terra"
+  "ai_model": "gpt-5.6-terra",
+  "new_leg_alerts": [
+    {
+      "tf": "M3",
+      "role": "CHILD",
+      "direction": "BEARISH",
+      "start_time": "2026-08-26T08:09:00+03:00",
+      "confirmed_time": "2026-08-26T08:18:00+03:00",
+      "start_price": 29191.3,
+      "ama_value": 29164.013226419,
+      "ama_side": "ABOVE",
+      "ama_distance": 27.28677358099958,
+      "start_basis": "M3 open"
+    }
+  ],
+  "telegram_delivery": {
+    "recent": [
+      {
+        "time_sofia": "2026-08-26T07:06:10.823061+03:00",
+        "category": "STATUS",
+        "success": true,
+        "error": "",
+        "text": "<b>USTEC POSITION STATUS @ 07:06</b> | затворен M3 07:03–07:06\n🟢 <b>Current M3: BULLISH</b>\n🟢 Current M3 BULLISH продължава Parent <b>BULLISH</b>.\n🟢 <b>Parent M3: BULLISH</b> (бичи / възходящ) — активният по-голям M3 тренд.\nParent: начало <b>29028.5</b> @ 26.08 04:33 | достигнато <b>29208.0</b> | <b>179.5 pts</b> | PULLBACK\nЗавършени Child legs в текущия Parent: <b>11</b>.\n🔴 Child 8: <b>BEARISH</b> | 29162.4 → 29147.5 | 14.9 pts\n🟢 Child 9: <b>BULLISH</b> | 29147.5 → 29165.5 | 18.0 pts\n🔴 Child 10: <b>BEARISH</b> | 29165.5 → 29137.3 | 28.2 pts\n🟢 Child 11: <b>BULLISH</b> | 29137.3 → 29206.9 | 69.6 pts\nCurrent M3: начало <b>29048.5</b> @ 26.08 04:54 | развитие <b>156.8 pts</b>\nЛокална pivot структура: <b>TRANSITION</b> (в преход).\n\n🧭 <b>Multi-TF контекст</b>\nM3 Parent <b>BULLISH</b> спрямо H1 Current <b>BEARISH</b>: в обратна посока / корекция.\nH1 Current <b>BEARISH</b> спрямо H4 Current <b>BEARISH</b>: в същата посока.\nH4 Current <b>BEARISH</b> спрямо D1 Current <b>BEARISH</b>: в същата посока.\nСобствена структура: H1 Current BEARISH продължава H1 structure BEARISH | H4 Current BEARISH продължава H4 structure BEARISH | D1 Current BEARISH е в преход спрямо D1 structure TRANSITION\nСтруктурен контекст: M3 Parent BULLISH е срещу H1/H4 Current.\nHTF MA пред M3 Parent <b>BULLISH</b> | реф. затворен M3 close 29205.3: H4 EMA20 29233.4 → D1 EMA30 29280.0 → H4 EMA30 29304.6 → D1 EMA20 29322.3\n\nNEWS: Core PCE Price Index m/m | USD HIGH | 26.08 18:30 Sofia | T-687m\n\n⚪ <b>Няма активна отворена позиция</b>"
+      },
+      {
+        "time_sofia": "2026-08-26T07:18:12.841101+03:00",
+        "category": "AMA_CROSS",
+        "success": true,
+        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
+        "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29197.5 @ 07:15</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29197.5</b>\nDistance to M3 AMA: <b>-0.0 pts</b>\nM3 AMA slope: <b>FLAT →</b>\nAMA role: resistance\nCandle: 07:15–07:18 Sofia\nConfirmed: 07:18:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~12s"
+      },
+      {
+        "time_sofia": "2026-08-26T07:21:11.589110+03:00",
+        "category": "AMA_CROSS",
+        "success": true,
+        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
+        "text": "🟢 <b>PRICE CROSSED AMA ↑</b>\n<b>USTEC: 29203.7 @ 07:18</b>\nPrice crossed AMA from BELOW to ABOVE\nM3 AMA: <b>29197.7</b>\nDistance to M3 AMA: <b>+6.0 pts</b>\nM3 AMA slope: <b>FLAT →</b>\nAMA role: support\nCandle: 07:18–07:21 Sofia\nConfirmed: 07:21:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~11s"
+      },
+      {
+        "time_sofia": "2026-08-26T07:39:07.770437+03:00",
+        "category": "AMA_CROSS",
+        "success": true,
+        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
+        "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29193.5 @ 07:36</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29197.8</b>\nDistance to M3 AMA: <b>-4.3 pts</b>\nM3 AMA slope: <b>FLAT →</b>\nAMA role: resistance\nCandle: 07:36–07:39 Sofia\nConfirmed: 07:39:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~7s"
+      },
+      {
+        "time_sofia": "2026-08-26T07:48:08.874385+03:00",
+        "category": "NEW_LEG_M3",
+        "success": true,
+        "error": "",
+        "text": "🔴 <b>M3 | NEW PARENT BEAR LEG</b>\nStart: <b>07:24</b> (M3 open) @ <b>29212.9</b>\nConfirmed: <b>07:48</b> (closed M3)\nStart vs AMA8(M3): <b>14.7 pt ABOVE AMA</b> | AMA <b>29198.2</b>"
+      },
+      {
+        "time_sofia": "2026-08-26T08:03:12.461234+03:00",
+        "category": "AMA_CROSS",
+        "success": true,
+        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
+        "text": "🟢 <b>PRICE CROSSED AMA ↑</b>\n<b>USTEC: 29188.5 @ 08:00</b>\nPrice crossed AMA from BELOW to ABOVE\nM3 AMA: <b>29162.4</b>\nDistance to M3 AMA: <b>+26.1 pts</b>\nM3 AMA slope: <b>FALLING ↓</b>\nAMA role: neutral\nCandle: 08:00–08:03 Sofia\nConfirmed: 08:03:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~12s"
+      },
+      {
+        "time_sofia": "2026-08-26T08:18:10.132484+03:00",
+        "category": "NEW_LEG_M3",
+        "success": true,
+        "error": "",
+        "text": "🔴 <b>M3 | NEW CHILD BEAR LEG</b>\nStart: <b>08:09</b> (M3 open) @ <b>29191.3</b>\nConfirmed: <b>08:18</b> (closed M3)\nStart vs AMA8(M3): <b>27.3 pt ABOVE AMA</b> | AMA <b>29164.0</b>"
+      },
+      {
+        "time_sofia": "2026-08-26T08:18:10.137490+03:00",
+        "category": "AMA_CROSS",
+        "success": true,
+        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
+        "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29163.8 @ 08:15</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29164.2</b>\nDistance to M3 AMA: <b>-0.4 pts</b>\nM3 AMA slope: <b>FLAT →</b>\nAMA role: resistance\nCandle: 08:15–08:18 Sofia\nConfirmed: 08:18:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~10s"
+      }
+    ],
+    "note": "Exact payloads; no Telegram credentials are stored."
+  },
+  "positions_live": {
+    "state": "FLAT",
+    "long_volume": 0.0,
+    "short_volume": 0.0,
+    "net_volume": 0.0,
+    "tickets": []
+  },
+  "analysis_basis": {
+    "strategy_timeframe": "M3",
+    "strategy_uses_closed_m3_only": true,
+    "closed_m3_candle_time_sofia": "2026-08-26T08:15:00+03:00",
+    "closed_m3_price": 29163.8,
+    "live_overlay_interval_seconds": 5,
+    "note": "market/scores/python_decision are from the latest CLOSED M3; top-level price is current MT5 BID (same as chart); live.* is current/intrabar."
+  },
+  "chart": {
+    "price_bid": 29165.4,
+    "ask": 29166.4,
+    "spread_points": 1.0,
+    "M3": {
+      "time_sofia": "2026-08-26T08:18:00+03:00",
+      "open": 29163.7,
+      "high": 29167.5,
+      "low": 29163.7,
+      "close": 29165.4
+    },
+    "H1": {
+      "time_sofia": "2026-08-26T08:00:00+03:00",
+      "open": 29160.4,
+      "high": 29191.3,
+      "low": 29158.8,
+      "close": 29165.4
+    },
+    "H4": {
+      "time_sofia": "2026-08-26T08:00:00+03:00",
+      "open": 29160.4,
+      "high": 29191.3,
+      "low": 29158.8,
+      "close": 29165.4
+    },
+    "D1": {
+      "time_sofia": "2026-08-26T00:00:00+03:00",
+      "open": 29227.7,
+      "high": 29238.7,
+      "low": 29028.5,
+      "close": 29165.4
+    },
+    "updated_at_sofia": "2026-08-26T08:18:15.463409+03:00",
+    "note": "Exact MT5 chart-view layer: BID price + currently forming bars."
+  },
+  "live": {
+    "snapshot_type": "INTRABAR_5S",
+    "received_at_sofia": "2026-08-26T08:18:15.463409+03:00",
+    "bid": 29165.4,
+    "ask": 29166.4,
+    "mid": 29165.9,
+    "chart_price": 29165.4,
+    "spread_points": 1.0,
+    "M3_forming": {
+      "time_sofia": "2026-08-26T08:18:00+03:00",
+      "open": 29163.7,
+      "high": 29167.5,
+      "low": 29163.7,
+      "close": 29165.4
+    },
+    "M3_chart_recent": [
+      {
+        "time_sofia": "2026-08-26T08:06:00+03:00",
+        "open": 29169.9,
+        "high": 29188.4,
+        "low": 29169.9,
+        "close": 29175.9
+      },
+      {
+        "time_sofia": "2026-08-26T08:09:00+03:00",
+        "open": 29176.0,
+        "high": 29191.3,
+        "low": 29175.5,
+        "close": 29179.5
+      },
+      {
+        "time_sofia": "2026-08-26T08:12:00+03:00",
+        "open": 29179.7,
+        "high": 29180.2,
+        "low": 29168.5,
+        "close": 29171.2
+      },
+      {
+        "time_sofia": "2026-08-26T08:15:00+03:00",
+        "open": 29171.3,
+        "high": 29173.5,
+        "low": 29162.3,
+        "close": 29163.8
+      },
+      {
+        "time_sofia": "2026-08-26T08:18:00+03:00",
+        "open": 29163.7,
+        "high": 29167.5,
+        "low": 29163.7,
+        "close": 29165.4
+      }
+    ],
+    "H1_forming": {
+      "time_sofia": "2026-08-26T08:00:00+03:00",
+      "open": 29160.4,
+      "high": 29191.3,
+      "low": 29158.8,
+      "close": 29165.4
+    },
+    "H4_forming": {
+      "time_sofia": "2026-08-26T08:00:00+03:00",
+      "open": 29160.4,
+      "high": 29191.3,
+      "low": 29158.8,
+      "close": 29165.4
+    },
+    "D1_forming": {
+      "time_sofia": "2026-08-26T00:00:00+03:00",
+      "open": 29227.7,
+      "high": 29238.7,
+      "low": 29028.5,
+      "close": 29165.4
+    },
+    "M3_intrabar_ama": 29164.2056,
+    "M3_intrabar_distance_to_ama": 1.6944
+  }
 }
