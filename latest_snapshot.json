@@ -1,5 +1,5 @@
 {
-  "schema_version": "USTEC_SNAPSHOT_1.6",
+  "schema_version": "USTEC_SNAPSHOT_1.7_LIVE",
   "engine_build": "USTEC-LIVE-2026.08.26-v6.5Q-CONSOLIDATION-FILTER",
   "instrument": "USTEC",
   "time_system": {
@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-27T06:21:11.073069+03:00",
+  "generated_at_sofia": "2026-08-27T06:21:17.652163+03:00",
   "candle_time_sofia": "2026-08-27T06:18:00+03:00",
-  "price": 29488.2,
+  "price": 29489.9,
   "market": {
     "overall_sentiment": "BULLISH",
     "overall_sentiment_score": 0.556,
@@ -217,8 +217,8 @@
     "lock_active": false,
     "source": "ForexFactory JSON explicit-offset",
     "phase": "CLEAR",
-    "minutes_to_event": 552,
-    "status_line": "NEWS: Unemployment Claims | USD MEDIUM | 27.08 15:30 Sofia | T-552m",
+    "minutes_to_event": 549,
+    "status_line": "NEWS: Unemployment Claims | USD MEDIUM | 27.08 15:30 Sofia | T-549m",
     "next_event": {
       "title": "Unemployment Claims",
       "currency": "USD",
@@ -4397,7 +4397,7 @@
   "position_management_actions": [],
   "ai_second_opinion": {
     "status": "DISABLED",
-    "model": "gpt-5.6-terra"
+    "reason": "Disabled to avoid OpenAI API credit usage; report AI runs in ChatGPT."
   },
   "ai_model": "gpt-5.6-terra",
   "telegram_market_chart": "C:\\USTEC2\\ustec_telegram_market_chart.png",
@@ -4462,5 +4462,156 @@
       }
     ],
     "note": "Exact payloads; no Telegram credentials are stored."
+  },
+  "positions_live": {
+    "state": "HEDGED",
+    "long_volume": 0.8,
+    "short_volume": 0.8,
+    "net_volume": 0.0,
+    "tickets": [
+      {
+        "ticket": 1885156124,
+        "side": "SELL",
+        "volume": 0.8,
+        "entry": 29149.4,
+        "current": 29490.9,
+        "profit": -234.4,
+        "sl": 0.0,
+        "tp": 0.0,
+        "magic": 0,
+        "comment": ""
+      },
+      {
+        "ticket": 1886966007,
+        "side": "BUY",
+        "volume": 0.8,
+        "entry": 29278.7,
+        "current": 29489.9,
+        "profit": 144.96,
+        "sl": 0.0,
+        "tp": 0.0,
+        "magic": 0,
+        "comment": ""
+      }
+    ]
+  },
+  "analysis_basis": {
+    "strategy_timeframe": "M3",
+    "strategy_uses_closed_m3_only": true,
+    "closed_m3_candle_time_sofia": "2026-08-27T06:18:00+03:00",
+    "closed_m3_price": 29488.2,
+    "live_overlay_interval_seconds": 5,
+    "note": "market/scores/python_decision are from the latest CLOSED M3; top-level price is current MT5 BID (same as chart); live.* is current/intrabar."
+  },
+  "chart": {
+    "price_bid": 29489.9,
+    "ask": 29490.9,
+    "spread_points": 1.0,
+    "M3": {
+      "time_sofia": "2026-08-27T06:21:00+03:00",
+      "open": 29488.4,
+      "high": 29490.9,
+      "low": 29488.4,
+      "close": 29489.9
+    },
+    "H1": {
+      "time_sofia": "2026-08-27T06:00:00+03:00",
+      "open": 29484.5,
+      "high": 29497.2,
+      "low": 29464.9,
+      "close": 29489.9
+    },
+    "H4": {
+      "time_sofia": "2026-08-27T04:00:00+03:00",
+      "open": 29378.7,
+      "high": 29497.2,
+      "low": 29367.8,
+      "close": 29489.9
+    },
+    "D1": {
+      "time_sofia": "2026-08-27T00:00:00+03:00",
+      "open": 29463.7,
+      "high": 29588.3,
+      "low": 29367.8,
+      "close": 29489.9
+    },
+    "updated_at_sofia": "2026-08-27T06:21:17.652163+03:00",
+    "note": "Exact MT5 chart-view layer: BID price + currently forming bars."
+  },
+  "live": {
+    "snapshot_type": "INTRABAR_5S",
+    "received_at_sofia": "2026-08-27T06:21:17.652163+03:00",
+    "bid": 29489.9,
+    "ask": 29490.9,
+    "mid": 29490.4,
+    "chart_price": 29489.9,
+    "spread_points": 1.0,
+    "M3_forming": {
+      "time_sofia": "2026-08-27T06:21:00+03:00",
+      "open": 29488.4,
+      "high": 29490.9,
+      "low": 29488.4,
+      "close": 29489.9
+    },
+    "M3_chart_recent": [
+      {
+        "time_sofia": "2026-08-27T06:09:00+03:00",
+        "open": 29472.2,
+        "high": 29476.0,
+        "low": 29469.5,
+        "close": 29471.7
+      },
+      {
+        "time_sofia": "2026-08-27T06:12:00+03:00",
+        "open": 29471.3,
+        "high": 29474.7,
+        "low": 29464.9,
+        "close": 29474.5
+      },
+      {
+        "time_sofia": "2026-08-27T06:15:00+03:00",
+        "open": 29476.7,
+        "high": 29483.5,
+        "low": 29476.2,
+        "close": 29481.7
+      },
+      {
+        "time_sofia": "2026-08-27T06:18:00+03:00",
+        "open": 29481.7,
+        "high": 29494.4,
+        "low": 29477.3,
+        "close": 29488.2
+      },
+      {
+        "time_sofia": "2026-08-27T06:21:00+03:00",
+        "open": 29488.4,
+        "high": 29490.9,
+        "low": 29488.4,
+        "close": 29489.9
+      }
+    ],
+    "H1_forming": {
+      "time_sofia": "2026-08-27T06:00:00+03:00",
+      "open": 29484.5,
+      "high": 29497.2,
+      "low": 29464.9,
+      "close": 29489.9
+    },
+    "H4_forming": {
+      "time_sofia": "2026-08-27T04:00:00+03:00",
+      "open": 29378.7,
+      "high": 29497.2,
+      "low": 29367.8,
+      "close": 29489.9
+    },
+    "D1_forming": {
+      "time_sofia": "2026-08-27T00:00:00+03:00",
+      "open": 29463.7,
+      "high": 29588.3,
+      "low": 29367.8,
+      "close": 29489.9
+    },
+    "M3_intrabar_ama": 29476.7201,
+    "M3_intrabar_distance_to_ama": 13.6799
   }
 }
