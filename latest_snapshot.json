@@ -1,5 +1,5 @@
 {
-  "schema_version": "USTEC_SNAPSHOT_1.7_LIVE",
+  "schema_version": "USTEC_SNAPSHOT_1.6",
   "engine_build": "USTEC-LIVE-2026.08.26-v6.5Q-CONSOLIDATION-FILTER",
   "instrument": "USTEC",
   "time_system": {
@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-27T06:56:56.728823+03:00",
-  "candle_time_sofia": "2026-08-27T06:51:00+03:00",
-  "price": 29482.4,
+  "generated_at_sofia": "2026-08-27T06:57:10.271531+03:00",
+  "candle_time_sofia": "2026-08-27T06:54:00+03:00",
+  "price": 29483.0,
   "market": {
     "overall_sentiment": "BULLISH",
     "overall_sentiment_score": 0.556,
@@ -47,11 +47,11 @@
       "trend": "TRANSITION",
       "active_leg": "BEARISH",
       "active_leg_origin": 29510.3,
-      "active_leg_points": 44.3,
+      "active_leg_points": 27.3,
       "macro_leg": "BULLISH",
       "macro_origin": 29124.7,
       "macro_start_time": "2026-08-26T19:15:00+03:00",
-      "macro_points": 341.3,
+      "macro_points": 358.3,
       "macro_peak": 29588.3,
       "macro_trough": 29124.7,
       "macro_state": "PULLBACK",
@@ -66,15 +66,8 @@
       "bos": false,
       "reversal_direction": "NONE",
       "reversal_state": "NONE",
-      "atr14": 12.8914,
+      "atr14": 13.2635,
       "recent_closed_candles": [
-        {
-          "time_sofia": "2026-08-27T06:42:00+03:00",
-          "open": 29486.7,
-          "high": 29487.7,
-          "low": 29476.5,
-          "close": 29477.5
-        },
         {
           "time_sofia": "2026-08-27T06:45:00+03:00",
           "open": 29477.7,
@@ -95,41 +88,58 @@
           "high": 29479.3,
           "low": 29461.0,
           "close": 29466.0
+        },
+        {
+          "time_sofia": "2026-08-27T06:54:00+03:00",
+          "open": 29465.8,
+          "high": 29483.0,
+          "low": 29464.9,
+          "close": 29483.0
         }
       ],
       "current_leg": "BEARISH",
       "current_origin": 29510.3,
       "current_start_time": "2026-08-27T06:24:00+03:00",
       "current_recognition_time": "2026-08-27T06:33:00+03:00",
-      "current_points": 44.3,
+      "current_points": 27.3,
       "current_source": "MAX_SUPPORT_TRENDLINE_CONFIRMED",
       "structure_state": "BULL_TREND",
       "consolidation_location": "TREND"
     }
   },
   "ama": {
-    "value": 29475.3273,
-    "distance_points": -9.3273,
-    "price_side": "BELOW",
+    "value": 29475.5854,
+    "distance_points": 7.4146,
+    "price_side": "ABOVE",
     "slope": "FALLING ↓",
-    "role": "resistance",
-    "confirmed_cross": null
+    "role": "neutral",
+    "confirmed_cross": {
+      "direction": "UP",
+      "price": 29483.0,
+      "ama": 29475.585392261637,
+      "distance": 7.4146077383629745,
+      "slope": "FALLING ↓",
+      "role": "neutral",
+      "time_utc": "2026-08-27T03:54:00+00:00",
+      "time_sofia": "2026-08-27T06:54:00+03:00",
+      "candle_id": "2026-08-27T03:54:00Z"
+    }
   },
   "scores": {
-    "bullish_execution_0_100": 32,
-    "bearish_execution_0_100": 33,
-    "bullish_execution_1_5": 1,
+    "bullish_execution_0_100": 42,
+    "bearish_execution_0_100": 25,
+    "bullish_execution_1_5": 2,
     "bearish_execution_1_5": 1,
-    "bullish_exhaustion_0_100": 28,
-    "bearish_exhaustion_0_100": 35,
+    "bullish_exhaustion_0_100": 19,
+    "bearish_exhaustion_0_100": 33,
     "bullish_exhaustion_1_5": 1,
     "bearish_exhaustion_1_5": 1
   },
   "levels": {
     "day_high": 29588.3,
     "day_low": 29367.8,
-    "points_from_day_high": -122.3,
-    "points_from_day_low": 98.2,
+    "points_from_day_high": -105.3,
+    "points_from_day_low": 115.2,
     "supports": [
       29465.8,
       29464.9,
@@ -145,8 +155,6 @@
       29312.39
     ],
     "resistances": [
-      29469.5,
-      29479.0,
       29488.8,
       29489.4,
       29494.8,
@@ -156,12 +164,14 @@
       29667.0,
       29777.3,
       29891.5,
-      30167.6
+      30167.6,
+      30180.0,
+      30244.3
     ],
-    "sell_retest_level": 29469.5,
+    "sell_retest_level": 29488.8,
     "sell_retest_zone": [
-      29465.5,
-      29473.5
+      29484.8,
+      29492.8
     ],
     "buy_retest_level": 29465.8,
     "buy_retest_zone": [
@@ -173,7 +183,7 @@
   },
   "python_decision": {
     "action": "WAIT",
-    "confidence_1_5": 1,
+    "confidence_1_5": 2,
     "reason": "No actionable alignment.",
     "wait_zone": null,
     "dynamic_target": null,
@@ -191,8 +201,8 @@
         "side": "SELL",
         "volume": 0.8,
         "entry": 29149.4,
-        "current": 29466.4,
-        "profit": -217.59,
+        "current": 29484.3,
+        "profit": -229.89,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -203,8 +213,8 @@
         "side": "BUY",
         "volume": 0.8,
         "entry": 29278.7,
-        "current": 29465.4,
-        "profit": 128.15,
+        "current": 29483.3,
+        "profit": 140.45,
         "sl": 0.0,
         "tp": 0.0,
         "magic": 0,
@@ -217,8 +227,8 @@
     "lock_active": false,
     "source": "ForexFactory JSON explicit-offset",
     "phase": "CLEAR",
-    "minutes_to_event": 513,
-    "status_line": "NEWS: Unemployment Claims | USD MEDIUM | 27.08 15:30 Sofia | T-513m",
+    "minutes_to_event": 516,
+    "status_line": "NEWS: Unemployment Claims | USD MEDIUM | 27.08 15:30 Sofia | T-516m",
     "next_event": {
       "title": "Unemployment Claims",
       "currency": "USD",
@@ -234,12 +244,12 @@
       "direction": "BULLISH",
       "origin": 29124.7,
       "start_time": "2026-08-26T19:15:00+03:00",
-      "candle_count": 213,
-      "execution_0_100": 24,
-      "execution_previous_0_100": 27,
+      "candle_count": 214,
+      "execution_0_100": 34,
+      "execution_previous_0_100": 32,
       "execution_arrow": "↓",
-      "exhaustion_0_100": 47,
-      "exhaustion_previous_0_100": 42,
+      "exhaustion_0_100": 37,
+      "exhaustion_previous_0_100": 35,
       "exhaustion_arrow": "↑"
     },
     "existing": {
@@ -247,12 +257,12 @@
       "direction": "BEARISH",
       "origin": 29510.3,
       "start_time": "2026-08-27T06:24:00+03:00",
-      "candle_count": 10,
-      "execution_0_100": 33,
-      "execution_previous_0_100": 32,
+      "candle_count": 11,
+      "execution_0_100": 25,
+      "execution_previous_0_100": 27,
       "execution_arrow": "↓",
-      "exhaustion_0_100": 35,
-      "exhaustion_previous_0_100": 29,
+      "exhaustion_0_100": 33,
+      "exhaustion_previous_0_100": 35,
       "exhaustion_arrow": "↑",
       "source": "MAX_SUPPORT_TRENDLINE_CONFIRMED",
       "recognition_time": "2026-08-27T06:33:00+03:00"
@@ -262,12 +272,12 @@
       "direction": "BULLISH",
       "origin": 29124.7,
       "start_time": "2026-08-26T19:15:00+03:00",
-      "candle_count": 213,
-      "execution_0_100": 24,
-      "execution_previous_0_100": 27,
+      "candle_count": 214,
+      "execution_0_100": 34,
+      "execution_previous_0_100": 32,
       "execution_arrow": "↓",
-      "exhaustion_0_100": 47,
-      "exhaustion_previous_0_100": 42,
+      "exhaustion_0_100": 37,
+      "exhaustion_previous_0_100": 35,
       "exhaustion_arrow": "↑"
     },
     "current": {
@@ -275,12 +285,12 @@
       "direction": "BEARISH",
       "origin": 29510.3,
       "start_time": "2026-08-27T06:24:00+03:00",
-      "candle_count": 10,
-      "execution_0_100": 33,
-      "execution_previous_0_100": 32,
+      "candle_count": 11,
+      "execution_0_100": 25,
+      "execution_previous_0_100": 27,
       "execution_arrow": "↓",
-      "exhaustion_0_100": 35,
-      "exhaustion_previous_0_100": 29,
+      "exhaustion_0_100": 33,
+      "exhaustion_previous_0_100": 35,
       "exhaustion_arrow": "↑",
       "source": "MAX_SUPPORT_TRENDLINE_CONFIRMED",
       "recognition_time": "2026-08-27T06:33:00+03:00"
@@ -291,7 +301,7 @@
       "direction": "BULLISH",
       "origin": 29124.7,
       "start_time": "2026-08-26T19:15:00+03:00",
-      "start_index": 286,
+      "start_index": 285,
       "reached": 29588.3,
       "points": 463.59999999999854,
       "state": "PULLBACK",
@@ -299,48 +309,48 @@
       "line": {
         "direction": "BULLISH",
         "slope_per_bar": 1.190540540540521,
-        "intercept": 28784.205405405413,
+        "intercept": 28785.39594594595,
         "support_indices": [
-          286,
-          360
+          285,
+          359
         ],
         "support_count": 2,
-        "solid_start_index": 286,
-        "last_support_index": 360,
+        "solid_start_index": 285,
+        "last_support_index": 359,
         "total_deviation": 0.0,
         "span_bars": 74.0,
         "tolerance_points": 0.0,
         "support_anchors": [
           {
             "direction": "BULLISH",
-            "index": 286,
+            "index": 285,
             "price": 29124.7,
             "time": "2026-08-26T19:15:00+03:00",
-            "confirmation_index": 286
+            "confirmation_index": 285
           },
           {
             "direction": "BULLISH",
-            "index": 360,
+            "index": 359,
             "price": 29212.8,
             "time": "2026-08-26T22:57:00+03:00",
-            "confirmation_index": 374,
+            "confirmation_index": 373,
             "parent_level": true,
             "kind": "PARENT_ZIGZAG_EXTREME"
           }
         ],
         "t1": {
           "direction": "BULLISH",
-          "index": 286,
+          "index": 285,
           "price": 29124.7,
           "time": "2026-08-26T19:15:00+03:00",
-          "confirmation_index": 286
+          "confirmation_index": 285
         },
         "t2": {
           "direction": "BULLISH",
-          "index": 360,
+          "index": 359,
           "price": 29212.8,
           "time": "2026-08-26T22:57:00+03:00",
-          "confirmation_index": 374,
+          "confirmation_index": 373,
           "parent_level": true,
           "kind": "PARENT_ZIGZAG_EXTREME"
         },
@@ -353,11 +363,11 @@
     "child_legs": [
       {
         "direction": "BULLISH",
-        "historical_start_index": 286,
-        "start_index": 286,
+        "historical_start_index": 285,
+        "start_index": 285,
         "start": 29124.7,
         "start_time": "2026-08-26T19:15:00+03:00",
-        "end_index": 292,
+        "end_index": 291,
         "end": 29151.5,
         "end_time": "2026-08-26T19:33:00+03:00",
         "points": 26.799999999999272,
@@ -366,20 +376,20 @@
         "confirmation_time": null,
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 2.4857142857132333,
-          "intercept": 28414.300000000305,
+          "slope_per_bar": 2.4857142857152073,
+          "intercept": 28416.78571428545,
           "support_indices": [
+            285,
             286,
             287,
             288,
             289,
             290,
-            291,
-            292
+            291
           ],
           "support_count": 7,
-          "solid_start_index": 286,
-          "last_support_index": 292,
+          "solid_start_index": 285,
+          "last_support_index": 291,
           "total_deviation": 6.171428571429715,
           "span_bars": 6.0,
           "tolerance_points": 3.0
@@ -388,30 +398,30 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 292,
-        "start_index": 292,
+        "historical_start_index": 291,
+        "start_index": 291,
         "start": 29151.5,
         "start_time": "2026-08-26T19:33:00+03:00",
-        "end_index": 295,
+        "end_index": 294,
         "end": 29102.5,
         "end_time": "2026-08-26T19:42:00+03:00",
         "points": 49.0,
         "completed": true,
-        "confirmation_index": 295,
+        "confirmation_index": 294,
         "confirmation_time": "2026-08-26T19:45:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -8.771428571425982,
-          "intercept": 31712.14285714208,
+          "slope_per_bar": -8.771428571428046,
+          "intercept": 31703.371428571278,
           "support_indices": [
-            292,
-            294,
-            295
+            291,
+            293,
+            294
           ],
           "support_count": 3,
-          "solid_start_index": 292,
-          "last_support_index": 295,
-          "total_deviation": 3.685714285729773,
+          "solid_start_index": 291,
+          "last_support_index": 294,
+          "total_deviation": 3.685714285711583,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         },
@@ -419,37 +429,37 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 295,
-        "start_index": 295,
+        "historical_start_index": 294,
+        "start_index": 294,
         "start": 29102.5,
         "start_time": "2026-08-26T19:42:00+03:00",
-        "end_index": 315,
+        "end_index": 314,
         "end": 29223.3,
         "end_time": "2026-08-26T20:42:00+03:00",
         "points": 120.79999999999927,
         "completed": true,
-        "confirmation_index": 298,
+        "confirmation_index": 297,
         "confirmation_time": "2026-08-26T19:54:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 6.1367816091959035,
-          "intercept": 27293.5873563217,
+          "slope_per_bar": 6.136781609196323,
+          "intercept": 27299.724137930734,
           "support_indices": [
-            295,
+            294,
+            299,
             300,
             301,
             302,
-            303,
+            304,
             305,
             306,
-            307,
-            309,
-            310
+            308,
+            309
           ],
           "support_count": 10,
-          "solid_start_index": 295,
-          "last_support_index": 310,
-          "total_deviation": 15.285057471290202,
+          "solid_start_index": 294,
+          "last_support_index": 309,
+          "total_deviation": 15.285057471228356,
           "span_bars": 15.0,
           "tolerance_points": 3.0
         },
@@ -457,32 +467,32 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 315,
-        "start_index": 315,
+        "historical_start_index": 314,
+        "start_index": 314,
         "start": 29223.3,
         "start_time": "2026-08-26T20:42:00+03:00",
-        "end_index": 326,
+        "end_index": 325,
         "end": 29197.1,
         "end_time": "2026-08-26T21:15:00+03:00",
         "points": 26.200000000000728,
         "completed": true,
-        "confirmation_index": 317,
+        "confirmation_index": 316,
         "confirmation_time": "2026-08-26T20:51:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -0.8181614349783194,
-          "intercept": 29475.778923767044,
+          "slope_per_bar": -0.8181614349780773,
+          "intercept": 29474.960762332,
           "support_indices": [
+            315,
             316,
             317,
-            318,
-            325,
-            326
+            324,
+            325
           ],
           "support_count": 5,
-          "solid_start_index": 316,
-          "last_support_index": 326,
-          "total_deviation": 2.639910313897417,
+          "solid_start_index": 315,
+          "last_support_index": 325,
+          "total_deviation": 2.639910313908331,
           "span_bars": 10.0,
           "tolerance_points": 3.0
         },
@@ -490,30 +500,30 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 326,
-        "start_index": 326,
+        "historical_start_index": 325,
+        "start_index": 325,
         "start": 29197.1,
         "start_time": "2026-08-26T21:15:00+03:00",
-        "end_index": 327,
+        "end_index": 326,
         "end": 29223.3,
         "end_time": "2026-08-26T21:18:00+03:00",
         "points": 26.200000000000728,
         "completed": true,
-        "confirmation_index": 328,
+        "confirmation_index": 327,
         "confirmation_time": "2026-08-26T21:24:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 6.5999999999961725,
-          "intercept": 27046.466666667908,
+          "slope_per_bar": 6.599999999997021,
+          "intercept": 27053.06666666763,
           "support_indices": [
+            325,
             326,
-            327,
-            328
+            327
           ],
           "support_count": 3,
-          "solid_start_index": 326,
-          "last_support_index": 328,
-          "total_deviation": 3.866666666654055,
+          "solid_start_index": 325,
+          "last_support_index": 327,
+          "total_deviation": 3.866666666661331,
           "span_bars": 2.0,
           "tolerance_points": 3.0
         },
@@ -521,30 +531,30 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 327,
-        "start_index": 327,
+        "historical_start_index": 326,
+        "start_index": 326,
         "start": 29223.3,
         "start_time": "2026-08-26T21:18:00+03:00",
-        "end_index": 329,
+        "end_index": 328,
         "end": 29203.7,
         "end_time": "2026-08-26T21:24:00+03:00",
         "points": 19.599999999998545,
         "completed": true,
-        "confirmation_index": 329,
+        "confirmation_index": 328,
         "confirmation_time": "2026-08-26T21:27:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -2.192857142855353,
-          "intercept": 29940.521428570824,
+          "slope_per_bar": -2.192857142861314,
+          "intercept": 29938.328571429953,
           "support_indices": [
+            326,
             327,
-            328,
-            330
+            329
           ],
           "support_count": 3,
-          "solid_start_index": 327,
-          "last_support_index": 330,
-          "total_deviation": 0.47142857141807326,
+          "solid_start_index": 326,
+          "last_support_index": 329,
+          "total_deviation": 0.4714285714435391,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         },
@@ -552,33 +562,33 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 329,
-        "start_index": 329,
+        "historical_start_index": 328,
+        "start_index": 328,
         "start": 29203.7,
         "start_time": "2026-08-26T21:24:00+03:00",
-        "end_index": 342,
+        "end_index": 341,
         "end": 29300.3,
         "end_time": "2026-08-26T22:03:00+03:00",
         "points": 96.59999999999854,
         "completed": true,
-        "confirmation_index": 331,
+        "confirmation_index": 330,
         "confirmation_time": "2026-08-26T21:33:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 4.442815674891773,
-          "intercept": 27741.680551523732,
+          "slope_per_bar": 4.4428156748908005,
+          "intercept": 27746.12336719894,
           "support_indices": [
+            328,
             329,
-            330,
-            333,
+            332,
+            337,
             338,
-            339,
-            340
+            339
           ],
           "support_count": 6,
-          "solid_start_index": 329,
-          "last_support_index": 340,
-          "total_deviation": 3.7239477503717353,
+          "solid_start_index": 328,
+          "last_support_index": 339,
+          "total_deviation": 3.723947750389925,
           "span_bars": 11.0,
           "tolerance_points": 3.0
         },
@@ -586,31 +596,31 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 342,
-        "start_index": 342,
+        "historical_start_index": 341,
+        "start_index": 341,
         "start": 29300.3,
         "start_time": "2026-08-26T22:03:00+03:00",
-        "end_index": 345,
+        "end_index": 344,
         "end": 29263.3,
         "end_time": "2026-08-26T22:12:00+03:00",
         "points": 37.0,
         "completed": true,
-        "confirmation_index": 345,
+        "confirmation_index": 344,
         "confirmation_time": "2026-08-26T22:15:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -4.154945054947207,
-          "intercept": 30721.392307693048,
+          "slope_per_bar": -4.154945054946082,
+          "intercept": 30717.237362637723,
           "support_indices": [
+            341,
             342,
-            343,
-            346,
-            348
+            345,
+            347
           ],
           "support_count": 4,
-          "solid_start_index": 342,
-          "last_support_index": 348,
-          "total_deviation": 2.837362637368642,
+          "solid_start_index": 341,
+          "last_support_index": 347,
+          "total_deviation": 2.837362637383194,
           "span_bars": 6.0,
           "tolerance_points": 3.0
         },
@@ -618,32 +628,32 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 345,
-        "start_index": 345,
+        "historical_start_index": 344,
+        "start_index": 344,
         "start": 29263.3,
         "start_time": "2026-08-26T22:12:00+03:00",
-        "end_index": 347,
+        "end_index": 346,
         "end": 29289.3,
         "end_time": "2026-08-26T22:18:00+03:00",
         "points": 26.0,
         "completed": true,
-        "confirmation_index": 349,
+        "confirmation_index": 348,
         "confirmation_time": "2026-08-26T22:27:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 0.7863013698615665,
-          "intercept": 28992.47260274022,
+          "slope_per_bar": 0.7863013698622853,
+          "intercept": 28993.258904109833,
           "support_indices": [
-            345,
+            344,
+            346,
             347,
-            348,
-            350,
-            352
+            349,
+            351
           ],
           "support_count": 5,
-          "solid_start_index": 345,
-          "last_support_index": 352,
-          "total_deviation": 3.904109589060681,
+          "solid_start_index": 344,
+          "last_support_index": 351,
+          "total_deviation": 3.904109589053405,
           "span_bars": 7.0,
           "tolerance_points": 3.0
         },
@@ -651,33 +661,33 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 347,
-        "start_index": 347,
+        "historical_start_index": 346,
+        "start_index": 346,
         "start": 29289.3,
         "start_time": "2026-08-26T22:18:00+03:00",
-        "end_index": 360,
+        "end_index": 359,
         "end": 29212.8,
         "end_time": "2026-08-26T22:57:00+03:00",
         "points": 76.5,
         "completed": true,
-        "confirmation_index": 353,
+        "confirmation_index": 352,
         "confirmation_time": "2026-08-26T22:39:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -2.4957943925236976,
-          "intercept": 30154.9210280375,
+          "slope_per_bar": -2.495794392523605,
+          "intercept": 30152.425233644946,
           "support_indices": [
-            347,
-            349,
+            346,
+            348,
+            350,
             351,
             352,
-            353,
-            358
+            357
           ],
           "support_count": 6,
-          "solid_start_index": 347,
-          "last_support_index": 358,
-          "total_deviation": 4.194392523360875,
+          "solid_start_index": 346,
+          "last_support_index": 357,
+          "total_deviation": 4.194392523349961,
           "span_bars": 11.0,
           "tolerance_points": 3.0
         },
@@ -685,30 +695,30 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 360,
-        "start_index": 360,
+        "historical_start_index": 359,
+        "start_index": 359,
         "start": 29212.8,
         "start_time": "2026-08-26T22:57:00+03:00",
-        "end_index": 367,
+        "end_index": 366,
         "end": 29314.9,
         "end_time": "2026-08-26T23:18:00+03:00",
         "points": 102.10000000000218,
         "completed": true,
-        "confirmation_index": 365,
+        "confirmation_index": 364,
         "confirmation_time": "2026-08-26T23:15:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 4.845121951218915,
-          "intercept": 27468.08048780511,
+          "slope_per_bar": 4.845121951219414,
+          "intercept": 27472.925609756134,
           "support_indices": [
+            359,
             360,
-            361,
-            369,
-            370
+            368,
+            369
           ],
           "support_count": 4,
-          "solid_start_index": 360,
-          "last_support_index": 370,
+          "solid_start_index": 359,
+          "last_support_index": 369,
           "total_deviation": 2.0,
           "span_bars": 10.0,
           "tolerance_points": 3.0
@@ -717,31 +727,31 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 367,
-        "start_index": 367,
+        "historical_start_index": 366,
+        "start_index": 366,
         "start": 29314.9,
         "start_time": "2026-08-26T23:18:00+03:00",
-        "end_index": 368,
+        "end_index": 367,
         "end": 29223.5,
         "end_time": "2026-08-26T23:21:00+03:00",
         "points": 91.40000000000146,
         "completed": true,
-        "confirmation_index": 372,
-        "confirmation_time": "2026-08-26T23:36:00+03:00",
+        "confirmation_index": 370,
+        "confirmation_time": "2026-08-26T23:33:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -8.878571428575407,
-          "intercept": 32573.59642857291,
+          "slope_per_bar": -8.878571428572522,
+          "intercept": 32564.71785714327,
           "support_indices": [
-            367,
+            366,
+            369,
             370,
-            371,
-            372
+            371
           ],
           "support_count": 4,
-          "solid_start_index": 367,
-          "last_support_index": 372,
-          "total_deviation": 4.214285714297148,
+          "solid_start_index": 366,
+          "last_support_index": 371,
+          "total_deviation": 4.214285714289872,
           "span_bars": 5.0,
           "tolerance_points": 3.0
         },
@@ -749,30 +759,30 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 368,
-        "start_index": 368,
+        "historical_start_index": 367,
+        "start_index": 367,
         "start": 29223.5,
         "start_time": "2026-08-26T23:21:00+03:00",
-        "end_index": 369,
+        "end_index": 368,
         "end": 29292.5,
         "end_time": "2026-08-26T23:24:00+03:00",
         "points": 69.0,
         "completed": true,
-        "confirmation_index": 374,
+        "confirmation_index": 373,
         "confirmation_time": "2026-08-26T23:42:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 8.146774193548644,
-          "intercept": 26225.382258064426,
+          "slope_per_bar": 8.146774193547884,
+          "intercept": 26233.529032258255,
           "support_indices": [
-            368,
-            373,
-            374
+            367,
+            372,
+            373
           ],
           "support_count": 3,
-          "solid_start_index": 368,
-          "last_support_index": 374,
-          "total_deviation": 1.2580645161251596,
+          "solid_start_index": 367,
+          "last_support_index": 373,
+          "total_deviation": 1.2580645161215216,
           "span_bars": 6.0,
           "tolerance_points": 3.0
         },
@@ -780,32 +790,32 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 369,
-        "start_index": 369,
+        "historical_start_index": 368,
+        "start_index": 368,
         "start": 29292.5,
         "start_time": "2026-08-26T23:24:00+03:00",
-        "end_index": 372,
+        "end_index": 371,
         "end": 29249.4,
         "end_time": "2026-08-26T23:33:00+03:00",
         "points": 43.099999999998545,
         "completed": true,
-        "confirmation_index": 375,
+        "confirmation_index": 374,
         "confirmation_time": "2026-08-26T23:45:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -1.0337349397600974,
-          "intercept": 29673.322891566662,
+          "slope_per_bar": -1.0337349397575588,
+          "intercept": 29672.289156625964,
           "support_indices": [
+            368,
             369,
-            370,
+            372,
             373,
-            374,
-            376
+            375
           ],
           "support_count": 5,
-          "solid_start_index": 369,
-          "last_support_index": 376,
-          "total_deviation": 4.438554216863849,
+          "solid_start_index": 368,
+          "last_support_index": 375,
+          "total_deviation": 4.438554216878401,
           "span_bars": 7.0,
           "tolerance_points": 3.0
         },
@@ -813,34 +823,34 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 372,
-        "start_index": 372,
+        "historical_start_index": 371,
+        "start_index": 371,
         "start": 29249.4,
         "start_time": "2026-08-26T23:33:00+03:00",
-        "end_index": 393,
+        "end_index": 392,
         "end": 29552.3,
         "end_time": "2026-08-27T01:36:00+03:00",
         "points": 302.8999999999978,
         "completed": true,
-        "confirmation_index": 377,
+        "confirmation_index": 376,
         "confirmation_time": "2026-08-26T23:51:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 4.985763097949887,
-          "intercept": 27571.005466970393,
+          "slope_per_bar": 4.98576309794994,
+          "intercept": 27575.991230068317,
           "support_indices": [
+            383,
             384,
-            385,
-            387,
-            390,
-            392,
-            394,
-            396
+            386,
+            389,
+            391,
+            393,
+            395
           ],
           "support_count": 7,
-          "solid_start_index": 384,
-          "last_support_index": 396,
-          "total_deviation": 10.48997722094282,
+          "solid_start_index": 383,
+          "last_support_index": 395,
+          "total_deviation": 10.489977220953733,
           "span_bars": 12.0,
           "tolerance_points": 3.0
         },
@@ -848,36 +858,36 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 393,
-        "start_index": 393,
+        "historical_start_index": 392,
+        "start_index": 392,
         "start": 29552.3,
         "start_time": "2026-08-27T01:36:00+03:00",
-        "end_index": 406,
+        "end_index": 405,
         "end": 29520.2,
         "end_time": "2026-08-27T02:15:00+03:00",
         "points": 32.099999999998545,
         "completed": true,
-        "confirmation_index": 397,
+        "confirmation_index": 396,
         "confirmation_time": "2026-08-27T01:51:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -0.9027423469385368,
-          "intercept": 29908.339859693795,
+          "slope_per_bar": -0.9027423469379959,
+          "intercept": 29907.437117346624,
           "support_indices": [
-            393,
+            392,
+            394,
             395,
             396,
-            397,
+            399,
             400,
             401,
             402,
-            403,
-            408
+            407
           ],
           "support_count": 9,
-          "solid_start_index": 393,
-          "last_support_index": 408,
-          "total_deviation": 7.996301020426472,
+          "solid_start_index": 392,
+          "last_support_index": 407,
+          "total_deviation": 7.996301020419196,
           "span_bars": 15.0,
           "tolerance_points": 3.0
         },
@@ -885,25 +895,26 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 406,
-        "start_index": 406,
+        "historical_start_index": 405,
+        "start_index": 405,
         "start": 29520.2,
         "start_time": "2026-08-27T02:15:00+03:00",
-        "end_index": 421,
+        "end_index": 420,
         "end": 29588.3,
         "end_time": "2026-08-27T03:00:00+03:00",
         "points": 68.09999999999854,
         "completed": true,
-        "confirmation_index": 409,
+        "confirmation_index": 408,
         "confirmation_time": "2026-08-27T02:27:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 2.3801339860862862,
-          "intercept": 28552.533187322777,
+          "slope_per_bar": 2.380133986086349,
+          "intercept": 28554.91332130881,
           "support_indices": [
+            405,
             406,
             407,
-            408,
+            409,
             410,
             411,
             412,
@@ -913,13 +924,12 @@
             416,
             417,
             418,
-            419,
-            421
+            420
           ],
           "support_count": 14,
-          "solid_start_index": 406,
-          "last_support_index": 421,
-          "total_deviation": 16.321205874774023,
+          "solid_start_index": 405,
+          "last_support_index": 420,
+          "total_deviation": 16.321205874766747,
           "span_bars": 15.0,
           "tolerance_points": 3.0
         },
@@ -927,32 +937,32 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 421,
-        "start_index": 421,
+        "historical_start_index": 420,
+        "start_index": 420,
         "start": 29588.3,
         "start_time": "2026-08-27T03:00:00+03:00",
-        "end_index": 427,
+        "end_index": 426,
         "end": 29493.0,
         "end_time": "2026-08-27T03:18:00+03:00",
         "points": 95.29999999999927,
         "completed": true,
-        "confirmation_index": 425,
+        "confirmation_index": 424,
         "confirmation_time": "2026-08-27T03:15:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -13.107547169812724,
-          "intercept": 35106.624528302484,
+          "slope_per_bar": -13.107547169811458,
+          "intercept": 35093.51698113214,
           "support_indices": [
-            421,
+            420,
+            423,
             424,
             425,
-            426,
-            427
+            426
           ],
           "support_count": 5,
-          "solid_start_index": 421,
-          "last_support_index": 427,
-          "total_deviation": 5.532075471703138,
+          "solid_start_index": 420,
+          "last_support_index": 426,
+          "total_deviation": 5.532075471706776,
           "span_bars": 6.0,
           "tolerance_points": 3.0
         },
@@ -960,30 +970,30 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 427,
-        "start_index": 427,
+        "historical_start_index": 426,
+        "start_index": 426,
         "start": 29493.0,
         "start_time": "2026-08-27T03:18:00+03:00",
-        "end_index": 430,
+        "end_index": 429,
         "end": 29518.4,
         "end_time": "2026-08-27T03:27:00+03:00",
         "points": 25.400000000001455,
         "completed": true,
-        "confirmation_index": 430,
+        "confirmation_index": 429,
         "confirmation_time": "2026-08-27T03:30:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 2.8071428571428636,
-          "intercept": 28294.07142857143,
+          "slope_per_bar": 2.807142857140445,
+          "intercept": 28296.878571429625,
           "support_indices": [
-            427,
-            429,
-            430
+            426,
+            428,
+            429
           ],
           "support_count": 3,
-          "solid_start_index": 427,
-          "last_support_index": 430,
-          "total_deviation": 1.6714285714260768,
+          "solid_start_index": 426,
+          "last_support_index": 429,
+          "total_deviation": 1.671428571404249,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         },
@@ -991,30 +1001,30 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 430,
-        "start_index": 430,
+        "historical_start_index": 429,
+        "start_index": 429,
         "start": 29518.4,
         "start_time": "2026-08-27T03:27:00+03:00",
-        "end_index": 441,
+        "end_index": 440,
         "end": 29367.8,
         "end_time": "2026-08-27T04:00:00+03:00",
         "points": 150.60000000000218,
         "completed": true,
-        "confirmation_index": 434,
-        "confirmation_time": "2026-08-27T03:42:00+03:00",
+        "confirmation_index": 431,
+        "confirmation_time": "2026-08-27T03:36:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -15.364122137406149,
-          "intercept": 36124.512977099934,
+          "slope_per_bar": -15.36412213740423,
+          "intercept": 36109.14885496168,
           "support_indices": [
-            430,
+            429,
+            432,
             433,
-            434,
-            438
+            437
           ],
           "support_count": 4,
-          "solid_start_index": 430,
-          "last_support_index": 438,
+          "solid_start_index": 429,
+          "last_support_index": 437,
           "total_deviation": 1.6641221374084125,
           "span_bars": 8.0,
           "tolerance_points": 3.0
@@ -1023,32 +1033,32 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 441,
-        "start_index": 441,
+        "historical_start_index": 440,
+        "start_index": 440,
         "start": 29367.8,
         "start_time": "2026-08-27T04:00:00+03:00",
-        "end_index": 453,
+        "end_index": 452,
         "end": 29469.5,
         "end_time": "2026-08-27T04:36:00+03:00",
         "points": 101.70000000000073,
         "completed": true,
-        "confirmation_index": 443,
+        "confirmation_index": 442,
         "confirmation_time": "2026-08-27T04:09:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 6.040640394088264,
-          "intercept": 26713.809359606097,
+          "slope_per_bar": 6.040640394089446,
+          "intercept": 26719.84999999965,
           "support_indices": [
-            442,
-            444,
+            441,
+            443,
+            448,
             449,
-            450,
-            453
+            452
           ],
           "support_count": 5,
-          "solid_start_index": 442,
-          "last_support_index": 453,
-          "total_deviation": 4.45369458129062,
+          "solid_start_index": 441,
+          "last_support_index": 452,
+          "total_deviation": 4.453694581279706,
           "span_bars": 11.0,
           "tolerance_points": 3.0
         },
@@ -1056,30 +1066,30 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 453,
-        "start_index": 453,
+        "historical_start_index": 452,
+        "start_index": 452,
         "start": 29469.5,
         "start_time": "2026-08-27T04:36:00+03:00",
-        "end_index": 455,
+        "end_index": 454,
         "end": 29426.8,
         "end_time": "2026-08-27T04:42:00+03:00",
         "points": 42.70000000000073,
         "completed": true,
         "confirmation_index": 455,
-        "confirmation_time": "2026-08-27T04:45:00+03:00",
+        "confirmation_time": "2026-08-27T04:48:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -8.557142857142736,
-          "intercept": 33345.714285714246,
+          "slope_per_bar": -8.557142857143347,
+          "intercept": 33337.157142857366,
           "support_indices": [
-            453,
-            455,
-            456
+            452,
+            454,
+            455
           ],
           "support_count": 3,
-          "solid_start_index": 453,
-          "last_support_index": 456,
-          "total_deviation": 1.028571428552823,
+          "solid_start_index": 452,
+          "last_support_index": 455,
+          "total_deviation": 1.0285714285673748,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         },
@@ -1087,30 +1097,30 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 455,
-        "start_index": 455,
+        "historical_start_index": 454,
+        "start_index": 454,
         "start": 29426.8,
         "start_time": "2026-08-27T04:42:00+03:00",
-        "end_index": 459,
+        "end_index": 458,
         "end": 29488.8,
         "end_time": "2026-08-27T04:54:00+03:00",
         "points": 62.0,
         "completed": true,
         "confirmation_index": 457,
-        "confirmation_time": "2026-08-27T04:51:00+03:00",
+        "confirmation_time": "2026-08-27T04:54:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 16.449999999999303,
-          "intercept": 21927.600000000322,
+          "slope_per_bar": 16.449999999999388,
+          "intercept": 21944.050000000272,
           "support_indices": [
+            455,
             456,
-            457,
-            459
+            458
           ],
           "support_count": 3,
-          "solid_start_index": 456,
-          "last_support_index": 459,
-          "total_deviation": 1.5,
+          "solid_start_index": 455,
+          "last_support_index": 458,
+          "total_deviation": 1.500000000003638,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         },
@@ -1118,31 +1128,31 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 459,
-        "start_index": 459,
+        "historical_start_index": 458,
+        "start_index": 458,
         "start": 29488.8,
         "start_time": "2026-08-27T04:54:00+03:00",
-        "end_index": 463,
+        "end_index": 462,
         "end": 29452.0,
         "end_time": "2026-08-27T05:06:00+03:00",
         "points": 36.79999999999927,
         "completed": true,
-        "confirmation_index": 462,
+        "confirmation_index": 461,
         "confirmation_time": "2026-08-27T05:06:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -5.300000000001219,
-          "intercept": 31922.500000000553,
+          "slope_per_bar": -5.299999999999323,
+          "intercept": 31917.199999999677,
           "support_indices": [
+            458,
             459,
-            460,
-            462,
-            463
+            461,
+            462
           ],
           "support_count": 4,
-          "solid_start_index": 459,
-          "last_support_index": 463,
-          "total_deviation": 5.19999999999709,
+          "solid_start_index": 458,
+          "last_support_index": 462,
+          "total_deviation": 5.200000000000728,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         },
@@ -1150,30 +1160,30 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 463,
-        "start_index": 463,
+        "historical_start_index": 462,
+        "start_index": 462,
         "start": 29452.0,
         "start_time": "2026-08-27T05:06:00+03:00",
-        "end_index": 465,
+        "end_index": 464,
         "end": 29479.0,
         "end_time": "2026-08-27T05:12:00+03:00",
         "points": 27.0,
         "completed": true,
-        "confirmation_index": 465,
+        "confirmation_index": 464,
         "confirmation_time": "2026-08-27T05:15:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 8.449999999998436,
-          "intercept": 25539.733333334065,
+          "slope_per_bar": 8.449999999999712,
+          "intercept": 25548.18333333347,
           "support_indices": [
+            462,
             463,
-            464,
-            465
+            464
           ],
           "support_count": 3,
-          "solid_start_index": 463,
-          "last_support_index": 465,
-          "total_deviation": 0.33333333333575865,
+          "solid_start_index": 462,
+          "last_support_index": 464,
+          "total_deviation": 0.3333333333321207,
           "span_bars": 2.0,
           "tolerance_points": 3.0
         },
@@ -1181,31 +1191,31 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 465,
-        "start_index": 465,
+        "historical_start_index": 464,
+        "start_index": 464,
         "start": 29479.0,
         "start_time": "2026-08-27T05:12:00+03:00",
-        "end_index": 469,
+        "end_index": 468,
         "end": 29460.9,
         "end_time": "2026-08-27T05:24:00+03:00",
         "points": 18.099999999998545,
         "completed": true,
-        "confirmation_index": 467,
+        "confirmation_index": 466,
         "confirmation_time": "2026-08-27T05:21:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -2.2457142857122947,
-          "intercept": 30523.2371428562,
+          "slope_per_bar": -2.2457142857144103,
+          "intercept": 30520.991428571484,
           "support_indices": [
+            464,
             465,
             466,
-            467,
-            469
+            468
           ],
           "support_count": 4,
-          "solid_start_index": 465,
-          "last_support_index": 469,
-          "total_deviation": 2.3771428571744764,
+          "solid_start_index": 464,
+          "last_support_index": 468,
+          "total_deviation": 2.3771428571526485,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         },
@@ -1213,31 +1223,31 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 469,
-        "start_index": 469,
+        "historical_start_index": 468,
+        "start_index": 468,
         "start": 29460.9,
         "start_time": "2026-08-27T05:24:00+03:00",
-        "end_index": 472,
+        "end_index": 471,
         "end": 29489.4,
         "end_time": "2026-08-27T05:33:00+03:00",
         "points": 28.5,
         "completed": true,
-        "confirmation_index": 471,
+        "confirmation_index": 470,
         "confirmation_time": "2026-08-27T05:33:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 4.459999999999043,
-          "intercept": 27369.480000000436,
+          "slope_per_bar": 4.460000000001272,
+          "intercept": 27373.939999999395,
           "support_indices": [
+            468,
             469,
             470,
-            471,
-            473
+            472
           ],
           "support_count": 4,
-          "solid_start_index": 469,
-          "last_support_index": 473,
-          "total_deviation": 3.319999999966967,
+          "solid_start_index": 468,
+          "last_support_index": 472,
+          "total_deviation": 3.319999999981519,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         },
@@ -1245,31 +1255,31 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 472,
-        "start_index": 472,
+        "historical_start_index": 471,
+        "start_index": 471,
         "start": 29489.4,
         "start_time": "2026-08-27T05:33:00+03:00",
-        "end_index": 475,
+        "end_index": 474,
         "end": 29465.8,
         "end_time": "2026-08-27T05:42:00+03:00",
         "points": 23.600000000002183,
         "completed": true,
-        "confirmation_index": 474,
+        "confirmation_index": 473,
         "confirmation_time": "2026-08-27T05:42:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -1.6628571428566998,
-          "intercept": 30274.328571428374,
+          "slope_per_bar": -1.6628571428541825,
+          "intercept": 30272.665714284318,
           "support_indices": [
+            471,
             472,
             473,
-            474,
-            476
+            475
           ],
           "support_count": 4,
-          "solid_start_index": 472,
-          "last_support_index": 476,
-          "total_deviation": 3.5314285714484868,
+          "solid_start_index": 471,
+          "last_support_index": 475,
+          "total_deviation": 3.531428571433935,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         },
@@ -1277,32 +1287,32 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 475,
-        "start_index": 475,
+        "historical_start_index": 474,
+        "start_index": 474,
         "start": 29465.8,
         "start_time": "2026-08-27T05:42:00+03:00",
-        "end_index": 478,
+        "end_index": 477,
         "end": 29494.8,
         "end_time": "2026-08-27T05:51:00+03:00",
         "points": 29.0,
         "completed": true,
-        "confirmation_index": 477,
+        "confirmation_index": 476,
         "confirmation_time": "2026-08-27T05:51:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 3.559999999998422,
-          "intercept": 27776.160000000742,
+          "slope_per_bar": 3.5599999999982375,
+          "intercept": 27779.720000000845,
           "support_indices": [
+            474,
             475,
             476,
             477,
-            478,
-            479
+            478
           ],
           "support_count": 5,
-          "solid_start_index": 475,
-          "last_support_index": 479,
-          "total_deviation": 7.679999999989377,
+          "solid_start_index": 474,
+          "last_support_index": 478,
+          "total_deviation": 7.680000000007567,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         },
@@ -1310,32 +1320,32 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 478,
-        "start_index": 478,
+        "historical_start_index": 477,
+        "start_index": 477,
         "start": 29494.8,
         "start_time": "2026-08-27T05:51:00+03:00",
-        "end_index": 485,
+        "end_index": 484,
         "end": 29464.9,
         "end_time": "2026-08-27T06:12:00+03:00",
         "points": 29.899999999997817,
         "completed": true,
-        "confirmation_index": 480,
+        "confirmation_index": 479,
         "confirmation_time": "2026-08-27T06:00:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -1.3116822429902002,
-          "intercept": 30120.92149532685,
+          "slope_per_bar": -1.3116822429909385,
+          "intercept": 30119.609813084262,
           "support_indices": [
+            477,
             478,
             479,
-            480,
-            483,
-            486
+            482,
+            485
           ],
           "support_count": 5,
-          "solid_start_index": 478,
-          "last_support_index": 486,
-          "total_deviation": 2.4794392523654096,
+          "solid_start_index": 477,
+          "last_support_index": 485,
+          "total_deviation": 2.479439252325392,
           "span_bars": 8.0,
           "tolerance_points": 3.0
         },
@@ -1343,31 +1353,31 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 485,
-        "start_index": 485,
+        "historical_start_index": 484,
+        "start_index": 484,
         "start": 29464.9,
         "start_time": "2026-08-27T06:12:00+03:00",
-        "end_index": 489,
+        "end_index": 488,
         "end": 29510.3,
         "end_time": "2026-08-27T06:24:00+03:00",
         "points": 45.39999999999782,
         "completed": true,
         "confirmation_index": 487,
-        "confirmation_time": "2026-08-27T06:21:00+03:00",
+        "confirmation_time": "2026-08-27T06:24:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 6.4269230769248935,
-          "intercept": 26348.14999999911,
+          "slope_per_bar": 6.426923076923077,
+          "intercept": 26354.57692307694,
           "support_indices": [
-            485,
+            484,
+            486,
             487,
-            488,
-            490
+            489
           ],
           "support_count": 4,
-          "solid_start_index": 485,
-          "last_support_index": 490,
-          "total_deviation": 3.8230769230649457,
+          "solid_start_index": 484,
+          "last_support_index": 489,
+          "total_deviation": 3.8230769231122395,
           "span_bars": 5.0,
           "tolerance_points": 3.0
         },
@@ -1376,37 +1386,37 @@
     ],
     "current": {
       "direction": "BEARISH",
-      "historical_start_index": 489,
-      "start_index": 489,
+      "historical_start_index": 488,
+      "start_index": 488,
       "origin": 29510.3,
       "start": 29510.3,
       "start_time": "2026-08-27T06:24:00+03:00",
-      "confirmation_index": 491,
+      "confirmation_index": 490,
       "recognition_time": "2026-08-27T06:33:00+03:00",
       "confirmation_time": "2026-08-27T06:33:00+03:00",
-      "current_price": 29466.0,
-      "points": 44.29999999999927,
+      "current_price": 29483.0,
+      "points": 27.299999999999272,
       "completed": false,
       "source": "MAX_SUPPORT_TRENDLINE_CONFIRMED",
       "line": {
         "direction": "BEARISH",
-        "slope_per_bar": -3.4633823529413514,
-        "intercept": 31202.75235294127,
+        "slope_per_bar": -3.4633823529399037,
+        "intercept": 31199.288970587604,
         "support_indices": [
+          488,
           489,
-          490,
+          491,
           492,
           493,
           494,
           495,
           496,
-          497,
-          498
+          497
         ],
         "support_count": 9,
-        "solid_start_index": 489,
-        "last_support_index": 498,
-        "total_deviation": 12.687941176471213,
+        "solid_start_index": 488,
+        "last_support_index": 497,
+        "total_deviation": 12.687941176463937,
         "span_bars": 9.0,
         "tolerance_points": 3.0
       },
@@ -1417,37 +1427,37 @@
     },
     "structural_current": {
       "direction": "BEARISH",
-      "historical_start_index": 489,
-      "start_index": 489,
+      "historical_start_index": 488,
+      "start_index": 488,
       "origin": 29510.3,
       "start": 29510.3,
       "start_time": "2026-08-27T06:24:00+03:00",
-      "confirmation_index": 491,
+      "confirmation_index": 490,
       "recognition_time": "2026-08-27T06:33:00+03:00",
       "confirmation_time": "2026-08-27T06:33:00+03:00",
-      "current_price": 29466.0,
-      "points": 44.29999999999927,
+      "current_price": 29483.0,
+      "points": 27.299999999999272,
       "completed": false,
       "source": "LINE_LEG_CONFIRMED_DIRECTION_GATE",
       "line": {
         "direction": "BEARISH",
-        "slope_per_bar": -3.4633823529413514,
-        "intercept": 31202.75235294127,
+        "slope_per_bar": -3.4633823529399037,
+        "intercept": 31199.288970587604,
         "support_indices": [
+          488,
           489,
-          490,
+          491,
           492,
           493,
           494,
           495,
           496,
-          497,
-          498
+          497
         ],
         "support_count": 9,
-        "solid_start_index": 489,
-        "last_support_index": 498,
-        "total_deviation": 12.687941176471213,
+        "solid_start_index": 488,
+        "last_support_index": 497,
+        "total_deviation": 12.687941176463937,
         "span_bars": 9.0,
         "tolerance_points": 3.0
       },
@@ -1474,9 +1484,9 @@
       "fit_tolerance_points": 3.0,
       "rule": "max_support_points -> min_total_deviation -> max_span; break -> opposite search -> 2-point candidate -> next closed candle acceptance -> NEW LEG; variant A",
       "last_failed_break": {
-        "old_direction": "BULLISH",
-        "break_index": 488,
-        "reentry_index": 489,
+        "old_direction": "BEARISH",
+        "break_index": 480,
+        "reentry_index": 482,
         "event": "FAILED_BREAK_REJECTION",
         "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
@@ -1486,9 +1496,9 @@
       "market": "BULL_TREND",
       "active": false,
       "location": "TREND",
-      "price": 29466.0,
-      "lower_parent": 29476.874074074072,
-      "upper_parent": 29386.681578947366,
+      "price": 29483.0,
+      "lower_parent": 29478.787654320986,
+      "upper_parent": 29384.063157894736,
       "near_lower": false,
       "near_upper": false,
       "boundary_zone_points": 5.0,
@@ -1496,92 +1506,92 @@
       "bull_parent_line": {
         "direction": "BULLISH",
         "slope_per_bar": 1.9135802469135803,
-        "intercept": 28523.91111111111,
+        "intercept": 28525.824691358022,
         "support_indices": [
-          360,
-          441
+          359,
+          440
         ],
         "support_count": 2,
-        "solid_start_index": 360,
-        "last_support_index": 441,
+        "solid_start_index": 359,
+        "last_support_index": 440,
         "total_deviation": 0.0,
         "span_bars": 81.0,
         "tolerance_points": 0.0,
         "support_anchors": [
           {
             "direction": "BULLISH",
-            "index": 360,
+            "index": 359,
             "price": 29212.8,
             "time": "2026-08-26T22:57:00+03:00",
-            "confirmation_index": 365
+            "confirmation_index": 364
           },
           {
             "direction": "BULLISH",
-            "index": 441,
+            "index": 440,
             "price": 29367.8,
             "time": "2026-08-27T04:00:00+03:00",
-            "confirmation_index": 443
+            "confirmation_index": 442
           }
         ],
         "t1": {
           "direction": "BULLISH",
-          "index": 360,
+          "index": 359,
           "price": 29212.8,
           "time": "2026-08-26T22:57:00+03:00",
-          "confirmation_index": 365
+          "confirmation_index": 364
         },
         "t2": {
           "direction": "BULLISH",
-          "index": 441,
+          "index": 440,
           "price": 29367.8,
           "time": "2026-08-27T04:00:00+03:00",
-          "confirmation_index": 443
+          "confirmation_index": 442
         },
         "selection_rule": "IMMUTABLE_PARENT_T1_T2"
       },
       "bear_parent_line": {
         "direction": "BEARISH",
         "slope_per_bar": -2.6184210526315788,
-        "intercept": 30690.655263157892,
+        "intercept": 30688.036842105263,
         "support_indices": [
-          421,
-          459
+          420,
+          458
         ],
         "support_count": 2,
-        "solid_start_index": 421,
-        "last_support_index": 459,
+        "solid_start_index": 420,
+        "last_support_index": 458,
         "total_deviation": 0.0,
         "span_bars": 38.0,
         "tolerance_points": 0.0,
         "support_anchors": [
           {
             "direction": "BEARISH",
-            "index": 421,
+            "index": 420,
             "price": 29588.3,
             "time": "2026-08-27T03:00:00+03:00",
-            "confirmation_index": 425
+            "confirmation_index": 424
           },
           {
             "direction": "BEARISH",
-            "index": 459,
+            "index": 458,
             "price": 29488.8,
             "time": "2026-08-27T04:54:00+03:00",
-            "confirmation_index": 462
+            "confirmation_index": 461
           }
         ],
         "t1": {
           "direction": "BEARISH",
-          "index": 421,
+          "index": 420,
           "price": 29588.3,
           "time": "2026-08-27T03:00:00+03:00",
-          "confirmation_index": 425
+          "confirmation_index": 424
         },
         "t2": {
           "direction": "BEARISH",
-          "index": 459,
+          "index": 458,
           "price": 29488.8,
           "time": "2026-08-27T04:54:00+03:00",
-          "confirmation_index": 462
+          "confirmation_index": 461
         },
         "selection_rule": "IMMUTABLE_PARENT_T1_T2"
       },
@@ -1589,16 +1599,16 @@
     }
   },
   "m3_line_leg_context": {
-    "parent_start_index": 286,
+    "parent_start_index": 285,
     "parent_direction": "BULLISH",
     "children": [
       {
         "direction": "BULLISH",
-        "historical_start_index": 286,
-        "start_index": 286,
+        "historical_start_index": 285,
+        "start_index": 285,
         "start": 29124.7,
         "start_time": "2026-08-26T19:15:00+03:00",
-        "end_index": 292,
+        "end_index": 291,
         "end": 29151.5,
         "end_time": "2026-08-26T19:33:00+03:00",
         "points": 26.799999999999272,
@@ -1607,20 +1617,20 @@
         "confirmation_time": null,
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 2.4857142857132333,
-          "intercept": 28414.300000000305,
+          "slope_per_bar": 2.4857142857152073,
+          "intercept": 28416.78571428545,
           "support_indices": [
+            285,
             286,
             287,
             288,
             289,
             290,
-            291,
-            292
+            291
           ],
           "support_count": 7,
-          "solid_start_index": 286,
-          "last_support_index": 292,
+          "solid_start_index": 285,
+          "last_support_index": 291,
           "total_deviation": 6.171428571429715,
           "span_bars": 6.0,
           "tolerance_points": 3.0
@@ -1628,318 +1638,318 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 292,
-        "start_index": 292,
+        "historical_start_index": 291,
+        "start_index": 291,
         "start": 29151.5,
         "start_time": "2026-08-26T19:33:00+03:00",
-        "end_index": 295,
+        "end_index": 294,
         "end": 29102.5,
         "end_time": "2026-08-26T19:42:00+03:00",
         "points": 49.0,
         "completed": true,
-        "confirmation_index": 295,
+        "confirmation_index": 294,
         "confirmation_time": "2026-08-26T19:45:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -8.771428571425982,
-          "intercept": 31712.14285714208,
+          "slope_per_bar": -8.771428571428046,
+          "intercept": 31703.371428571278,
           "support_indices": [
-            292,
-            294,
-            295
+            291,
+            293,
+            294
           ],
           "support_count": 3,
-          "solid_start_index": 292,
-          "last_support_index": 295,
-          "total_deviation": 3.685714285729773,
+          "solid_start_index": 291,
+          "last_support_index": 294,
+          "total_deviation": 3.685714285711583,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 295,
-        "start_index": 295,
+        "historical_start_index": 294,
+        "start_index": 294,
         "start": 29102.5,
         "start_time": "2026-08-26T19:42:00+03:00",
-        "end_index": 315,
+        "end_index": 314,
         "end": 29223.3,
         "end_time": "2026-08-26T20:42:00+03:00",
         "points": 120.79999999999927,
         "completed": true,
-        "confirmation_index": 298,
+        "confirmation_index": 297,
         "confirmation_time": "2026-08-26T19:54:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 6.1367816091959035,
-          "intercept": 27293.5873563217,
+          "slope_per_bar": 6.136781609196323,
+          "intercept": 27299.724137930734,
           "support_indices": [
-            295,
+            294,
+            299,
             300,
             301,
             302,
-            303,
+            304,
             305,
             306,
-            307,
-            309,
-            310
+            308,
+            309
           ],
           "support_count": 10,
-          "solid_start_index": 295,
-          "last_support_index": 310,
-          "total_deviation": 15.285057471290202,
+          "solid_start_index": 294,
+          "last_support_index": 309,
+          "total_deviation": 15.285057471228356,
           "span_bars": 15.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 315,
-        "start_index": 315,
+        "historical_start_index": 314,
+        "start_index": 314,
         "start": 29223.3,
         "start_time": "2026-08-26T20:42:00+03:00",
-        "end_index": 326,
+        "end_index": 325,
         "end": 29197.1,
         "end_time": "2026-08-26T21:15:00+03:00",
         "points": 26.200000000000728,
         "completed": true,
-        "confirmation_index": 317,
+        "confirmation_index": 316,
         "confirmation_time": "2026-08-26T20:51:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -0.8181614349783194,
-          "intercept": 29475.778923767044,
+          "slope_per_bar": -0.8181614349780773,
+          "intercept": 29474.960762332,
           "support_indices": [
+            315,
             316,
             317,
-            318,
-            325,
-            326
+            324,
+            325
           ],
           "support_count": 5,
-          "solid_start_index": 316,
-          "last_support_index": 326,
-          "total_deviation": 2.639910313897417,
+          "solid_start_index": 315,
+          "last_support_index": 325,
+          "total_deviation": 2.639910313908331,
           "span_bars": 10.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 326,
-        "start_index": 326,
+        "historical_start_index": 325,
+        "start_index": 325,
         "start": 29197.1,
         "start_time": "2026-08-26T21:15:00+03:00",
-        "end_index": 327,
+        "end_index": 326,
         "end": 29223.3,
         "end_time": "2026-08-26T21:18:00+03:00",
         "points": 26.200000000000728,
         "completed": true,
-        "confirmation_index": 328,
+        "confirmation_index": 327,
         "confirmation_time": "2026-08-26T21:24:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 6.5999999999961725,
-          "intercept": 27046.466666667908,
+          "slope_per_bar": 6.599999999997021,
+          "intercept": 27053.06666666763,
           "support_indices": [
+            325,
             326,
-            327,
-            328
+            327
           ],
           "support_count": 3,
-          "solid_start_index": 326,
-          "last_support_index": 328,
-          "total_deviation": 3.866666666654055,
+          "solid_start_index": 325,
+          "last_support_index": 327,
+          "total_deviation": 3.866666666661331,
           "span_bars": 2.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 327,
-        "start_index": 327,
+        "historical_start_index": 326,
+        "start_index": 326,
         "start": 29223.3,
         "start_time": "2026-08-26T21:18:00+03:00",
-        "end_index": 329,
+        "end_index": 328,
         "end": 29203.7,
         "end_time": "2026-08-26T21:24:00+03:00",
         "points": 19.599999999998545,
         "completed": true,
-        "confirmation_index": 329,
+        "confirmation_index": 328,
         "confirmation_time": "2026-08-26T21:27:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -2.192857142855353,
-          "intercept": 29940.521428570824,
+          "slope_per_bar": -2.192857142861314,
+          "intercept": 29938.328571429953,
           "support_indices": [
+            326,
             327,
-            328,
-            330
+            329
           ],
           "support_count": 3,
-          "solid_start_index": 327,
-          "last_support_index": 330,
-          "total_deviation": 0.47142857141807326,
+          "solid_start_index": 326,
+          "last_support_index": 329,
+          "total_deviation": 0.4714285714435391,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 329,
-        "start_index": 329,
+        "historical_start_index": 328,
+        "start_index": 328,
         "start": 29203.7,
         "start_time": "2026-08-26T21:24:00+03:00",
-        "end_index": 342,
+        "end_index": 341,
         "end": 29300.3,
         "end_time": "2026-08-26T22:03:00+03:00",
         "points": 96.59999999999854,
         "completed": true,
-        "confirmation_index": 331,
+        "confirmation_index": 330,
         "confirmation_time": "2026-08-26T21:33:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 4.442815674891773,
-          "intercept": 27741.680551523732,
+          "slope_per_bar": 4.4428156748908005,
+          "intercept": 27746.12336719894,
           "support_indices": [
+            328,
             329,
-            330,
-            333,
+            332,
+            337,
             338,
-            339,
-            340
+            339
           ],
           "support_count": 6,
-          "solid_start_index": 329,
-          "last_support_index": 340,
-          "total_deviation": 3.7239477503717353,
+          "solid_start_index": 328,
+          "last_support_index": 339,
+          "total_deviation": 3.723947750389925,
           "span_bars": 11.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 342,
-        "start_index": 342,
+        "historical_start_index": 341,
+        "start_index": 341,
         "start": 29300.3,
         "start_time": "2026-08-26T22:03:00+03:00",
-        "end_index": 345,
+        "end_index": 344,
         "end": 29263.3,
         "end_time": "2026-08-26T22:12:00+03:00",
         "points": 37.0,
         "completed": true,
-        "confirmation_index": 345,
+        "confirmation_index": 344,
         "confirmation_time": "2026-08-26T22:15:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -4.154945054947207,
-          "intercept": 30721.392307693048,
+          "slope_per_bar": -4.154945054946082,
+          "intercept": 30717.237362637723,
           "support_indices": [
+            341,
             342,
-            343,
-            346,
-            348
+            345,
+            347
           ],
           "support_count": 4,
-          "solid_start_index": 342,
-          "last_support_index": 348,
-          "total_deviation": 2.837362637368642,
+          "solid_start_index": 341,
+          "last_support_index": 347,
+          "total_deviation": 2.837362637383194,
           "span_bars": 6.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 345,
-        "start_index": 345,
+        "historical_start_index": 344,
+        "start_index": 344,
         "start": 29263.3,
         "start_time": "2026-08-26T22:12:00+03:00",
-        "end_index": 347,
+        "end_index": 346,
         "end": 29289.3,
         "end_time": "2026-08-26T22:18:00+03:00",
         "points": 26.0,
         "completed": true,
-        "confirmation_index": 349,
+        "confirmation_index": 348,
         "confirmation_time": "2026-08-26T22:27:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 0.7863013698615665,
-          "intercept": 28992.47260274022,
+          "slope_per_bar": 0.7863013698622853,
+          "intercept": 28993.258904109833,
           "support_indices": [
-            345,
+            344,
+            346,
             347,
-            348,
-            350,
-            352
+            349,
+            351
           ],
           "support_count": 5,
-          "solid_start_index": 345,
-          "last_support_index": 352,
-          "total_deviation": 3.904109589060681,
+          "solid_start_index": 344,
+          "last_support_index": 351,
+          "total_deviation": 3.904109589053405,
           "span_bars": 7.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 347,
-        "start_index": 347,
+        "historical_start_index": 346,
+        "start_index": 346,
         "start": 29289.3,
         "start_time": "2026-08-26T22:18:00+03:00",
-        "end_index": 360,
+        "end_index": 359,
         "end": 29212.8,
         "end_time": "2026-08-26T22:57:00+03:00",
         "points": 76.5,
         "completed": true,
-        "confirmation_index": 353,
+        "confirmation_index": 352,
         "confirmation_time": "2026-08-26T22:39:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -2.4957943925236976,
-          "intercept": 30154.9210280375,
+          "slope_per_bar": -2.495794392523605,
+          "intercept": 30152.425233644946,
           "support_indices": [
-            347,
-            349,
+            346,
+            348,
+            350,
             351,
             352,
-            353,
-            358
+            357
           ],
           "support_count": 6,
-          "solid_start_index": 347,
-          "last_support_index": 358,
-          "total_deviation": 4.194392523360875,
+          "solid_start_index": 346,
+          "last_support_index": 357,
+          "total_deviation": 4.194392523349961,
           "span_bars": 11.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 360,
-        "start_index": 360,
+        "historical_start_index": 359,
+        "start_index": 359,
         "start": 29212.8,
         "start_time": "2026-08-26T22:57:00+03:00",
-        "end_index": 367,
+        "end_index": 366,
         "end": 29314.9,
         "end_time": "2026-08-26T23:18:00+03:00",
         "points": 102.10000000000218,
         "completed": true,
-        "confirmation_index": 365,
+        "confirmation_index": 364,
         "confirmation_time": "2026-08-26T23:15:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 4.845121951218915,
-          "intercept": 27468.08048780511,
+          "slope_per_bar": 4.845121951219414,
+          "intercept": 27472.925609756134,
           "support_indices": [
+            359,
             360,
-            361,
-            369,
-            370
+            368,
+            369
           ],
           "support_count": 4,
-          "solid_start_index": 360,
-          "last_support_index": 370,
+          "solid_start_index": 359,
+          "last_support_index": 369,
           "total_deviation": 2.0,
           "span_bars": 10.0,
           "tolerance_points": 3.0
@@ -1947,188 +1957,189 @@
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 367,
-        "start_index": 367,
+        "historical_start_index": 366,
+        "start_index": 366,
         "start": 29314.9,
         "start_time": "2026-08-26T23:18:00+03:00",
-        "end_index": 368,
+        "end_index": 367,
         "end": 29223.5,
         "end_time": "2026-08-26T23:21:00+03:00",
         "points": 91.40000000000146,
         "completed": true,
-        "confirmation_index": 372,
-        "confirmation_time": "2026-08-26T23:36:00+03:00",
+        "confirmation_index": 370,
+        "confirmation_time": "2026-08-26T23:33:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -8.878571428575407,
-          "intercept": 32573.59642857291,
+          "slope_per_bar": -8.878571428572522,
+          "intercept": 32564.71785714327,
           "support_indices": [
-            367,
+            366,
+            369,
             370,
-            371,
-            372
+            371
           ],
           "support_count": 4,
-          "solid_start_index": 367,
-          "last_support_index": 372,
-          "total_deviation": 4.214285714297148,
+          "solid_start_index": 366,
+          "last_support_index": 371,
+          "total_deviation": 4.214285714289872,
           "span_bars": 5.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 368,
-        "start_index": 368,
+        "historical_start_index": 367,
+        "start_index": 367,
         "start": 29223.5,
         "start_time": "2026-08-26T23:21:00+03:00",
-        "end_index": 369,
+        "end_index": 368,
         "end": 29292.5,
         "end_time": "2026-08-26T23:24:00+03:00",
         "points": 69.0,
         "completed": true,
-        "confirmation_index": 374,
+        "confirmation_index": 373,
         "confirmation_time": "2026-08-26T23:42:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 8.146774193548644,
-          "intercept": 26225.382258064426,
+          "slope_per_bar": 8.146774193547884,
+          "intercept": 26233.529032258255,
           "support_indices": [
-            368,
-            373,
-            374
+            367,
+            372,
+            373
           ],
           "support_count": 3,
-          "solid_start_index": 368,
-          "last_support_index": 374,
-          "total_deviation": 1.2580645161251596,
+          "solid_start_index": 367,
+          "last_support_index": 373,
+          "total_deviation": 1.2580645161215216,
           "span_bars": 6.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 369,
-        "start_index": 369,
+        "historical_start_index": 368,
+        "start_index": 368,
         "start": 29292.5,
         "start_time": "2026-08-26T23:24:00+03:00",
-        "end_index": 372,
+        "end_index": 371,
         "end": 29249.4,
         "end_time": "2026-08-26T23:33:00+03:00",
         "points": 43.099999999998545,
         "completed": true,
-        "confirmation_index": 375,
+        "confirmation_index": 374,
         "confirmation_time": "2026-08-26T23:45:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -1.0337349397600974,
-          "intercept": 29673.322891566662,
+          "slope_per_bar": -1.0337349397575588,
+          "intercept": 29672.289156625964,
           "support_indices": [
+            368,
             369,
-            370,
+            372,
             373,
-            374,
-            376
+            375
           ],
           "support_count": 5,
-          "solid_start_index": 369,
-          "last_support_index": 376,
-          "total_deviation": 4.438554216863849,
+          "solid_start_index": 368,
+          "last_support_index": 375,
+          "total_deviation": 4.438554216878401,
           "span_bars": 7.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 372,
-        "start_index": 372,
+        "historical_start_index": 371,
+        "start_index": 371,
         "start": 29249.4,
         "start_time": "2026-08-26T23:33:00+03:00",
-        "end_index": 393,
+        "end_index": 392,
         "end": 29552.3,
         "end_time": "2026-08-27T01:36:00+03:00",
         "points": 302.8999999999978,
         "completed": true,
-        "confirmation_index": 377,
+        "confirmation_index": 376,
         "confirmation_time": "2026-08-26T23:51:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 4.985763097949887,
-          "intercept": 27571.005466970393,
+          "slope_per_bar": 4.98576309794994,
+          "intercept": 27575.991230068317,
           "support_indices": [
+            383,
             384,
-            385,
-            387,
-            390,
-            392,
-            394,
-            396
+            386,
+            389,
+            391,
+            393,
+            395
           ],
           "support_count": 7,
-          "solid_start_index": 384,
-          "last_support_index": 396,
-          "total_deviation": 10.48997722094282,
+          "solid_start_index": 383,
+          "last_support_index": 395,
+          "total_deviation": 10.489977220953733,
           "span_bars": 12.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 393,
-        "start_index": 393,
+        "historical_start_index": 392,
+        "start_index": 392,
         "start": 29552.3,
         "start_time": "2026-08-27T01:36:00+03:00",
-        "end_index": 406,
+        "end_index": 405,
         "end": 29520.2,
         "end_time": "2026-08-27T02:15:00+03:00",
         "points": 32.099999999998545,
         "completed": true,
-        "confirmation_index": 397,
+        "confirmation_index": 396,
         "confirmation_time": "2026-08-27T01:51:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -0.9027423469385368,
-          "intercept": 29908.339859693795,
+          "slope_per_bar": -0.9027423469379959,
+          "intercept": 29907.437117346624,
           "support_indices": [
-            393,
+            392,
+            394,
             395,
             396,
-            397,
+            399,
             400,
             401,
             402,
-            403,
-            408
+            407
           ],
           "support_count": 9,
-          "solid_start_index": 393,
-          "last_support_index": 408,
-          "total_deviation": 7.996301020426472,
+          "solid_start_index": 392,
+          "last_support_index": 407,
+          "total_deviation": 7.996301020419196,
           "span_bars": 15.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 406,
-        "start_index": 406,
+        "historical_start_index": 405,
+        "start_index": 405,
         "start": 29520.2,
         "start_time": "2026-08-27T02:15:00+03:00",
-        "end_index": 421,
+        "end_index": 420,
         "end": 29588.3,
         "end_time": "2026-08-27T03:00:00+03:00",
         "points": 68.09999999999854,
         "completed": true,
-        "confirmation_index": 409,
+        "confirmation_index": 408,
         "confirmation_time": "2026-08-27T02:27:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 2.3801339860862862,
-          "intercept": 28552.533187322777,
+          "slope_per_bar": 2.380133986086349,
+          "intercept": 28554.91332130881,
           "support_indices": [
+            405,
             406,
             407,
-            408,
+            409,
             410,
             411,
             412,
@@ -2138,105 +2149,104 @@
             416,
             417,
             418,
-            419,
-            421
+            420
           ],
           "support_count": 14,
-          "solid_start_index": 406,
-          "last_support_index": 421,
-          "total_deviation": 16.321205874774023,
+          "solid_start_index": 405,
+          "last_support_index": 420,
+          "total_deviation": 16.321205874766747,
           "span_bars": 15.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 421,
-        "start_index": 421,
+        "historical_start_index": 420,
+        "start_index": 420,
         "start": 29588.3,
         "start_time": "2026-08-27T03:00:00+03:00",
-        "end_index": 427,
+        "end_index": 426,
         "end": 29493.0,
         "end_time": "2026-08-27T03:18:00+03:00",
         "points": 95.29999999999927,
         "completed": true,
-        "confirmation_index": 425,
+        "confirmation_index": 424,
         "confirmation_time": "2026-08-27T03:15:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -13.107547169812724,
-          "intercept": 35106.624528302484,
+          "slope_per_bar": -13.107547169811458,
+          "intercept": 35093.51698113214,
           "support_indices": [
-            421,
+            420,
+            423,
             424,
             425,
-            426,
-            427
+            426
           ],
           "support_count": 5,
-          "solid_start_index": 421,
-          "last_support_index": 427,
-          "total_deviation": 5.532075471703138,
+          "solid_start_index": 420,
+          "last_support_index": 426,
+          "total_deviation": 5.532075471706776,
           "span_bars": 6.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 427,
-        "start_index": 427,
+        "historical_start_index": 426,
+        "start_index": 426,
         "start": 29493.0,
         "start_time": "2026-08-27T03:18:00+03:00",
-        "end_index": 430,
+        "end_index": 429,
         "end": 29518.4,
         "end_time": "2026-08-27T03:27:00+03:00",
         "points": 25.400000000001455,
         "completed": true,
-        "confirmation_index": 430,
+        "confirmation_index": 429,
         "confirmation_time": "2026-08-27T03:30:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 2.8071428571428636,
-          "intercept": 28294.07142857143,
+          "slope_per_bar": 2.807142857140445,
+          "intercept": 28296.878571429625,
           "support_indices": [
-            427,
-            429,
-            430
+            426,
+            428,
+            429
           ],
           "support_count": 3,
-          "solid_start_index": 427,
-          "last_support_index": 430,
-          "total_deviation": 1.6714285714260768,
+          "solid_start_index": 426,
+          "last_support_index": 429,
+          "total_deviation": 1.671428571404249,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 430,
-        "start_index": 430,
+        "historical_start_index": 429,
+        "start_index": 429,
         "start": 29518.4,
         "start_time": "2026-08-27T03:27:00+03:00",
-        "end_index": 441,
+        "end_index": 440,
         "end": 29367.8,
         "end_time": "2026-08-27T04:00:00+03:00",
         "points": 150.60000000000218,
         "completed": true,
-        "confirmation_index": 434,
-        "confirmation_time": "2026-08-27T03:42:00+03:00",
+        "confirmation_index": 431,
+        "confirmation_time": "2026-08-27T03:36:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -15.364122137406149,
-          "intercept": 36124.512977099934,
+          "slope_per_bar": -15.36412213740423,
+          "intercept": 36109.14885496168,
           "support_indices": [
-            430,
+            429,
+            432,
             433,
-            434,
-            438
+            437
           ],
           "support_count": 4,
-          "solid_start_index": 430,
-          "last_support_index": 438,
+          "solid_start_index": 429,
+          "last_support_index": 437,
           "total_deviation": 1.6641221374084125,
           "span_bars": 8.0,
           "tolerance_points": 3.0
@@ -2244,341 +2254,341 @@
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 441,
-        "start_index": 441,
+        "historical_start_index": 440,
+        "start_index": 440,
         "start": 29367.8,
         "start_time": "2026-08-27T04:00:00+03:00",
-        "end_index": 453,
+        "end_index": 452,
         "end": 29469.5,
         "end_time": "2026-08-27T04:36:00+03:00",
         "points": 101.70000000000073,
         "completed": true,
-        "confirmation_index": 443,
+        "confirmation_index": 442,
         "confirmation_time": "2026-08-27T04:09:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 6.040640394088264,
-          "intercept": 26713.809359606097,
+          "slope_per_bar": 6.040640394089446,
+          "intercept": 26719.84999999965,
           "support_indices": [
-            442,
-            444,
+            441,
+            443,
+            448,
             449,
-            450,
-            453
+            452
           ],
           "support_count": 5,
-          "solid_start_index": 442,
-          "last_support_index": 453,
-          "total_deviation": 4.45369458129062,
+          "solid_start_index": 441,
+          "last_support_index": 452,
+          "total_deviation": 4.453694581279706,
           "span_bars": 11.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 453,
-        "start_index": 453,
+        "historical_start_index": 452,
+        "start_index": 452,
         "start": 29469.5,
         "start_time": "2026-08-27T04:36:00+03:00",
-        "end_index": 455,
+        "end_index": 454,
         "end": 29426.8,
         "end_time": "2026-08-27T04:42:00+03:00",
         "points": 42.70000000000073,
         "completed": true,
         "confirmation_index": 455,
-        "confirmation_time": "2026-08-27T04:45:00+03:00",
+        "confirmation_time": "2026-08-27T04:48:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -8.557142857142736,
-          "intercept": 33345.714285714246,
+          "slope_per_bar": -8.557142857143347,
+          "intercept": 33337.157142857366,
           "support_indices": [
-            453,
-            455,
-            456
+            452,
+            454,
+            455
           ],
           "support_count": 3,
-          "solid_start_index": 453,
-          "last_support_index": 456,
-          "total_deviation": 1.028571428552823,
+          "solid_start_index": 452,
+          "last_support_index": 455,
+          "total_deviation": 1.0285714285673748,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 455,
-        "start_index": 455,
+        "historical_start_index": 454,
+        "start_index": 454,
         "start": 29426.8,
         "start_time": "2026-08-27T04:42:00+03:00",
-        "end_index": 459,
+        "end_index": 458,
         "end": 29488.8,
         "end_time": "2026-08-27T04:54:00+03:00",
         "points": 62.0,
         "completed": true,
         "confirmation_index": 457,
-        "confirmation_time": "2026-08-27T04:51:00+03:00",
+        "confirmation_time": "2026-08-27T04:54:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 16.449999999999303,
-          "intercept": 21927.600000000322,
+          "slope_per_bar": 16.449999999999388,
+          "intercept": 21944.050000000272,
           "support_indices": [
+            455,
             456,
-            457,
-            459
+            458
           ],
           "support_count": 3,
-          "solid_start_index": 456,
-          "last_support_index": 459,
-          "total_deviation": 1.5,
+          "solid_start_index": 455,
+          "last_support_index": 458,
+          "total_deviation": 1.500000000003638,
           "span_bars": 3.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 459,
-        "start_index": 459,
+        "historical_start_index": 458,
+        "start_index": 458,
         "start": 29488.8,
         "start_time": "2026-08-27T04:54:00+03:00",
-        "end_index": 463,
+        "end_index": 462,
         "end": 29452.0,
         "end_time": "2026-08-27T05:06:00+03:00",
         "points": 36.79999999999927,
         "completed": true,
-        "confirmation_index": 462,
+        "confirmation_index": 461,
         "confirmation_time": "2026-08-27T05:06:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -5.300000000001219,
-          "intercept": 31922.500000000553,
+          "slope_per_bar": -5.299999999999323,
+          "intercept": 31917.199999999677,
           "support_indices": [
+            458,
             459,
-            460,
-            462,
-            463
+            461,
+            462
           ],
           "support_count": 4,
-          "solid_start_index": 459,
-          "last_support_index": 463,
-          "total_deviation": 5.19999999999709,
+          "solid_start_index": 458,
+          "last_support_index": 462,
+          "total_deviation": 5.200000000000728,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 463,
-        "start_index": 463,
+        "historical_start_index": 462,
+        "start_index": 462,
         "start": 29452.0,
         "start_time": "2026-08-27T05:06:00+03:00",
-        "end_index": 465,
+        "end_index": 464,
         "end": 29479.0,
         "end_time": "2026-08-27T05:12:00+03:00",
         "points": 27.0,
         "completed": true,
-        "confirmation_index": 465,
+        "confirmation_index": 464,
         "confirmation_time": "2026-08-27T05:15:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 8.449999999998436,
-          "intercept": 25539.733333334065,
+          "slope_per_bar": 8.449999999999712,
+          "intercept": 25548.18333333347,
           "support_indices": [
+            462,
             463,
-            464,
-            465
+            464
           ],
           "support_count": 3,
-          "solid_start_index": 463,
-          "last_support_index": 465,
-          "total_deviation": 0.33333333333575865,
+          "solid_start_index": 462,
+          "last_support_index": 464,
+          "total_deviation": 0.3333333333321207,
           "span_bars": 2.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 465,
-        "start_index": 465,
+        "historical_start_index": 464,
+        "start_index": 464,
         "start": 29479.0,
         "start_time": "2026-08-27T05:12:00+03:00",
-        "end_index": 469,
+        "end_index": 468,
         "end": 29460.9,
         "end_time": "2026-08-27T05:24:00+03:00",
         "points": 18.099999999998545,
         "completed": true,
-        "confirmation_index": 467,
+        "confirmation_index": 466,
         "confirmation_time": "2026-08-27T05:21:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -2.2457142857122947,
-          "intercept": 30523.2371428562,
+          "slope_per_bar": -2.2457142857144103,
+          "intercept": 30520.991428571484,
           "support_indices": [
+            464,
             465,
             466,
-            467,
-            469
+            468
           ],
           "support_count": 4,
-          "solid_start_index": 465,
-          "last_support_index": 469,
-          "total_deviation": 2.3771428571744764,
+          "solid_start_index": 464,
+          "last_support_index": 468,
+          "total_deviation": 2.3771428571526485,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 469,
-        "start_index": 469,
+        "historical_start_index": 468,
+        "start_index": 468,
         "start": 29460.9,
         "start_time": "2026-08-27T05:24:00+03:00",
-        "end_index": 472,
+        "end_index": 471,
         "end": 29489.4,
         "end_time": "2026-08-27T05:33:00+03:00",
         "points": 28.5,
         "completed": true,
-        "confirmation_index": 471,
+        "confirmation_index": 470,
         "confirmation_time": "2026-08-27T05:33:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 4.459999999999043,
-          "intercept": 27369.480000000436,
+          "slope_per_bar": 4.460000000001272,
+          "intercept": 27373.939999999395,
           "support_indices": [
+            468,
             469,
             470,
-            471,
-            473
+            472
           ],
           "support_count": 4,
-          "solid_start_index": 469,
-          "last_support_index": 473,
-          "total_deviation": 3.319999999966967,
+          "solid_start_index": 468,
+          "last_support_index": 472,
+          "total_deviation": 3.319999999981519,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 472,
-        "start_index": 472,
+        "historical_start_index": 471,
+        "start_index": 471,
         "start": 29489.4,
         "start_time": "2026-08-27T05:33:00+03:00",
-        "end_index": 475,
+        "end_index": 474,
         "end": 29465.8,
         "end_time": "2026-08-27T05:42:00+03:00",
         "points": 23.600000000002183,
         "completed": true,
-        "confirmation_index": 474,
+        "confirmation_index": 473,
         "confirmation_time": "2026-08-27T05:42:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -1.6628571428566998,
-          "intercept": 30274.328571428374,
+          "slope_per_bar": -1.6628571428541825,
+          "intercept": 30272.665714284318,
           "support_indices": [
+            471,
             472,
             473,
-            474,
-            476
+            475
           ],
           "support_count": 4,
-          "solid_start_index": 472,
-          "last_support_index": 476,
-          "total_deviation": 3.5314285714484868,
+          "solid_start_index": 471,
+          "last_support_index": 475,
+          "total_deviation": 3.531428571433935,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 475,
-        "start_index": 475,
+        "historical_start_index": 474,
+        "start_index": 474,
         "start": 29465.8,
         "start_time": "2026-08-27T05:42:00+03:00",
-        "end_index": 478,
+        "end_index": 477,
         "end": 29494.8,
         "end_time": "2026-08-27T05:51:00+03:00",
         "points": 29.0,
         "completed": true,
-        "confirmation_index": 477,
+        "confirmation_index": 476,
         "confirmation_time": "2026-08-27T05:51:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 3.559999999998422,
-          "intercept": 27776.160000000742,
+          "slope_per_bar": 3.5599999999982375,
+          "intercept": 27779.720000000845,
           "support_indices": [
+            474,
             475,
             476,
             477,
-            478,
-            479
+            478
           ],
           "support_count": 5,
-          "solid_start_index": 475,
-          "last_support_index": 479,
-          "total_deviation": 7.679999999989377,
+          "solid_start_index": 474,
+          "last_support_index": 478,
+          "total_deviation": 7.680000000007567,
           "span_bars": 4.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BEARISH",
-        "historical_start_index": 478,
-        "start_index": 478,
+        "historical_start_index": 477,
+        "start_index": 477,
         "start": 29494.8,
         "start_time": "2026-08-27T05:51:00+03:00",
-        "end_index": 485,
+        "end_index": 484,
         "end": 29464.9,
         "end_time": "2026-08-27T06:12:00+03:00",
         "points": 29.899999999997817,
         "completed": true,
-        "confirmation_index": 480,
+        "confirmation_index": 479,
         "confirmation_time": "2026-08-27T06:00:00+03:00",
         "line": {
           "direction": "BEARISH",
-          "slope_per_bar": -1.3116822429902002,
-          "intercept": 30120.92149532685,
+          "slope_per_bar": -1.3116822429909385,
+          "intercept": 30119.609813084262,
           "support_indices": [
+            477,
             478,
             479,
-            480,
-            483,
-            486
+            482,
+            485
           ],
           "support_count": 5,
-          "solid_start_index": 478,
-          "last_support_index": 486,
-          "total_deviation": 2.4794392523654096,
+          "solid_start_index": 477,
+          "last_support_index": 485,
+          "total_deviation": 2.479439252325392,
           "span_bars": 8.0,
           "tolerance_points": 3.0
         }
       },
       {
         "direction": "BULLISH",
-        "historical_start_index": 485,
-        "start_index": 485,
+        "historical_start_index": 484,
+        "start_index": 484,
         "start": 29464.9,
         "start_time": "2026-08-27T06:12:00+03:00",
-        "end_index": 489,
+        "end_index": 488,
         "end": 29510.3,
         "end_time": "2026-08-27T06:24:00+03:00",
         "points": 45.39999999999782,
         "completed": true,
         "confirmation_index": 487,
-        "confirmation_time": "2026-08-27T06:21:00+03:00",
+        "confirmation_time": "2026-08-27T06:24:00+03:00",
         "line": {
           "direction": "BULLISH",
-          "slope_per_bar": 6.4269230769248935,
-          "intercept": 26348.14999999911,
+          "slope_per_bar": 6.426923076923077,
+          "intercept": 26354.57692307694,
           "support_indices": [
-            485,
+            484,
+            486,
             487,
-            488,
-            490
+            489
           ],
           "support_count": 4,
-          "solid_start_index": 485,
-          "last_support_index": 490,
-          "total_deviation": 3.8230769230649457,
+          "solid_start_index": 484,
+          "last_support_index": 489,
+          "total_deviation": 3.8230769231122395,
           "span_bars": 5.0,
           "tolerance_points": 3.0
         }
@@ -2586,37 +2596,37 @@
     ],
     "current": {
       "direction": "BEARISH",
-      "historical_start_index": 489,
-      "start_index": 489,
+      "historical_start_index": 488,
+      "start_index": 488,
       "origin": 29510.3,
       "start": 29510.3,
       "start_time": "2026-08-27T06:24:00+03:00",
-      "confirmation_index": 491,
+      "confirmation_index": 490,
       "recognition_time": "2026-08-27T06:33:00+03:00",
       "confirmation_time": "2026-08-27T06:33:00+03:00",
-      "current_price": 29466.0,
-      "points": 44.29999999999927,
+      "current_price": 29483.0,
+      "points": 27.299999999999272,
       "completed": false,
       "source": "MAX_SUPPORT_TRENDLINE_CONFIRMED",
       "line": {
         "direction": "BEARISH",
-        "slope_per_bar": -3.4633823529413514,
-        "intercept": 31202.75235294127,
+        "slope_per_bar": -3.4633823529399037,
+        "intercept": 31199.288970587604,
         "support_indices": [
+          488,
           489,
-          490,
+          491,
           492,
           493,
           494,
           495,
           496,
-          497,
-          498
+          497
         ],
         "support_count": 9,
-        "solid_start_index": 489,
-        "last_support_index": 498,
-        "total_deviation": 12.687941176471213,
+        "solid_start_index": 488,
+        "last_support_index": 497,
+        "total_deviation": 12.687941176463937,
         "span_bars": 9.0,
         "tolerance_points": 3.0
       },
@@ -2627,25 +2637,33 @@
     "events": [
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 289,
+        "break_index": 288,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 288,
+        "candidate_start_index": 287,
         "candidate_accepted": false
       },
       {
         "old_direction": "BULLISH",
-        "break_index": 289,
-        "reentry_index": 290,
+        "break_index": 288,
+        "reentry_index": 289,
         "event": "FAILED_BREAK_REJECTION",
         "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 292,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 291,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 293,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 292,
+        "candidate_start_index": 291,
         "candidate_accepted": false
       },
       {
@@ -2653,33 +2671,33 @@
         "break_index": 294,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 292,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 295,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 292,
+        "candidate_start_index": 291,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 292,
+        "historical_start_index": 291,
         "historical_start_price": 29151.5,
-        "confirmation_index": 295,
+        "confirmation_index": 294,
         "confirmation_time": "2026-08-26T19:45:00+03:00",
-        "acceptance_index": 295,
+        "acceptance_index": 294,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 295,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 294,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 296,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 295,
+        "candidate_start_index": 294,
         "candidate_accepted": false
       },
       {
@@ -2687,30 +2705,22 @@
         "break_index": 297,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 295,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 298,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 295,
+        "candidate_start_index": 294,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 295,
+        "historical_start_index": 294,
         "historical_start_price": 29102.5,
-        "confirmation_index": 298,
+        "confirmation_index": 297,
         "confirmation_time": "2026-08-26T19:54:00+03:00",
-        "acceptance_index": 297,
+        "acceptance_index": 296,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 311,
+        "break_index": 310,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
         "candidate_start_index": null,
@@ -2718,14 +2728,14 @@
       },
       {
         "old_direction": "BULLISH",
-        "break_index": 311,
-        "reentry_index": 312,
+        "break_index": 310,
+        "reentry_index": 311,
         "event": "FAILED_BREAK_REJECTION",
         "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 313,
+        "break_index": 312,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
         "candidate_start_index": null,
@@ -2733,17 +2743,25 @@
       },
       {
         "old_direction": "BULLISH",
-        "break_index": 313,
-        "reentry_index": 314,
+        "break_index": 312,
+        "reentry_index": 313,
         "event": "FAILED_BREAK_REJECTION",
         "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 314,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": null,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 315,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": null,
+        "candidate_start_index": 314,
         "candidate_accepted": false
       },
       {
@@ -2751,33 +2769,33 @@
         "break_index": 316,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 315,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 317,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 315,
+        "candidate_start_index": 314,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 315,
+        "historical_start_index": 314,
         "historical_start_price": 29223.3,
-        "confirmation_index": 317,
+        "confirmation_index": 316,
         "confirmation_time": "2026-08-26T20:51:00+03:00",
-        "acceptance_index": 317,
+        "acceptance_index": 316,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 317,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 316,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 318,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 317,
+        "candidate_start_index": 316,
         "candidate_accepted": false
       },
       {
@@ -2785,184 +2803,184 @@
         "break_index": 319,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 317,
+        "candidate_start_index": 316,
         "candidate_accepted": false
+      },
+      {
+        "old_direction": "BEARISH",
+        "break_index": 317,
+        "reentry_index": 320,
+        "event": "FAILED_BREAK_REJECTION",
+        "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 320,
+        "break_index": 326,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 317,
+        "candidate_start_index": 325,
         "candidate_accepted": false
-      },
-      {
-        "old_direction": "BEARISH",
-        "break_index": 318,
-        "reentry_index": 321,
-        "event": "FAILED_BREAK_REJECTION",
-        "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 327,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 326,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 328,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 326,
+        "candidate_start_index": 325,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 326,
+        "historical_start_index": 325,
         "historical_start_price": 29197.1,
-        "confirmation_index": 328,
+        "confirmation_index": 327,
         "confirmation_time": "2026-08-26T21:24:00+03:00",
+        "acceptance_index": 327,
+        "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 328,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 326,
+        "candidate_accepted": true
+      },
+      {
+        "event": "NEW_LEG",
+        "direction": "BEARISH",
+        "historical_start_index": 326,
+        "historical_start_price": 29223.3,
+        "confirmation_index": 328,
+        "confirmation_time": "2026-08-26T21:27:00+03:00",
         "acceptance_index": 328,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 329,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 327,
-        "candidate_accepted": true
-      },
-      {
-        "event": "NEW_LEG",
-        "direction": "BEARISH",
-        "historical_start_index": 327,
-        "historical_start_price": 29223.3,
-        "confirmation_index": 329,
-        "confirmation_time": "2026-08-26T21:27:00+03:00",
-        "acceptance_index": 329,
-        "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 328,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 330,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 329,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 331,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 329,
+        "candidate_start_index": 328,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 329,
+        "historical_start_index": 328,
         "historical_start_price": 29203.7,
-        "confirmation_index": 331,
+        "confirmation_index": 330,
         "confirmation_time": "2026-08-26T21:33:00+03:00",
-        "acceptance_index": 331,
+        "acceptance_index": 330,
+        "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 344,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 341,
+        "candidate_accepted": true
+      },
+      {
+        "event": "NEW_LEG",
+        "direction": "BEARISH",
+        "historical_start_index": 341,
+        "historical_start_price": 29300.3,
+        "confirmation_index": 344,
+        "confirmation_time": "2026-08-26T22:15:00+03:00",
+        "acceptance_index": 343,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 345,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 342,
-        "candidate_accepted": true
-      },
-      {
-        "event": "NEW_LEG",
-        "direction": "BEARISH",
-        "historical_start_index": 342,
-        "historical_start_price": 29300.3,
-        "confirmation_index": 345,
-        "confirmation_time": "2026-08-26T22:15:00+03:00",
-        "acceptance_index": 344,
-        "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 346,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 345,
+        "candidate_start_index": 344,
         "candidate_accepted": false
       },
       {
         "old_direction": "BEARISH",
-        "break_index": 346,
-        "reentry_index": 347,
+        "break_index": 345,
+        "reentry_index": 346,
         "event": "FAILED_BREAK_REJECTION",
         "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 349,
+        "break_index": 348,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 345,
+        "candidate_start_index": 344,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 345,
+        "historical_start_index": 344,
         "historical_start_price": 29263.3,
-        "confirmation_index": 349,
+        "confirmation_index": 348,
         "confirmation_time": "2026-08-26T22:27:00+03:00",
-        "acceptance_index": 348,
+        "acceptance_index": 347,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 350,
+        "break_index": 349,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 347,
+        "candidate_start_index": 346,
         "candidate_accepted": false
       },
       {
         "old_direction": "BULLISH",
-        "break_index": 350,
-        "reentry_index": 351,
+        "break_index": 349,
+        "reentry_index": 350,
         "event": "FAILED_BREAK_REJECTION",
         "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 353,
+        "break_index": 352,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 347,
+        "candidate_start_index": 346,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 347,
+        "historical_start_index": 346,
         "historical_start_price": 29289.3,
-        "confirmation_index": 353,
+        "confirmation_index": 352,
         "confirmation_time": "2026-08-26T22:39:00+03:00",
-        "acceptance_index": 350,
+        "acceptance_index": 349,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 360,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 359,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 361,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 360,
+        "candidate_start_index": 359,
         "candidate_accepted": false
       },
       {
@@ -2970,7 +2988,7 @@
         "break_index": 362,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 360,
+        "candidate_start_index": 359,
         "candidate_accepted": false
       },
       {
@@ -2978,7 +2996,7 @@
         "break_index": 363,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 360,
+        "candidate_start_index": 359,
         "candidate_accepted": false
       },
       {
@@ -2986,30 +3004,22 @@
         "break_index": 364,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 360,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 365,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 360,
+        "candidate_start_index": 359,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 360,
+        "historical_start_index": 359,
         "historical_start_price": 29212.8,
-        "confirmation_index": 365,
+        "confirmation_index": 364,
         "confirmation_time": "2026-08-26T23:15:00+03:00",
-        "acceptance_index": 365,
+        "acceptance_index": 364,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 367,
+        "break_index": 366,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
         "candidate_start_index": null,
@@ -3017,10 +3027,18 @@
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 367,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 366,
+        "candidate_accepted": false
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 368,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 367,
+        "candidate_start_index": 366,
         "candidate_accepted": false
       },
       {
@@ -3028,7 +3046,7 @@
         "break_index": 369,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 367,
+        "candidate_start_index": 366,
         "candidate_accepted": false
       },
       {
@@ -3036,139 +3054,131 @@
         "break_index": 370,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 367,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 371,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 367,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 372,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 367,
+        "candidate_start_index": 366,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 367,
+        "historical_start_index": 366,
         "historical_start_price": 29314.9,
-        "confirmation_index": 372,
-        "confirmation_time": "2026-08-26T23:36:00+03:00",
-        "acceptance_index": 371,
+        "confirmation_index": 370,
+        "confirmation_time": "2026-08-26T23:33:00+03:00",
+        "acceptance_index": 370,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 372,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 367,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 373,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 368,
-        "candidate_accepted": false
+        "candidate_start_index": 367,
+        "candidate_accepted": true
+      },
+      {
+        "event": "NEW_LEG",
+        "direction": "BULLISH",
+        "historical_start_index": 367,
+        "historical_start_price": 29223.5,
+        "confirmation_index": 373,
+        "confirmation_time": "2026-08-26T23:42:00+03:00",
+        "acceptance_index": 373,
+        "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 374,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
         "candidate_start_index": 368,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
-        "direction": "BULLISH",
+        "direction": "BEARISH",
         "historical_start_index": 368,
-        "historical_start_price": 29223.5,
-        "confirmation_index": 374,
-        "confirmation_time": "2026-08-26T23:42:00+03:00",
-        "acceptance_index": 374,
-        "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 375,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 369,
-        "candidate_accepted": true
-      },
-      {
-        "event": "NEW_LEG",
-        "direction": "BEARISH",
-        "historical_start_index": 369,
         "historical_start_price": 29292.5,
-        "confirmation_index": 375,
+        "confirmation_index": 374,
         "confirmation_time": "2026-08-26T23:45:00+03:00",
-        "acceptance_index": 371,
+        "acceptance_index": 370,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 377,
+        "break_index": 376,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 372,
+        "candidate_start_index": 371,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 372,
+        "historical_start_index": 371,
         "historical_start_price": 29249.4,
-        "confirmation_index": 377,
+        "confirmation_index": 376,
         "confirmation_time": "2026-08-26T23:51:00+03:00",
-        "acceptance_index": 376,
+        "acceptance_index": 375,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 397,
+        "break_index": 396,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 393,
+        "candidate_start_index": 392,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 393,
+        "historical_start_index": 392,
         "historical_start_price": 29552.3,
-        "confirmation_index": 397,
+        "confirmation_index": 396,
         "confirmation_time": "2026-08-27T01:51:00+03:00",
-        "acceptance_index": 396,
+        "acceptance_index": 395,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 409,
+        "break_index": 408,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 406,
+        "candidate_start_index": 405,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 406,
+        "historical_start_index": 405,
         "historical_start_price": 29520.2,
-        "confirmation_index": 409,
+        "confirmation_index": 408,
         "confirmation_time": "2026-08-27T02:27:00+03:00",
-        "acceptance_index": 408,
+        "acceptance_index": 407,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 422,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 420,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 423,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 421,
+        "candidate_start_index": 420,
         "candidate_accepted": false
       },
       {
@@ -3176,33 +3186,33 @@
         "break_index": 424,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 421,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 425,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 421,
+        "candidate_start_index": 420,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 421,
+        "historical_start_index": 420,
         "historical_start_price": 29588.3,
-        "confirmation_index": 425,
+        "confirmation_index": 424,
         "confirmation_time": "2026-08-27T03:15:00+03:00",
-        "acceptance_index": 425,
+        "acceptance_index": 424,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 427,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 426,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 428,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 427,
+        "candidate_start_index": 426,
         "candidate_accepted": false
       },
       {
@@ -3210,68 +3220,52 @@
         "break_index": 429,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 427,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 430,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 427,
+        "candidate_start_index": 426,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 427,
+        "historical_start_index": 426,
         "historical_start_price": 29493.0,
-        "confirmation_index": 430,
+        "confirmation_index": 429,
         "confirmation_time": "2026-08-27T03:30:00+03:00",
-        "acceptance_index": 430,
+        "acceptance_index": 429,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 430,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 429,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 431,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 430,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 432,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 430,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 433,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 430,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 434,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 430,
+        "candidate_start_index": 429,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 430,
+        "historical_start_index": 429,
         "historical_start_price": 29518.4,
-        "confirmation_index": 434,
-        "confirmation_time": "2026-08-27T03:42:00+03:00",
-        "acceptance_index": 434,
+        "confirmation_index": 431,
+        "confirmation_time": "2026-08-27T03:36:00+03:00",
+        "acceptance_index": 431,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 438,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": null,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
@@ -3294,7 +3288,7 @@
         "break_index": 441,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": null,
+        "candidate_start_index": 440,
         "candidate_accepted": false
       },
       {
@@ -3302,30 +3296,22 @@
         "break_index": 442,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 441,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 443,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 441,
+        "candidate_start_index": 440,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 441,
+        "historical_start_index": 440,
         "historical_start_price": 29367.8,
-        "confirmation_index": 443,
+        "confirmation_index": 442,
         "confirmation_time": "2026-08-27T04:09:00+03:00",
-        "acceptance_index": 443,
+        "acceptance_index": 442,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 444,
+        "break_index": 443,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
         "candidate_start_index": null,
@@ -3333,10 +3319,18 @@
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 444,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 443,
+        "candidate_accepted": false
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 445,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 444,
+        "candidate_start_index": 443,
         "candidate_accepted": false
       },
       {
@@ -3344,7 +3338,7 @@
         "break_index": 446,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 444,
+        "candidate_start_index": 443,
         "candidate_accepted": false
       },
       {
@@ -3352,7 +3346,7 @@
         "break_index": 447,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 444,
+        "candidate_start_index": null,
         "candidate_accepted": false
       },
       {
@@ -3368,30 +3362,30 @@
         "break_index": 449,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": null,
+        "candidate_start_index": 448,
         "candidate_accepted": false
+      },
+      {
+        "old_direction": "BULLISH",
+        "break_index": 443,
+        "reentry_index": 450,
+        "event": "FAILED_BREAK_REJECTION",
+        "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 450,
+        "break_index": 453,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 449,
+        "candidate_start_index": 452,
         "candidate_accepted": false
-      },
-      {
-        "old_direction": "BULLISH",
-        "break_index": 444,
-        "reentry_index": 451,
-        "event": "FAILED_BREAK_REJECTION",
-        "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 454,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 453,
+        "candidate_start_index": 452,
         "candidate_accepted": false
       },
       {
@@ -3399,43 +3393,59 @@
         "break_index": 455,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 453,
+        "candidate_start_index": 452,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 453,
+        "historical_start_index": 452,
         "historical_start_price": 29469.5,
         "confirmation_index": 455,
-        "confirmation_time": "2026-08-27T04:45:00+03:00",
+        "confirmation_time": "2026-08-27T04:48:00+03:00",
         "acceptance_index": 455,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 456,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 454,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 457,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 455,
+        "candidate_start_index": 454,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 455,
+        "historical_start_index": 454,
         "historical_start_price": 29426.8,
         "confirmation_index": 457,
-        "confirmation_time": "2026-08-27T04:51:00+03:00",
+        "confirmation_time": "2026-08-27T04:54:00+03:00",
         "acceptance_index": 457,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 459,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 458,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 460,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 459,
+        "candidate_start_index": 458,
         "candidate_accepted": false
       },
       {
@@ -3443,186 +3453,178 @@
         "break_index": 461,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 459,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 462,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 459,
+        "candidate_start_index": 458,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 459,
+        "historical_start_index": 458,
         "historical_start_price": 29488.8,
-        "confirmation_index": 462,
+        "confirmation_index": 461,
         "confirmation_time": "2026-08-27T05:06:00+03:00",
-        "acceptance_index": 461,
+        "acceptance_index": 460,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 463,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 462,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 464,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 463,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 465,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 463,
+        "candidate_start_index": 462,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 463,
+        "historical_start_index": 462,
         "historical_start_price": 29452.0,
-        "confirmation_index": 465,
+        "confirmation_index": 464,
         "confirmation_time": "2026-08-27T05:15:00+03:00",
-        "acceptance_index": 465,
+        "acceptance_index": 464,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 465,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 464,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 466,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 465,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 467,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 465,
+        "candidate_start_index": 464,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 465,
+        "historical_start_index": 464,
         "historical_start_price": 29479.0,
-        "confirmation_index": 467,
+        "confirmation_index": 466,
         "confirmation_time": "2026-08-27T05:21:00+03:00",
-        "acceptance_index": 467,
+        "acceptance_index": 466,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 469,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 468,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 470,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 469,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 471,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 469,
+        "candidate_start_index": 468,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 469,
+        "historical_start_index": 468,
         "historical_start_price": 29460.9,
-        "confirmation_index": 471,
+        "confirmation_index": 470,
         "confirmation_time": "2026-08-27T05:33:00+03:00",
-        "acceptance_index": 471,
+        "acceptance_index": 470,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 472,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 471,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 473,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 472,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 474,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 472,
+        "candidate_start_index": 471,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 472,
+        "historical_start_index": 471,
         "historical_start_price": 29489.4,
-        "confirmation_index": 474,
+        "confirmation_index": 473,
         "confirmation_time": "2026-08-27T05:42:00+03:00",
-        "acceptance_index": 474,
+        "acceptance_index": 473,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 475,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 474,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 476,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 475,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 477,
-        "old_direction": "BEARISH",
-        "candidate_direction": "BULLISH",
-        "candidate_start_index": 475,
+        "candidate_start_index": 474,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 475,
+        "historical_start_index": 474,
         "historical_start_price": 29465.8,
-        "confirmation_index": 477,
+        "confirmation_index": 476,
         "confirmation_time": "2026-08-27T05:51:00+03:00",
-        "acceptance_index": 477,
+        "acceptance_index": 476,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 478,
+        "old_direction": "BULLISH",
+        "candidate_direction": "BEARISH",
+        "candidate_start_index": 477,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 479,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 478,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 480,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 478,
+        "candidate_start_index": 477,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 478,
+        "historical_start_index": 477,
         "historical_start_price": 29494.8,
-        "confirmation_index": 480,
+        "confirmation_index": 479,
         "confirmation_time": "2026-08-27T06:00:00+03:00",
-        "acceptance_index": 480,
+        "acceptance_index": 479,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 481,
+        "break_index": 480,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
         "candidate_start_index": null,
@@ -3630,25 +3632,33 @@
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 482,
+        "break_index": 481,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 481,
+        "candidate_start_index": 480,
         "candidate_accepted": false
       },
       {
         "old_direction": "BEARISH",
-        "break_index": 481,
-        "reentry_index": 483,
+        "break_index": 480,
+        "reentry_index": 482,
         "event": "FAILED_BREAK_REJECTION",
         "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 485,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 484,
+        "candidate_accepted": false
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 486,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 485,
+        "candidate_start_index": 484,
         "candidate_accepted": false
       },
       {
@@ -3656,65 +3666,58 @@
         "break_index": 487,
         "old_direction": "BEARISH",
         "candidate_direction": "BULLISH",
-        "candidate_start_index": 485,
+        "candidate_start_index": 484,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BULLISH",
-        "historical_start_index": 485,
+        "historical_start_index": 484,
         "historical_start_price": 29464.9,
         "confirmation_index": 487,
-        "confirmation_time": "2026-08-27T06:21:00+03:00",
+        "confirmation_time": "2026-08-27T06:24:00+03:00",
         "acceptance_index": 487,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 488,
+        "break_index": 489,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": null,
+        "candidate_start_index": 488,
         "candidate_accepted": false
-      },
-      {
-        "old_direction": "BULLISH",
-        "break_index": 488,
-        "reentry_index": 489,
-        "event": "FAILED_BREAK_REJECTION",
-        "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
       },
       {
         "event": "BREAK_SEARCH_OPPOSITE",
         "break_index": 490,
         "old_direction": "BULLISH",
         "candidate_direction": "BEARISH",
-        "candidate_start_index": 489,
-        "candidate_accepted": false
-      },
-      {
-        "event": "BREAK_SEARCH_OPPOSITE",
-        "break_index": 491,
-        "old_direction": "BULLISH",
-        "candidate_direction": "BEARISH",
-        "candidate_start_index": 489,
+        "candidate_start_index": 488,
         "candidate_accepted": true
       },
       {
         "event": "NEW_LEG",
         "direction": "BEARISH",
-        "historical_start_index": 489,
+        "historical_start_index": 488,
         "historical_start_price": 29510.3,
-        "confirmation_index": 491,
+        "confirmation_index": 490,
         "confirmation_time": "2026-08-27T06:33:00+03:00",
-        "acceptance_index": 491,
+        "acceptance_index": 490,
         "variant": "A_ALREADY_ACCEPTED_AT_BREAK_ALLOWED"
+      },
+      {
+        "event": "BREAK_SEARCH_OPPOSITE",
+        "break_index": 498,
+        "old_direction": "BEARISH",
+        "candidate_direction": "BULLISH",
+        "candidate_start_index": 497,
+        "candidate_accepted": false
       }
     ],
     "last_failed_break": {
-      "old_direction": "BULLISH",
-      "break_index": 488,
-      "reentry_index": 489,
+      "old_direction": "BEARISH",
+      "break_index": 480,
+      "reentry_index": 482,
       "event": "FAILED_BREAK_REJECTION",
       "structural_context": "USE_EXISTING_MTF_CHOCH_BOS_LAYER"
     },
@@ -3724,53 +3727,53 @@
     "structural_parent": {
       "direction": "BULLISH",
       "origin": 29124.7,
-      "start_index": 286,
+      "start_index": 285,
       "start_time": "2026-08-26T19:15:00+03:00",
       "line": {
         "direction": "BULLISH",
         "slope_per_bar": 1.190540540540521,
-        "intercept": 28784.205405405413,
+        "intercept": 28785.39594594595,
         "support_indices": [
-          286,
-          360
+          285,
+          359
         ],
         "support_count": 2,
-        "solid_start_index": 286,
-        "last_support_index": 360,
+        "solid_start_index": 285,
+        "last_support_index": 359,
         "total_deviation": 0.0,
         "span_bars": 74.0,
         "tolerance_points": 0.0,
         "support_anchors": [
           {
             "direction": "BULLISH",
-            "index": 286,
+            "index": 285,
             "price": 29124.7,
             "time": "2026-08-26T19:15:00+03:00",
-            "confirmation_index": 286
+            "confirmation_index": 285
           },
           {
             "direction": "BULLISH",
-            "index": 360,
+            "index": 359,
             "price": 29212.8,
             "time": "2026-08-26T22:57:00+03:00",
-            "confirmation_index": 374,
+            "confirmation_index": 373,
             "parent_level": true,
             "kind": "PARENT_ZIGZAG_EXTREME"
           }
         ],
         "t1": {
           "direction": "BULLISH",
-          "index": 286,
+          "index": 285,
           "price": 29124.7,
           "time": "2026-08-26T19:15:00+03:00",
-          "confirmation_index": 286
+          "confirmation_index": 285
         },
         "t2": {
           "direction": "BULLISH",
-          "index": 360,
+          "index": 359,
           "price": 29212.8,
           "time": "2026-08-26T22:57:00+03:00",
-          "confirmation_index": 374,
+          "confirmation_index": 373,
           "parent_level": true,
           "kind": "PARENT_ZIGZAG_EXTREME"
         },
@@ -3779,32 +3782,32 @@
       "anchors": [
         {
           "direction": "BULLISH",
-          "index": 286,
+          "index": 285,
           "price": 29124.7,
           "time": "2026-08-26T19:15:00+03:00",
-          "confirmation_index": 286
+          "confirmation_index": 285
         },
         {
           "direction": "BULLISH",
-          "index": 295,
+          "index": 294,
           "price": 29102.5,
           "time": "2026-08-26T19:42:00+03:00",
-          "confirmation_index": 328,
+          "confirmation_index": 327,
           "parent_level": true,
           "kind": "PARENT_ZIGZAG_EXTREME"
         },
         {
           "direction": "BULLISH",
-          "index": 360,
+          "index": 359,
           "price": 29212.8,
           "time": "2026-08-26T22:57:00+03:00",
-          "confirmation_index": 374,
+          "confirmation_index": 373,
           "parent_level": true,
           "kind": "PARENT_ZIGZAG_EXTREME"
         },
         {
           "direction": "BULLISH",
-          "index": 441,
+          "index": 440,
           "price": 29367.8,
           "time": "2026-08-27T04:00:00+03:00",
           "confirmation_index": 457,
@@ -3815,37 +3818,37 @@
       "opposite_anchors": [
         {
           "direction": "BEARISH",
-          "index": 342,
+          "index": 341,
           "price": 29300.3,
           "time": "2026-08-26T22:03:00+03:00",
-          "confirmation_index": 353,
+          "confirmation_index": 352,
           "parent_level": true,
           "kind": "PARENT_ZIGZAG_EXTREME"
         },
         {
           "direction": "BEARISH",
-          "index": 367,
+          "index": 366,
           "price": 29314.9,
           "time": "2026-08-26T23:18:00+03:00",
-          "confirmation_index": 375,
+          "confirmation_index": 374,
           "parent_level": true,
           "kind": "PARENT_ZIGZAG_EXTREME"
         },
         {
           "direction": "BEARISH",
-          "index": 421,
+          "index": 420,
           "price": 29588.3,
           "time": "2026-08-27T03:00:00+03:00",
-          "confirmation_index": 434,
+          "confirmation_index": 431,
           "parent_level": true,
           "kind": "PARENT_ZIGZAG_EXTREME"
         },
         {
           "direction": "BEARISH",
-          "index": 459,
+          "index": 458,
           "price": 29488.8,
           "time": "2026-08-27T04:54:00+03:00",
-          "confirmation_index": 467,
+          "confirmation_index": 466,
           "parent_level": true,
           "kind": "PARENT_ZIGZAG_EXTREME"
         }
@@ -3857,17 +3860,17 @@
       "atr_context": {
         "mode": "CONTEXT_ONLY_NO_PARENT_TRIGGER",
         "definition_atr": 4.5,
-        "atr14": 12.891446897391843,
-        "threshold_points": 58.01151103826329,
+        "atr14": 13.263486404720894,
+        "threshold_points": 59.68568882124402,
         "running_extreme": 29588.3,
-        "reversal_distance_points": 127.29999999999927,
+        "reversal_distance_points": 123.39999999999782,
         "threshold_hit": true,
         "candidate_direction": "BEARISH"
       },
       "rule": "Parent = higher-order zigzag of confirmed Child legs; immutable T1/T2 lines; break only starts opposite Parent search; new Parent requires opposite Parent-level T1 + post-break T2; ATR context only",
       "reached": 29588.3,
       "points": 463.59999999999854,
-      "current_points": 341.2999999999993
+      "current_points": 358.2999999999993
     },
     "parent_events": []
   },
@@ -3875,9 +3878,9 @@
     "market": "BULL_TREND",
     "active": false,
     "location": "TREND",
-    "price": 29466.0,
-    "lower_parent": 29476.874074074072,
-    "upper_parent": 29386.681578947366,
+    "price": 29483.0,
+    "lower_parent": 29478.787654320986,
+    "upper_parent": 29384.063157894736,
     "near_lower": false,
     "near_upper": false,
     "boundary_zone_points": 5.0,
@@ -3885,92 +3888,92 @@
     "bull_parent_line": {
       "direction": "BULLISH",
       "slope_per_bar": 1.9135802469135803,
-      "intercept": 28523.91111111111,
+      "intercept": 28525.824691358022,
       "support_indices": [
-        360,
-        441
+        359,
+        440
       ],
       "support_count": 2,
-      "solid_start_index": 360,
-      "last_support_index": 441,
+      "solid_start_index": 359,
+      "last_support_index": 440,
       "total_deviation": 0.0,
       "span_bars": 81.0,
       "tolerance_points": 0.0,
       "support_anchors": [
         {
           "direction": "BULLISH",
-          "index": 360,
+          "index": 359,
           "price": 29212.8,
           "time": "2026-08-26T22:57:00+03:00",
-          "confirmation_index": 365
+          "confirmation_index": 364
         },
         {
           "direction": "BULLISH",
-          "index": 441,
+          "index": 440,
           "price": 29367.8,
           "time": "2026-08-27T04:00:00+03:00",
-          "confirmation_index": 443
+          "confirmation_index": 442
         }
       ],
       "t1": {
         "direction": "BULLISH",
-        "index": 360,
+        "index": 359,
         "price": 29212.8,
         "time": "2026-08-26T22:57:00+03:00",
-        "confirmation_index": 365
+        "confirmation_index": 364
       },
       "t2": {
         "direction": "BULLISH",
-        "index": 441,
+        "index": 440,
         "price": 29367.8,
         "time": "2026-08-27T04:00:00+03:00",
-        "confirmation_index": 443
+        "confirmation_index": 442
       },
       "selection_rule": "IMMUTABLE_PARENT_T1_T2"
     },
     "bear_parent_line": {
       "direction": "BEARISH",
       "slope_per_bar": -2.6184210526315788,
-      "intercept": 30690.655263157892,
+      "intercept": 30688.036842105263,
       "support_indices": [
-        421,
-        459
+        420,
+        458
       ],
       "support_count": 2,
-      "solid_start_index": 421,
-      "last_support_index": 459,
+      "solid_start_index": 420,
+      "last_support_index": 458,
       "total_deviation": 0.0,
       "span_bars": 38.0,
       "tolerance_points": 0.0,
       "support_anchors": [
         {
           "direction": "BEARISH",
-          "index": 421,
+          "index": 420,
           "price": 29588.3,
           "time": "2026-08-27T03:00:00+03:00",
-          "confirmation_index": 425
+          "confirmation_index": 424
         },
         {
           "direction": "BEARISH",
-          "index": 459,
+          "index": 458,
           "price": 29488.8,
           "time": "2026-08-27T04:54:00+03:00",
-          "confirmation_index": 462
+          "confirmation_index": 461
         }
       ],
       "t1": {
         "direction": "BEARISH",
-        "index": 421,
+        "index": 420,
         "price": 29588.3,
         "time": "2026-08-27T03:00:00+03:00",
-        "confirmation_index": 425
+        "confirmation_index": 424
       },
       "t2": {
         "direction": "BEARISH",
-        "index": 459,
+        "index": 458,
         "price": 29488.8,
         "time": "2026-08-27T04:54:00+03:00",
-        "confirmation_index": 462
+        "confirmation_index": 461
       },
       "selection_rule": "IMMUTABLE_PARENT_T1_T2"
     },
@@ -3991,13 +3994,13 @@
         "structure_trend": "TRANSITION",
         "current_leg": "BEARISH",
         "current_origin": 29510.3,
-        "current_points": 44.29999999999927,
+        "current_points": 27.299999999999272,
         "current_start_time": "2026-08-27T06:24:00+03:00",
         "current_recognition_time": "2026-08-27T06:33:00+03:00",
         "current_source": "LINE_LEG_CONFIRMED_DIRECTION_GATE",
         "active_current_leg": "BEARISH",
         "active_current_origin": 29510.3,
-        "active_current_points": 44.29999999999927,
+        "active_current_points": 27.299999999999272,
         "active_current_start_time": "2026-08-27T06:24:00+03:00",
         "latest_pivot_leg": "BEARISH",
         "latest_pivot_origin": 29510.3,
@@ -4006,56 +4009,56 @@
           {
             "tf": "M3",
             "ma": "AMA8",
-            "value": 29475.32726181907,
-            "distance_from_m3_price": 9.327261819071282,
-            "side": "ABOVE",
+            "value": 29475.585392261637,
+            "distance_from_m3_price": -7.4146077383629745,
+            "side": "BELOW",
             "slope": "FALLING",
-            "slope_value": -2.583865953839753
+            "slope_value": -2.0044958961795296
           },
           {
             "tf": "M3",
             "ma": "SMA10",
-            "value": 29485.74,
-            "distance_from_m3_price": 19.7400000000016,
+            "value": 29483.52,
+            "distance_from_m3_price": 0.5200000000004366,
             "side": "ABOVE",
             "slope": "FALLING",
-            "slope_value": -1.5833333333333333
+            "slope_value": -2.0833333333333335
           },
           {
             "tf": "M3",
             "ma": "EMA20",
-            "value": 29481.47081132603,
-            "distance_from_m3_price": 15.470811326031253,
-            "side": "ABOVE",
+            "value": 29481.6164483426,
+            "distance_from_m3_price": -1.3835516573999485,
+            "side": "BELOW",
             "slope": "FALLING",
-            "slope_value": -1.0733483406305215
+            "slope_value": -0.7012834192998222
           },
           {
             "tf": "M3",
             "ma": "EMA30",
-            "value": 29479.657427909955,
-            "distance_from_m3_price": 13.657427909955004,
-            "side": "ABOVE",
+            "value": 29479.87307772222,
+            "distance_from_m3_price": -3.1269222777809773,
+            "side": "BELOW",
             "slope": "FALLING",
-            "slope_value": -0.5377127061316666
+            "slope_value": -0.3202258648755863
           },
           {
             "tf": "M3",
             "ma": "EMA50",
-            "value": 29475.522399354388,
-            "distance_from_m3_price": 9.522399354387744,
-            "side": "ABOVE",
+            "value": 29475.815638580847,
+            "distance_from_m3_price": -7.184361419152992,
+            "side": "BELOW",
             "slope": "FALLING",
-            "slope_value": -0.13050241286691744
+            "slope_value": -0.0142735594563419
           },
           {
             "tf": "M3",
             "ma": "EMA232",
-            "value": 29380.84639165991,
-            "distance_from_m3_price": -85.1536083400897,
+            "value": 29381.631141862228,
+            "distance_from_m3_price": -101.3688581377719,
             "side": "BELOW",
             "slope": "RISING",
-            "slope_value": 0.8007964212447405
+            "slope_value": 0.8190474584213613
           }
         ]
       },
@@ -4085,7 +4088,7 @@
             "tf": "H1",
             "ma": "AMA8",
             "value": 29395.28613732636,
-            "distance_from_m3_price": -70.71386267364142,
+            "distance_from_m3_price": -87.71386267364142,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 6.510803505804991
@@ -4094,7 +4097,7 @@
             "tf": "H1",
             "ma": "SMA10",
             "value": 29366.610000000004,
-            "distance_from_m3_price": -99.38999999999578,
+            "distance_from_m3_price": -116.38999999999578,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 24.400000000000244
@@ -4103,7 +4106,7 @@
             "tf": "H1",
             "ma": "EMA20",
             "value": 29312.38969090784,
-            "distance_from_m3_price": -153.6103090921606,
+            "distance_from_m3_price": -170.6103090921606,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 15.677900687143847
@@ -4112,7 +4115,7 @@
             "tf": "H1",
             "ma": "EMA30",
             "value": 29273.969706793807,
-            "distance_from_m3_price": -192.03029320619316,
+            "distance_from_m3_price": -209.03029320619316,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 12.6680586042894
@@ -4121,7 +4124,7 @@
             "tf": "H1",
             "ma": "EMA50",
             "value": 29243.653259992625,
-            "distance_from_m3_price": -222.34674000737505,
+            "distance_from_m3_price": -239.34674000737505,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 8.542444031513392
@@ -4130,7 +4133,7 @@
             "tf": "H1",
             "ma": "EMA232",
             "value": 29380.56636634118,
-            "distance_from_m3_price": -85.43363365882033,
+            "distance_from_m3_price": -102.43363365882033,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 0.5499173509269895
@@ -4163,7 +4166,7 @@
             "tf": "H4",
             "ma": "AMA8",
             "value": 29178.424211855625,
-            "distance_from_m3_price": -287.5757881443751,
+            "distance_from_m3_price": -304.5757881443751,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 5.246075340937144
@@ -4172,7 +4175,7 @@
             "tf": "H4",
             "ma": "SMA10",
             "value": 29200.760000000002,
-            "distance_from_m3_price": -265.23999999999796,
+            "distance_from_m3_price": -282.23999999999796,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 16.143333333334642
@@ -4181,7 +4184,7 @@
             "tf": "H4",
             "ma": "EMA20",
             "value": 29232.253559089215,
-            "distance_from_m3_price": -233.74644091078517,
+            "distance_from_m3_price": -250.74644091078517,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 8.406840213231286
@@ -4190,7 +4193,7 @@
             "tf": "H4",
             "ma": "EMA30",
             "value": 29278.537345703036,
-            "distance_from_m3_price": -187.4626542969636,
+            "distance_from_m3_price": -204.4626542969636,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 1.7156075623206561
@@ -4199,7 +4202,7 @@
             "tf": "H4",
             "ma": "EMA50",
             "value": 29349.75648534636,
-            "distance_from_m3_price": -116.24351465364089,
+            "distance_from_m3_price": -133.2435146536409,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -2.1252318143100033
@@ -4208,7 +4211,7 @@
             "tf": "H4",
             "ma": "EMA232",
             "value": 29345.58328368923,
-            "distance_from_m3_price": -120.41671631077043,
+            "distance_from_m3_price": -137.41671631077043,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -0.42112691201327834
@@ -4241,8 +4244,8 @@
             "tf": "D1",
             "ma": "AMA8",
             "value": 29482.24277628598,
-            "distance_from_m3_price": 16.242776285980653,
-            "side": "ABOVE",
+            "distance_from_m3_price": -0.7572237140193465,
+            "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -66.32464196124783
           },
@@ -4250,7 +4253,7 @@
             "tf": "D1",
             "ma": "SMA10",
             "value": 29523.609999999997,
-            "distance_from_m3_price": 57.609999999996944,
+            "distance_from_m3_price": 40.609999999996944,
             "side": "ABOVE",
             "slope": "FALLING",
             "slope_value": -42.0566666666673
@@ -4259,7 +4262,7 @@
             "tf": "D1",
             "ma": "EMA20",
             "value": 29326.063899314235,
-            "distance_from_m3_price": -139.93610068576527,
+            "distance_from_m3_price": -156.93610068576527,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -12.43948516075155
@@ -4268,7 +4271,7 @@
             "tf": "D1",
             "ma": "EMA30",
             "value": 29285.2828915475,
-            "distance_from_m3_price": -180.71710845249982,
+            "distance_from_m3_price": -197.71710845249982,
             "side": "BELOW",
             "slope": "FALLING",
             "slope_value": -5.107602882986005
@@ -4277,7 +4280,7 @@
             "tf": "D1",
             "ma": "EMA50",
             "value": 29164.525973046206,
-            "distance_from_m3_price": -301.47402695379424,
+            "distance_from_m3_price": -318.47402695379424,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 2.076673133250248
@@ -4286,7 +4289,7 @@
             "tf": "D1",
             "ma": "EMA232",
             "value": 27237.766570408803,
-            "distance_from_m3_price": -2228.233429591197,
+            "distance_from_m3_price": -2245.233429591197,
             "side": "BELOW",
             "slope": "RISING",
             "slope_value": 17.225454905463266
@@ -4333,23 +4336,14 @@
       }
     ],
     "ma_chain": {
-      "reference_price": 29466.0,
+      "reference_price": 29483.0,
       "m3_parent_direction": "BULLISH",
       "nearest_above": [
         {
           "tf": "D1",
-          "ma": "AMA8",
-          "value": 29482.24277628598,
-          "distance_from_m3_price": 16.242776285980653,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -66.32464196124783
-        },
-        {
-          "tf": "D1",
           "ma": "SMA10",
           "value": 29523.609999999997,
-          "distance_from_m3_price": 57.609999999996944,
+          "distance_from_m3_price": 40.609999999996944,
           "side": "ABOVE",
           "slope": "FALLING",
           "slope_value": -42.0566666666673
@@ -4357,10 +4351,19 @@
       ],
       "nearest_below": [
         {
+          "tf": "D1",
+          "ma": "AMA8",
+          "value": 29482.24277628598,
+          "distance_from_m3_price": -0.7572237140193465,
+          "side": "BELOW",
+          "slope": "FALLING",
+          "slope_value": -66.32464196124783
+        },
+        {
           "tf": "H1",
           "ma": "AMA8",
           "value": 29395.28613732636,
-          "distance_from_m3_price": -70.71386267364142,
+          "distance_from_m3_price": -87.71386267364142,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 6.510803505804991
@@ -4369,7 +4372,7 @@
           "tf": "H1",
           "ma": "EMA232",
           "value": 29380.56636634118,
-          "distance_from_m3_price": -85.43363365882033,
+          "distance_from_m3_price": -102.43363365882033,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 0.5499173509269895
@@ -4378,7 +4381,7 @@
           "tf": "H1",
           "ma": "SMA10",
           "value": 29366.610000000004,
-          "distance_from_m3_price": -99.38999999999578,
+          "distance_from_m3_price": -116.38999999999578,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 24.400000000000244
@@ -4387,7 +4390,7 @@
           "tf": "H4",
           "ma": "EMA50",
           "value": 29349.75648534636,
-          "distance_from_m3_price": -116.24351465364089,
+          "distance_from_m3_price": -133.2435146536409,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -2.1252318143100033
@@ -4396,36 +4399,18 @@
           "tf": "H4",
           "ma": "EMA232",
           "value": 29345.58328368923,
-          "distance_from_m3_price": -120.41671631077043,
+          "distance_from_m3_price": -137.41671631077043,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -0.42112691201327834
-        },
-        {
-          "tf": "D1",
-          "ma": "EMA20",
-          "value": 29326.063899314235,
-          "distance_from_m3_price": -139.93610068576527,
-          "side": "BELOW",
-          "slope": "FALLING",
-          "slope_value": -12.43948516075155
         }
       ],
       "ahead_of_parent": [
         {
           "tf": "D1",
-          "ma": "AMA8",
-          "value": 29482.24277628598,
-          "distance_from_m3_price": 16.242776285980653,
-          "side": "ABOVE",
-          "slope": "FALLING",
-          "slope_value": -66.32464196124783
-        },
-        {
-          "tf": "D1",
           "ma": "SMA10",
           "value": 29523.609999999997,
-          "distance_from_m3_price": 57.609999999996944,
+          "distance_from_m3_price": 40.609999999996944,
           "side": "ABOVE",
           "slope": "FALLING",
           "slope_value": -42.0566666666673
@@ -4433,10 +4418,19 @@
       ],
       "behind_parent": [
         {
+          "tf": "D1",
+          "ma": "AMA8",
+          "value": 29482.24277628598,
+          "distance_from_m3_price": -0.7572237140193465,
+          "side": "BELOW",
+          "slope": "FALLING",
+          "slope_value": -66.32464196124783
+        },
+        {
           "tf": "H1",
           "ma": "AMA8",
           "value": 29395.28613732636,
-          "distance_from_m3_price": -70.71386267364142,
+          "distance_from_m3_price": -87.71386267364142,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 6.510803505804991
@@ -4445,7 +4439,7 @@
           "tf": "H1",
           "ma": "EMA232",
           "value": 29380.56636634118,
-          "distance_from_m3_price": -85.43363365882033,
+          "distance_from_m3_price": -102.43363365882033,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 0.5499173509269895
@@ -4454,7 +4448,7 @@
           "tf": "H1",
           "ma": "SMA10",
           "value": 29366.610000000004,
-          "distance_from_m3_price": -99.38999999999578,
+          "distance_from_m3_price": -116.38999999999578,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 24.400000000000244
@@ -4463,7 +4457,7 @@
           "tf": "H4",
           "ma": "EMA50",
           "value": 29349.75648534636,
-          "distance_from_m3_price": -116.24351465364089,
+          "distance_from_m3_price": -133.2435146536409,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -2.1252318143100033
@@ -4472,7 +4466,7 @@
           "tf": "H4",
           "ma": "EMA232",
           "value": 29345.58328368923,
-          "distance_from_m3_price": -120.41671631077043,
+          "distance_from_m3_price": -137.41671631077043,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -0.42112691201327834
@@ -4481,7 +4475,7 @@
           "tf": "D1",
           "ma": "EMA20",
           "value": 29326.063899314235,
-          "distance_from_m3_price": -139.93610068576527,
+          "distance_from_m3_price": -156.93610068576527,
           "side": "BELOW",
           "slope": "FALLING",
           "slope_value": -12.43948516075155
@@ -4490,19 +4484,10 @@
           "tf": "H1",
           "ma": "EMA20",
           "value": 29312.38969090784,
-          "distance_from_m3_price": -153.6103090921606,
+          "distance_from_m3_price": -170.6103090921606,
           "side": "BELOW",
           "slope": "RISING",
           "slope_value": 15.677900687143847
-        },
-        {
-          "tf": "D1",
-          "ma": "EMA30",
-          "value": 29285.2828915475,
-          "distance_from_m3_price": -180.71710845249982,
-          "side": "BELOW",
-          "slope": "FALLING",
-          "slope_value": -5.107602882986005
         }
       ],
       "note": "Cross-TF MA chain is spatial/context only. No MA cluster threshold or trading filter is applied."
@@ -4522,10 +4507,9 @@
       "start_minus_ama_points": 31.87662018750416,
       "start_vs_ama": "ABOVE",
       "support_count": 9,
-      "solid_start_index": 489,
+      "solid_start_index": 488,
       "identity": "BEARISH|2026-08-27T06:24:00+03:00|29510.30000",
-      "source": "REAL_OHLC_MAX_SUPPORT_LINE_LEG",
-      "market_state": "BULL_TREND"
+      "source": "REAL_OHLC_MAX_SUPPORT_LINE_LEG"
     },
     "H1": {
       "tf": "H1",
@@ -4537,8 +4521,7 @@
       "ama8_at_start": 29376.017446501428,
       "start_minus_ama_points": 212.28255349857136,
       "start_vs_ama": "ABOVE",
-      "identity": "H1|BEARISH|2026-08-27T03:00:00+03:00|29588.30000",
-      "market_state": "BULL_TREND"
+      "identity": "H1|BEARISH|2026-08-27T03:00:00+03:00|29588.30000"
     },
     "H4": {
       "tf": "H4",
@@ -4550,8 +4533,7 @@
       "ama8_at_start": 29164.032091711884,
       "start_minus_ama_points": -135.53209171188428,
       "start_vs_ama": "BELOW",
-      "identity": "H4|BULLISH|2026-08-26T04:00:00+03:00|29028.50000",
-      "market_state": "BULL_TREND"
+      "identity": "H4|BULLISH|2026-08-26T04:00:00+03:00|29028.50000"
     },
     "D1": {
       "tf": "D1",
@@ -4563,13 +4545,12 @@
       "ama8_at_start": 29587.771880188076,
       "start_minus_ama_points": -716.4718801880772,
       "start_vs_ama": "BELOW",
-      "identity": "D1|BULLISH|2026-08-24T00:00:00+03:00|28871.30000",
-      "market_state": "BULL_TREND"
+      "identity": "D1|BULLISH|2026-08-24T00:00:00+03:00|28871.30000"
     }
   },
   "market_event_filters": {
     "nasdaq_calendar": {
-      "ny_time": "2026-08-26T23:51:00-04:00",
+      "ny_time": "2026-08-26T23:54:00-04:00",
       "cash_open_et": "2026-08-26T09:30:00-04:00",
       "cash_open_sofia": "2026-08-26T16:30:00+03:00",
       "cash_close_et": "2026-08-26T16:00:00-04:00",
@@ -4622,221 +4603,7 @@
   "position_management_actions": [],
   "ai_second_opinion": {
     "status": "DISABLED",
-    "reason": "Disabled to avoid OpenAI API credit usage; report AI runs in ChatGPT."
+    "model": "gpt-5.6-terra"
   },
-  "ai_model": "gpt-5.6-terra",
-  "telegram_market_chart": "C:\\USTEC2\\ustec_telegram_market_chart.png",
-  "new_leg_alerts": [],
-  "telegram_delivery": {
-    "recent": [
-      {
-        "time_sofia": "2026-08-27T06:00:09.754831+03:00",
-        "category": "NEW_LEG_M3_CHART",
-        "success": true,
-        "error": "",
-        "text": "[REAL_DATA_CHART] ustec_telegram_market_chart.png"
-      },
-      {
-        "time_sofia": "2026-08-27T06:09:11.652863+03:00",
-        "category": "AMA_CROSS",
-        "success": true,
-        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
-        "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29471.9 @ 06:06</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29476.2</b>\nDistance to M3 AMA: <b>-4.3 pts</b>\nM3 AMA slope: <b>RISING ↑</b>\nAMA role: neutral\nCandle: 06:06–06:09 Sofia\nConfirmed: 06:09:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~11s"
-      },
-      {
-        "time_sofia": "2026-08-27T06:18:09.752343+03:00",
-        "category": "AMA_CROSS",
-        "success": true,
-        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
-        "text": "🟢 <b>PRICE CROSSED AMA ↑</b>\n<b>USTEC: 29481.7 @ 06:15</b>\nPrice crossed AMA from BELOW to ABOVE\nM3 AMA: <b>29476.3</b>\nDistance to M3 AMA: <b>+5.4 pts</b>\nM3 AMA slope: <b>FLAT →</b>\nAMA role: support\nCandle: 06:15–06:18 Sofia\nConfirmed: 06:18:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~9s"
-      },
-      {
-        "time_sofia": "2026-08-27T06:24:09.999051+03:00",
-        "category": "NEW_LEG_M3",
-        "success": true,
-        "error": "",
-        "text": "🟢 <b>M3 | NEW CHILD #35 BULL LEG</b>\nMarket: <b>BULL TREND</b>\nStart: <b>06:12</b> @ <b>29464.9</b>\nConfirmed: <b>06:21</b> | trendline break + opposite 2-point leg + closed-candle acceptance\nStart vs AMA8(M3): <b>11.2 pt BELOW AMA</b> | AMA <b>29476.1</b>\nTrendline supports: <b>3</b> | fit tolerance ±3.0 pt"
-      },
-      {
-        "time_sofia": "2026-08-27T06:24:10.500515+03:00",
-        "category": "NEW_LEG_M3_CHART",
-        "success": true,
-        "error": "",
-        "text": "[REAL_DATA_CHART] ustec_telegram_market_chart.png"
-      },
-      {
-        "time_sofia": "2026-08-27T06:33:12.690652+03:00",
-        "category": "NEW_LEG_M3",
-        "success": true,
-        "error": "",
-        "text": "🔴 <b>M3 | NEW CHILD #36 BEAR LEG</b>\nMarket: <b>BULL TREND</b>\nStart: <b>06:24</b> @ <b>29510.3</b>\nConfirmed: <b>06:33</b> | trendline break + opposite 2-point leg + closed-candle acceptance\nStart vs AMA8(M3): <b>31.9 pt ABOVE AMA</b> | AMA <b>29478.4</b>\nTrendline supports: <b>3</b> | fit tolerance ±3.0 pt"
-      },
-      {
-        "time_sofia": "2026-08-27T06:33:13.185885+03:00",
-        "category": "NEW_LEG_M3_CHART",
-        "success": true,
-        "error": "",
-        "text": "[REAL_DATA_CHART] ustec_telegram_market_chart.png"
-      },
-      {
-        "time_sofia": "2026-08-27T06:45:14.801492+03:00",
-        "category": "AMA_CROSS",
-        "success": true,
-        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
-        "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29477.5 @ 06:42</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29483.1</b>\nDistance to M3 AMA: <b>-5.6 pts</b>\nM3 AMA slope: <b>FLAT →</b>\nAMA role: resistance\nCandle: 06:42–06:45 Sofia\nConfirmed: 06:45:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~14s"
-      }
-    ],
-    "note": "Exact payloads; no Telegram credentials are stored."
-  },
-  "positions_live": {
-    "state": "HEDGED",
-    "long_volume": 0.8,
-    "short_volume": 0.8,
-    "net_volume": 0.0,
-    "tickets": [
-      {
-        "ticket": 1885156124,
-        "side": "SELL",
-        "volume": 0.8,
-        "entry": 29149.4,
-        "current": 29483.7,
-        "profit": -229.48,
-        "sl": 0.0,
-        "tp": 0.0,
-        "magic": 0,
-        "comment": ""
-      },
-      {
-        "ticket": 1886966007,
-        "side": "BUY",
-        "volume": 0.8,
-        "entry": 29278.7,
-        "current": 29482.7,
-        "profit": 140.03,
-        "sl": 0.0,
-        "tp": 0.0,
-        "magic": 0,
-        "comment": ""
-      }
-    ]
-  },
-  "analysis_basis": {
-    "strategy_timeframe": "M3",
-    "strategy_uses_closed_m3_only": true,
-    "closed_m3_candle_time_sofia": "2026-08-27T06:51:00+03:00",
-    "closed_m3_price": 29466.0,
-    "live_overlay_interval_seconds": 5,
-    "note": "market/scores/python_decision are from the latest CLOSED M3; top-level price is current MT5 BID (same as chart); live.* is current/intrabar."
-  },
-  "chart": {
-    "price_bid": 29482.4,
-    "ask": 29483.4,
-    "spread_points": 1.0,
-    "M3": {
-      "time_sofia": "2026-08-27T06:54:00+03:00",
-      "open": 29465.8,
-      "high": 29482.8,
-      "low": 29464.9,
-      "close": 29482.4
-    },
-    "H1": {
-      "time_sofia": "2026-08-27T06:00:00+03:00",
-      "open": 29484.5,
-      "high": 29510.3,
-      "low": 29461.0,
-      "close": 29482.4
-    },
-    "H4": {
-      "time_sofia": "2026-08-27T04:00:00+03:00",
-      "open": 29378.7,
-      "high": 29510.3,
-      "low": 29367.8,
-      "close": 29482.4
-    },
-    "D1": {
-      "time_sofia": "2026-08-27T00:00:00+03:00",
-      "open": 29463.7,
-      "high": 29588.3,
-      "low": 29367.8,
-      "close": 29482.4
-    },
-    "updated_at_sofia": "2026-08-27T06:56:56.728823+03:00",
-    "note": "Exact MT5 chart-view layer: BID price + currently forming bars."
-  },
-  "live": {
-    "snapshot_type": "INTRABAR_5S",
-    "received_at_sofia": "2026-08-27T06:56:56.728823+03:00",
-    "bid": 29482.4,
-    "ask": 29483.4,
-    "mid": 29482.9,
-    "chart_price": 29482.4,
-    "spread_points": 1.0,
-    "M3_forming": {
-      "time_sofia": "2026-08-27T06:54:00+03:00",
-      "open": 29465.8,
-      "high": 29482.8,
-      "low": 29464.9,
-      "close": 29482.4
-    },
-    "M3_chart_recent": [
-      {
-        "time_sofia": "2026-08-27T06:42:00+03:00",
-        "open": 29486.7,
-        "high": 29487.7,
-        "low": 29476.5,
-        "close": 29477.5
-      },
-      {
-        "time_sofia": "2026-08-27T06:45:00+03:00",
-        "open": 29477.7,
-        "high": 29487.0,
-        "low": 29471.2,
-        "close": 29474.5
-      },
-      {
-        "time_sofia": "2026-08-27T06:48:00+03:00",
-        "open": 29474.8,
-        "high": 29481.4,
-        "low": 29471.2,
-        "close": 29477.2
-      },
-      {
-        "time_sofia": "2026-08-27T06:51:00+03:00",
-        "open": 29477.0,
-        "high": 29479.3,
-        "low": 29461.0,
-        "close": 29466.0
-      },
-      {
-        "time_sofia": "2026-08-27T06:54:00+03:00",
-        "open": 29465.8,
-        "high": 29482.8,
-        "low": 29464.9,
-        "close": 29482.4
-      }
-    ],
-    "H1_forming": {
-      "time_sofia": "2026-08-27T06:00:00+03:00",
-      "open": 29484.5,
-      "high": 29510.3,
-      "low": 29461.0,
-      "close": 29482.4
-    },
-    "H4_forming": {
-      "time_sofia": "2026-08-27T04:00:00+03:00",
-      "open": 29378.7,
-      "high": 29510.3,
-      "low": 29367.8,
-      "close": 29482.4
-    },
-    "D1_forming": {
-      "time_sofia": "2026-08-27T00:00:00+03:00",
-      "open": 29463.7,
-      "high": 29588.3,
-      "low": 29367.8,
-      "close": 29482.4
-    },
-    "M3_intrabar_ama": 29475.5862,
-    "M3_intrabar_distance_to_ama": 7.3138
-  }
+  "ai_model": "gpt-5.6-terra"
 }
