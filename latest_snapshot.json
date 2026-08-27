@@ -1,5 +1,5 @@
 {
-  "schema_version": "USTEC_SNAPSHOT_1.6",
+  "schema_version": "USTEC_SNAPSHOT_1.7_LIVE",
   "engine_build": "USTEC-LIVE-2026.08.26-v6.5Q-CONSOLIDATION-FILTER",
   "instrument": "USTEC",
   "time_system": {
@@ -7,9 +7,9 @@
     "mt5_broker_encoded_offset_hours": 3,
     "correction_mode": "auto"
   },
-  "generated_at_sofia": "2026-08-27T06:12:12.632881+03:00",
+  "generated_at_sofia": "2026-08-27T06:12:19.270210+03:00",
   "candle_time_sofia": "2026-08-27T06:09:00+03:00",
-  "price": 29471.7,
+  "price": 29469.9,
   "market": {
     "overall_sentiment": "BULLISH",
     "overall_sentiment_score": 0.556,
@@ -220,8 +220,8 @@
     "lock_active": false,
     "source": "ForexFactory JSON explicit-offset",
     "phase": "CLEAR",
-    "minutes_to_event": 561,
-    "status_line": "NEWS: Unemployment Claims | USD MEDIUM | 27.08 15:30 Sofia | T-561m",
+    "minutes_to_event": 558,
+    "status_line": "NEWS: Unemployment Claims | USD MEDIUM | 27.08 15:30 Sofia | T-558m",
     "next_event": {
       "title": "Unemployment Claims",
       "currency": "USD",
@@ -4317,7 +4317,8 @@
       "support_count": 4,
       "solid_start_index": 492,
       "identity": "BEARISH|2026-08-27T05:51:00+03:00|29494.80000",
-      "source": "REAL_OHLC_MAX_SUPPORT_LINE_LEG"
+      "source": "REAL_OHLC_MAX_SUPPORT_LINE_LEG",
+      "market_state": "BULL_TREND"
     },
     "H1": {
       "tf": "H1",
@@ -4329,7 +4330,8 @@
       "ama8_at_start": 29376.017446501428,
       "start_minus_ama_points": 212.28255349857136,
       "start_vs_ama": "ABOVE",
-      "identity": "H1|BEARISH|2026-08-27T03:00:00+03:00|29588.30000"
+      "identity": "H1|BEARISH|2026-08-27T03:00:00+03:00|29588.30000",
+      "market_state": "BULL_TREND"
     },
     "H4": {
       "tf": "H4",
@@ -4341,7 +4343,8 @@
       "ama8_at_start": 29164.032091711884,
       "start_minus_ama_points": -135.53209171188428,
       "start_vs_ama": "BELOW",
-      "identity": "H4|BULLISH|2026-08-26T04:00:00+03:00|29028.50000"
+      "identity": "H4|BULLISH|2026-08-26T04:00:00+03:00|29028.50000",
+      "market_state": "BULL_TREND"
     },
     "D1": {
       "tf": "D1",
@@ -4353,7 +4356,8 @@
       "ama8_at_start": 29587.771880188076,
       "start_minus_ama_points": -716.4718801880772,
       "start_vs_ama": "BELOW",
-      "identity": "D1|BULLISH|2026-08-24T00:00:00+03:00|28871.30000"
+      "identity": "D1|BULLISH|2026-08-24T00:00:00+03:00|28871.30000",
+      "market_state": "BULL_TREND"
     }
   },
   "market_event_filters": {
@@ -4411,7 +4415,221 @@
   "position_management_actions": [],
   "ai_second_opinion": {
     "status": "DISABLED",
-    "model": "gpt-5.6-terra"
+    "reason": "Disabled to avoid OpenAI API credit usage; report AI runs in ChatGPT."
   },
-  "ai_model": "gpt-5.6-terra"
+  "ai_model": "gpt-5.6-terra",
+  "telegram_market_chart": "C:\\USTEC2\\ustec_telegram_market_chart.png",
+  "new_leg_alerts": [],
+  "telegram_delivery": {
+    "recent": [
+      {
+        "time_sofia": "2026-08-27T05:33:09.781194+03:00",
+        "category": "NEW_LEG_M3_CHART",
+        "success": true,
+        "error": "",
+        "text": "[REAL_DATA_CHART] ustec_telegram_market_chart.png"
+      },
+      {
+        "time_sofia": "2026-08-27T05:42:11.273663+03:00",
+        "category": "NEW_LEG_M3",
+        "success": true,
+        "error": "",
+        "text": "🔴 <b>M3 | NEW CHILD #32 BEAR LEG</b>\nMarket: <b>BULL TREND</b>\nStart: <b>05:33</b> @ <b>29489.4</b>\nConfirmed: <b>05:42</b> | trendline break + opposite 2-point leg + closed-candle acceptance\nStart vs AMA8(M3): <b>26.0 pt ABOVE AMA</b> | AMA <b>29463.4</b>\nTrendline supports: <b>3</b> | fit tolerance ±3.0 pt"
+      },
+      {
+        "time_sofia": "2026-08-27T05:42:11.764267+03:00",
+        "category": "NEW_LEG_M3_CHART",
+        "success": true,
+        "error": "",
+        "text": "[REAL_DATA_CHART] ustec_telegram_market_chart.png"
+      },
+      {
+        "time_sofia": "2026-08-27T05:51:11.639313+03:00",
+        "category": "NEW_LEG_M3",
+        "success": true,
+        "error": "",
+        "text": "🟢 <b>M3 | NEW CHILD #33 BULL LEG</b>\nMarket: <b>BULL TREND</b>\nStart: <b>05:42</b> @ <b>29465.8</b>\nConfirmed: <b>05:51</b> | trendline break + opposite 2-point leg + closed-candle acceptance\nStart vs AMA8(M3): <b>0.8 pt ABOVE AMA</b> | AMA <b>29465.0</b>\nTrendline supports: <b>3</b> | fit tolerance ±3.0 pt"
+      },
+      {
+        "time_sofia": "2026-08-27T05:51:12.127012+03:00",
+        "category": "NEW_LEG_M3_CHART",
+        "success": true,
+        "error": "",
+        "text": "[REAL_DATA_CHART] ustec_telegram_market_chart.png"
+      },
+      {
+        "time_sofia": "2026-08-27T06:00:09.214843+03:00",
+        "category": "NEW_LEG_M3",
+        "success": true,
+        "error": "",
+        "text": "🔴 <b>M3 | NEW CHILD #34 BEAR LEG</b>\nMarket: <b>BULL TREND</b>\nStart: <b>05:51</b> @ <b>29494.8</b>\nConfirmed: <b>06:00</b> | trendline break + opposite 2-point leg + closed-candle acceptance\nStart vs AMA8(M3): <b>21.5 pt ABOVE AMA</b> | AMA <b>29473.3</b>\nTrendline supports: <b>3</b> | fit tolerance ±3.0 pt"
+      },
+      {
+        "time_sofia": "2026-08-27T06:00:09.754831+03:00",
+        "category": "NEW_LEG_M3_CHART",
+        "success": true,
+        "error": "",
+        "text": "[REAL_DATA_CHART] ustec_telegram_market_chart.png"
+      },
+      {
+        "time_sofia": "2026-08-27T06:09:11.652863+03:00",
+        "category": "AMA_CROSS",
+        "success": true,
+        "error": "SUPPRESSED_BY_USER_CONTROL:ama_cross_alerts",
+        "text": "🔴 <b>PRICE CROSSED AMA ↓</b>\n<b>USTEC: 29471.9 @ 06:06</b>\nPrice crossed AMA from ABOVE to BELOW\nM3 AMA: <b>29476.2</b>\nDistance to M3 AMA: <b>-4.3 pts</b>\nM3 AMA slope: <b>RISING ↑</b>\nAMA role: neutral\nCandle: 06:06–06:09 Sofia\nConfirmed: 06:09:00 Sofia\nConfirmation: CLOSED M3 candle\nPipeline delay after confirmation: ~11s"
+      }
+    ],
+    "note": "Exact payloads; no Telegram credentials are stored."
+  },
+  "positions_live": {
+    "state": "HEDGED",
+    "long_volume": 0.8,
+    "short_volume": 0.8,
+    "net_volume": 0.0,
+    "tickets": [
+      {
+        "ticket": 1885156124,
+        "side": "SELL",
+        "volume": 0.8,
+        "entry": 29149.4,
+        "current": 29470.9,
+        "profit": -220.66,
+        "sl": 0.0,
+        "tp": 0.0,
+        "magic": 0,
+        "comment": ""
+      },
+      {
+        "ticket": 1886966007,
+        "side": "BUY",
+        "volume": 0.8,
+        "entry": 29278.7,
+        "current": 29469.9,
+        "profit": 131.23,
+        "sl": 0.0,
+        "tp": 0.0,
+        "magic": 0,
+        "comment": ""
+      }
+    ]
+  },
+  "analysis_basis": {
+    "strategy_timeframe": "M3",
+    "strategy_uses_closed_m3_only": true,
+    "closed_m3_candle_time_sofia": "2026-08-27T06:09:00+03:00",
+    "closed_m3_price": 29471.7,
+    "live_overlay_interval_seconds": 5,
+    "note": "market/scores/python_decision are from the latest CLOSED M3; top-level price is current MT5 BID (same as chart); live.* is current/intrabar."
+  },
+  "chart": {
+    "price_bid": 29469.9,
+    "ask": 29470.9,
+    "spread_points": 1.0,
+    "M3": {
+      "time_sofia": "2026-08-27T06:12:00+03:00",
+      "open": 29471.3,
+      "high": 29471.5,
+      "low": 29469.2,
+      "close": 29469.9
+    },
+    "H1": {
+      "time_sofia": "2026-08-27T06:00:00+03:00",
+      "open": 29484.5,
+      "high": 29497.2,
+      "low": 29469.2,
+      "close": 29469.9
+    },
+    "H4": {
+      "time_sofia": "2026-08-27T04:00:00+03:00",
+      "open": 29378.7,
+      "high": 29497.2,
+      "low": 29367.8,
+      "close": 29469.9
+    },
+    "D1": {
+      "time_sofia": "2026-08-27T00:00:00+03:00",
+      "open": 29463.7,
+      "high": 29588.3,
+      "low": 29367.8,
+      "close": 29469.9
+    },
+    "updated_at_sofia": "2026-08-27T06:12:19.270210+03:00",
+    "note": "Exact MT5 chart-view layer: BID price + currently forming bars."
+  },
+  "live": {
+    "snapshot_type": "INTRABAR_5S",
+    "received_at_sofia": "2026-08-27T06:12:19.270210+03:00",
+    "bid": 29469.9,
+    "ask": 29470.9,
+    "mid": 29470.4,
+    "chart_price": 29469.9,
+    "spread_points": 1.0,
+    "M3_forming": {
+      "time_sofia": "2026-08-27T06:12:00+03:00",
+      "open": 29471.3,
+      "high": 29471.5,
+      "low": 29469.2,
+      "close": 29469.9
+    },
+    "M3_chart_recent": [
+      {
+        "time_sofia": "2026-08-27T06:00:00+03:00",
+        "open": 29484.5,
+        "high": 29493.9,
+        "low": 29478.7,
+        "close": 29493.8
+      },
+      {
+        "time_sofia": "2026-08-27T06:03:00+03:00",
+        "open": 29493.3,
+        "high": 29497.2,
+        "low": 29485.7,
+        "close": 29486.9
+      },
+      {
+        "time_sofia": "2026-08-27T06:06:00+03:00",
+        "open": 29486.7,
+        "high": 29487.7,
+        "low": 29471.0,
+        "close": 29471.9
+      },
+      {
+        "time_sofia": "2026-08-27T06:09:00+03:00",
+        "open": 29472.2,
+        "high": 29476.0,
+        "low": 29469.5,
+        "close": 29471.7
+      },
+      {
+        "time_sofia": "2026-08-27T06:12:00+03:00",
+        "open": 29471.3,
+        "high": 29471.5,
+        "low": 29469.2,
+        "close": 29469.9
+      }
+    ],
+    "H1_forming": {
+      "time_sofia": "2026-08-27T06:00:00+03:00",
+      "open": 29484.5,
+      "high": 29497.2,
+      "low": 29469.2,
+      "close": 29469.9
+    },
+    "H4_forming": {
+      "time_sofia": "2026-08-27T04:00:00+03:00",
+      "open": 29378.7,
+      "high": 29497.2,
+      "low": 29367.8,
+      "close": 29469.9
+    },
+    "D1_forming": {
+      "time_sofia": "2026-08-27T00:00:00+03:00",
+      "open": 29463.7,
+      "high": 29588.3,
+      "low": 29367.8,
+      "close": 29469.9
+    },
+    "M3_intrabar_ama": 29475.7288,
+    "M3_intrabar_distance_to_ama": -5.3288
+  }
 }
